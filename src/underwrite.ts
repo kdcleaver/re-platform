@@ -5,8 +5,9 @@ import { KYLE, type BuyerProfile } from "./buyer.js";
 import {
   FHA, type CapitalCheck, type CostBuild, type Financing, type GrmScreen,
   type Phase1, type Phase2, type SelfSufficiency, type SolverContext,
-  capitalCheck, costBuild, grmScreen, maxPriceForCapital, maxPriceForDscr, maxPriceForPhase2Hurdles,
-  maxPriceForSelfSufficiency, maxPriceForZeroHousingCost, phase1, phase2, screenGrmMax, selfSufficiency,
+  capitalCheck, costBuild, fhaLoanLimit, grmScreen, maxPriceForCapital, maxPriceForDscr, maxPriceForFhaLimit,
+  maxPriceForPhase2Hurdles, maxPriceForSelfSufficiency, maxPriceForZeroHousingCost, phase1, phase2, rentNeeded,
+  screenGrmMax, selfSufficiency, type RentNeeded,
 } from "./engine.js";
 
 export interface Scenario {
@@ -59,6 +60,7 @@ export interface UnderwriteResult {
     maxPriceZeroHousing: number | null;
     maxPriceLender: number | null;
     maxPriceCapital: number | null;
+    maxPriceFhaLimit: number | null;
     /** min of every constraint that applies under this financing */
     maxOffer: number | null;
     bindingConstraint: string;
@@ -123,6 +125,9 @@ export function underwrite(
   if (assumedAverage) flags.push({ severity: "info", message: "Owner's unit rent unknown; Phase 1 assumes the average door." });
   if (financing.kind === "fha" && units > market.fha.maxUnits)
     flags.push({ severity: "kill-candidate", message: `${units} units is outside FHA 1–4 unit lending.` });
+  const fhaLimit = financing.kind === "fha" ? fhaLoanLimit(units, market) : null;
+  if (fhaLimit != null && cost.baseLoan > fhaLimit)
+    flags.push({ severity: "kill-candidate", message: `FHA base loan $${Math.round(cost.baseLoan / 1000)}k exceeds the ${units}-unit limit $${Math.round(fhaLimit / 1000)}k.` });
 
   // Lender eligibility + DSCR (non-FHA)
   const lender: UnderwriteResult["lender"] = { eligible: true, reasons: [] };
@@ -169,7 +174,8 @@ export function underwrite(
     maxPricePhase2Hurdles: maxPriceForPhase2Hurdles(units, rc.grossMo, h, ctx),
     maxPriceZeroHousing: maxPriceForZeroHousingCost(units, otherRentMo, ctx),
     maxPriceLender: lender.minDscr !== undefined ? maxPriceForDscr(units, rc.grossMo, lender.minDscr, ctx) : null,
-    maxPriceCapital: maxPriceForCapital(buyer.capital, ctx),
+    maxPriceCapital: maxPriceForCapital(buyer.capital, ctx, units),
+    maxPriceFhaLimit: financing.kind === "fha" ? maxPriceForFhaLimit(units, market, financing.downPct) : null,
   };
   const binding = minNonNull([
     ["Phase 2 hurdles", solvers.maxPricePhase2Hurdles],
@@ -177,7 +183,9 @@ export function underwrite(
     ["capital", solvers.maxPriceCapital],
     ...(ssApplies ? ([["FHA self-sufficiency", solvers.maxPriceSelfSufficiency]] as [string, number | null][]) : []),
     ...(lender.minDscr !== undefined ? ([["lender DSCR", solvers.maxPriceLender]] as [string, number | null][]) : []),
+    ...(solvers.maxPriceFhaLimit != null ? ([["FHA loan limit", solvers.maxPriceFhaLimit]] as [string, number | null][]) : []),
   ]);
+  const fhaIneligible = financing.kind === "fha" && units > market.fha.maxUnits;
 
   return {
     dealId: deal.id,
@@ -191,19 +199,43 @@ export function underwrite(
     screen: grmScreen(price, rc.grossMo, market, grmMax),
     cost,
     selfSufficiency: ss,
-    capital: capitalCheck(cost, buyer.capital, financing),
+    capital: capitalCheck(cost, buyer.capital, financing, units),
     phase1: p1,
     phase2: p2,
     hurdles: { phase1Pass: p1.netHousingCostMo <= h.phase1MaxNetHousingCostMo, phase2Pass: misses.length === 0, phase2Misses: misses },
     lender,
-    solvers: { ...solvers, maxOffer: lender.eligible ? binding.value : null, bindingConstraint: lender.eligible ? binding.name : "lender eligibility" },
+    solvers: {
+      ...solvers,
+      maxOffer: lender.eligible && !fhaIneligible ? binding.value : null,
+      bindingConstraint: fhaIneligible ? "not FHA-eligible (5+ units)" : lender.eligible ? binding.name : "lender eligibility",
+    },
     flags,
   };
 }
 
+/** Rent the deal would need at a given price (default: ask) under a scenario. Works with no rent roll. */
+export function rentNeededAt(deal: Deal, sc: Scenario, market: MarketAssumptions, buyer: BuyerProfile = KYLE, price = deal.askPrice): RentNeeded {
+  const ins = resolveInsurance(deal, sc, market);
+  return rentNeeded(price, deal.units.length, buyer.hurdles, {
+    market, financing: sc.financing ?? FHA, taxPct: sc.taxPct, insAnnual: ins.insAnnual,
+    utilPerDoor: deal.overrides?.ownerUtilitiesPerDoorMo,
+  });
+}
+
 /** Free-at-screening red flags derived from the deal record itself. */
-export function screeningFlags(deal: Deal): Flag[] {
+export function screeningFlags(deal: Deal, market?: MarketAssumptions): Flag[] {
   const f: Flag[] = [];
+  if (deal.rentCases.length === 0)
+    f.push({ severity: "warn", message: "Listing publishes no rents. Get a rent roll + leases; report shows the rent this price would need." });
+  if (deal.units.length > 4)
+    f.push({ severity: "kill-candidate", message: `${deal.units.length} units: outside FHA and residential DSCR (1–4 unit) programs; commercial loans here need $1.5M+ and 20%+ down.` });
+  if (market?.singleFamilyZoningPatterns && deal.zoning && deal.units.length > 1 &&
+      market.singleFamilyZoningPatterns.some((p) => new RegExp(p).test(deal.zoning!)))
+    f.push({ severity: "warn", message: `Zoning ${deal.zoning} reads as single-family. Confirm the ${deal.units.length} units are legal (nonconforming/grandfathered) before anything else.` });
+  if (deal.floodFactor !== undefined && deal.floodFactor >= 5)
+    f.push({ severity: "warn", message: `First Street Flood Factor ${deal.floodFactor}/10${deal.floodZone ? "" : " and no FEMA zone on the listing"}: check FEMA map and flood-insurance cost.` });
+  else if (!deal.floodZone)
+    f.push({ severity: "info", message: "FEMA flood zone not on the listing; check the FEMA map." });
   if (deal.isFrame && deal.yearBuilt < 1950)
     f.push({
       severity: "warn",

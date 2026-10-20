@@ -231,12 +231,14 @@ export interface CapitalCheck {
  * can backfill closing only after reserves are covered.
  * Other structures: capital is pooled (placeholder until lender confirms gift rules).
  */
-export function capitalCheck(c: CostBuild, cap: BuyerCapital, f: Financing = FHA): CapitalCheck {
+export function capitalCheck(c: CostBuild, cap: BuyerCapital, f: Financing = FHA, units?: number): CapitalCheck {
   let closeShortfall: number;
   let reserveShortfall: number;
   if (f.kind === "fha") {
-    reserveShortfall = Math.max(0, c.reserves - cap.ownCash);
-    const ownLeft = Math.max(0, cap.ownCash - c.reserves);
+    // HUD 4000.1: the 3-month reserve requirement applies to 3–4 units only
+    const reservesRequired = units === undefined || units >= 3 ? c.reserves : 0;
+    reserveShortfall = Math.max(0, reservesRequired - cap.ownCash);
+    const ownLeft = Math.max(0, cap.ownCash - reservesRequired);
     closeShortfall = Math.max(0, c.cashToClose - cap.giftFunds - ownLeft);
   } else {
     const pool = cap.giftFunds + cap.ownCash;
@@ -245,7 +247,7 @@ export function capitalCheck(c: CostBuild, cap: BuyerCapital, f: Financing = FHA
   }
   return {
     cashToClose: c.cashToClose,
-    reserves: c.reserves,
+    reserves: f.kind === "fha" && units !== undefined && units < 3 ? 0 : c.reserves,
     closeShortfall,
     reserveShortfall,
     pass: closeShortfall === 0 && reserveShortfall === 0,
@@ -382,6 +384,59 @@ export function maxPriceForPhase2Hurdles(
 }
 
 /** Highest price the buyer's capital can close (cash to close + reserves under the financing's rules). */
-export function maxPriceForCapital(cap: BuyerCapital, s: SolverContext): number | null {
-  return solveMaxPrice((p) => capitalCheck(cb(p, s), cap, s.financing ?? FHA).pass, 50_000);
+export function maxPriceForCapital(cap: BuyerCapital, s: SolverContext, units?: number): number | null {
+  return solveMaxPrice((p) => capitalCheck(cb(p, s), cap, s.financing ?? FHA, units).pass, 50_000);
+}
+
+// ---------- FHA loan limit ----------
+
+export function fhaLoanLimit(units: number, market: MarketAssumptions): number | null {
+  const t = market.fha.loanLimitByUnits;
+  if (!t || units < 1 || units > 4) return null;
+  return t[units as 1 | 2 | 3 | 4];
+}
+
+/** Highest price whose FHA base loan stays within the county limit. */
+export function maxPriceForFhaLimit(units: number, market: MarketAssumptions, downPct = market.fha.minDownPct): number | null {
+  const lim = fhaLoanLimit(units, market);
+  return lim == null ? null : lim / (1 - downPct);
+}
+
+// ---------- Rent-needed solvers (for listings without a rent roll, or to size the gap) ----------
+
+/** Lowest gross rent in [0, hi] for which ok(gross) holds. ok must be monotone (false below, true above). */
+export function solveMinRent(ok: (grossMo: number) => boolean, hi = 50_000, iters = 60): number | null {
+  if (!ok(hi)) return null;
+  let lo = 0;
+  for (let k = 0; k < iters; k++) {
+    const mid = (lo + hi) / 2;
+    if (ok(mid)) hi = mid;
+    else lo = mid;
+  }
+  return hi;
+}
+
+export interface RentNeeded {
+  selfSufficiency: number | null; // FHA 3–4 units only
+  dscr1: number;
+  phase2Hurdles: number | null;
+  /** rent from the non-owner doors for $0 Phase 1 housing cost */
+  zeroHousingOtherDoors: number;
+}
+
+export function rentNeeded(
+  price: number,
+  units: number,
+  h: { phase2MinDscr: number; phase2MinCashFlowPerDoorMo: number; phase2MinCoc: number },
+  s: SolverContext,
+): RentNeeded {
+  const c = cb(price, s);
+  const f = s.financing ?? FHA;
+  const ss = f.kind === "fha" && units >= 3 && units <= s.market.fha.maxUnits ? c.pitia / s.market.fha.selfSufficiencyFactor : null;
+  const dscr1 = solveMinRent((g) => phase2(price, units, g, c, s.market, s.utilPerDoor).dscr >= 1)!;
+  const hurdles = solveMinRent((g) => {
+    const r = phase2(price, units, g, c, s.market, s.utilPerDoor);
+    return r.dscr >= h.phase2MinDscr && r.cashFlowPerDoorMo >= h.phase2MinCashFlowPerDoorMo && r.coc >= h.phase2MinCoc;
+  });
+  return { selfSufficiency: ss, dscr1, phase2Hurdles: hurdles, zeroHousingOtherDoors: otherRentForZero(units, c, s.market, s.utilPerDoor) };
 }

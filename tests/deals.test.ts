@@ -1,7 +1,7 @@
 /** Integration checks on the three live deals: guard the conclusions we act on. */
 import { describe, expect, it } from "vitest";
 import { TAMPA_MSA_2026_10 as M } from "../src/market.js";
-import { DEALS, YBOR_3106_N_17TH as YBOR, STPETE_1761_19TH_S as S1761, STPETE_1846_2ND_AVE_N as S1846 } from "../deals/index.js";
+import { OCT_BATCH as DEALS, YBOR_3106_N_17TH as YBOR, STPETE_1761_19TH_S as S1761, STPETE_1846_2ND_AVE_N as S1846 } from "../deals/index.js";
 import { screeningFlags, underwrite } from "../src/underwrite.js";
 import { STANDARD_SCENARIOS, YBOR_STRUCTURE_SCENARIOS } from "../src/stress.js";
 

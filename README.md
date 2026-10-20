@@ -12,7 +12,7 @@ Local-first underwriting engine for paper house-hack deals. TypeScript, no UI ye
 | `src/deal.ts` | Deal record shape: units, rent cases (in-place vs. pro forma), liens, gates (Kill/Reprice/Clear/Unverified). |
 | `src/underwrite.ts` | Runs one deal × rent case × scenario: hurdle pass/fail, lender eligibility + DSCR, **max offer** (lowest price clearing every constraint) and which constraint binds; screening red flags. |
 | `src/stress.ts` | Standard stress grid (rate, tax, insurance, price, combined) + Ybor brief structures. |
-| `deals/` | The three live paper deals, one file each. |
+| `deals/` | 13 paper deals, one file each: the Oct batch (3) and the Sept `buybox_check.py` batch (10, re-pulled 2026-10-20). Deals may have no rent cases; the report then shows rent needed at ask. |
 | `tests/` | Parity with `buybox_check.py` v0 (to the cent), engine unit tests, deal-level guards. |
 | `scripts/run-stress.ts` | Writes `out/stress-report.md` and `out/stress-results.json`. |
 
@@ -22,7 +22,7 @@ Local-first underwriting engine for paper house-hack deals. TypeScript, no UI ye
 # one time: install Node 22+ from nodejs.org, then in this folder:
 npm install
 
-npm test          # 55 tests, incl. parity with the original Python script
+npm test          # 64 tests, incl. parity with the original Python script
 npm run stress    # regenerate out/stress-report.md
 npm run typecheck
 ```

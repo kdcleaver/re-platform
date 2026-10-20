@@ -54,6 +54,8 @@ export interface Deal {
   isFrame: boolean;
   zoning?: string;
   floodZone?: string;
+  /** First Street Flood Factor 1–10, when the listing shows it */
+  floodFactor?: number;
   /** Unit count shown in MLS data fields, when it disagrees with advertised doors */
   mlsUnitCountField?: number;
   currentAnnualTax?: number;
@@ -61,11 +63,19 @@ export interface Deal {
   /** Open liens on public record, for structuring checks (e.g. seller financing) */
   openLiens?: { recorded: string; amount: number; type: string }[];
   lastSale?: { date: string; price: number };
+  /** May be empty when the listing publishes no rents; the engine then reports rent needed at ask. */
   rentCases: RentCase[];
+  /** Which rent case drives verdicts. Defaults to in-place, then MLS gross, then the first case. */
+  primaryRentCaseId?: string;
   /** Building-specific insurance estimate (annual $). Used instead of the market % when present. */
   insuranceEstimate?: { lowAnnual: number; highAnnual: number; source: string; bound: boolean };
   /** Per-deal operating overrides (e.g. tenants pay all utilities) */
   overrides?: { ownerUtilitiesPerDoorMo?: number; note?: string };
   gates: GateItem[];
   notes: string[];
+}
+
+export function primaryRentCase(d: Deal): RentCase | undefined {
+  if (d.primaryRentCaseId) return d.rentCases.find((r) => r.id === d.primaryRentCaseId);
+  return d.rentCases.find((r) => r.basis === "in-place") ?? d.rentCases.find((r) => r.basis === "mls-gross") ?? d.rentCases[0];
 }

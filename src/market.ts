@@ -24,6 +24,8 @@ export interface FhaRules {
   selfSufficiencyFactor: number; // 3-4 units: factor x gross rent >= PITIA
   reserveMonths: number; // 3-4 units, own funds, months of PITIA
   maxUnits: number; // >4 units = commercial underwriting, not FHA 1-4
+  /** max base loan (excl. UFMIP) by unit count for this market's county/MSA */
+  loanLimitByUnits?: Record<1 | 2 | 3 | 4, number>;
 }
 
 export interface OperatingAssumptions {
@@ -73,6 +75,8 @@ export interface MarketAssumptions {
   opex: OperatingAssumptions;
   loanProducts: LoanProduct[];
   screen: ScreenRule;
+  /** regexes for zoning codes that appear single-family only (screening flag, not a ruling) */
+  singleFamilyZoningPatterns?: string[];
   provenance: Record<string, Provenance>;
 }
 
@@ -140,7 +144,8 @@ export const TAMPA_MSA_2026_10: MarketAssumptions = {
   propertyTaxPctOfPrice: 0.017,
   insurancePctOfPrice: 0.0145,
   closingCostPct: 0.03,
-  fha: FHA_2026,
+  fha: { ...FHA_2026, loanLimitByUnits: { 1: 541_287, 2: 693_050, 3: 837_700, 4: 1_041_125 } },
+  singleFamilyZoningPatterns: ["^RS-\\d+", "^SH-RS", "^NT-[1-3]$", "^R-[1-3]$"],
   conventionalDownPctByUnits: { 1: 0.05, 2: 0.15, 3: 0.25, 4: 0.25 },
   opex: OPEX_V0,
   loanProducts: [
@@ -219,6 +224,17 @@ export const TAMPA_MSA_2026_10: MarketAssumptions = {
         "Select Commercial indicative rates 2026-10-20: Apartment/Freddie SBL 6.60% 5-yr, 80% LTV purchase, 1.25x DSCR at 75–80% LTV, 30-yr amort. $1.5M minimum loan ('no exceptions'); 5+ unit programs. Reference only: not eligible for 2–4 unit deals of this size.",
       confidence: "researched",
       url: "https://selectcommercial.com/commercial-mortgage-rates.php",
+    },
+    "fha.loanLimitByUnits": {
+      source:
+        "2026 FHA 1-unit limit $541,287 for Hillsborough (homebuyer.com, citing HUD/FHFA, 2026-10-20) = the national floor (65% of $832,750 conforming). " +
+        "2–4 unit figures derived as 65% of 2026 conforming 2–4 unit limits; Pinellas shares the Tampa MSA. Verify on HUD's FHA limit lookup.",
+      confidence: "researched",
+      url: "https://homebuyer.com/mortgage-loan-limits/hillsborough-county-florida",
+    },
+    singleFamilyZoningPatterns: {
+      source: "Tampa RS-*, Seminole Heights SH-RS; St. Pete NT-1..3; Pinellas unincorporated R-1..R-3. Screening heuristic only: a match means 'confirm legal nonconforming status', not a ruling.",
+      confidence: "placeholder",
     },
     screen: {
       source: "Derived from this record's own defaults (FHA, Phase 2 DSCR 1.0x). Replaces fixed 7.5x after the 2026-10-20 stress test.",

@@ -7,9 +7,10 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { CURRENT_TAMPA as M, TAMPA_MSA_V0 } from "../src/market.js";
 import { KYLE } from "../src/buyer.js";
-import { DEALS } from "../deals/index.js";
+import { DEALS, OCT_BATCH } from "../deals/index.js";
+import { primaryRentCase } from "../src/deal.js";
 import { impliedBreakevenGrm, screenBatch, screenGrmMax } from "../src/engine.js";
-import { screeningFlags, underwrite, type Scenario, type UnderwriteResult } from "../src/underwrite.js";
+import { rentNeededAt, screeningFlags, underwrite, type Scenario, type UnderwriteResult } from "../src/underwrite.js";
 import { STANDARD_SCENARIOS, YBOR_STRUCTURE_SCENARIOS } from "../src/stress.js";
 
 const $ = (x: number | null | undefined) =>
@@ -24,7 +25,7 @@ const md: string[] = [];
 const grmMax = screenGrmMax(M);
 const sc = (id: string) => STANDARD_SCENARIOS.find((s) => s.id === id)!;
 
-md.push(`# Stress test: 3 paper deals`);
+md.push(`# Stress test: ${DEALS.length} paper deals`);
 md.push(`Market record **${M.marketName} @ ${M.version}** (as of ${M.asOfDate}). Run ${new Date().toISOString().slice(0, 10)}.\n`);
 md.push(`**Base case:** FHA ${pct(M.fha.minDownPct)} down @ ${pct(M.fha.rate)}; tax ${pct(M.propertyTaxPctOfPrice)} of price; insurance = deal estimate midpoint where we have one, else ${pct(M.insurancePctOfPrice)}; ` +
   `vacancy ${pct(M.opex.vacancyPct)}, repairs+capex ${pct(M.opex.repairsPctOfRent + M.opex.capexPctOfRent)}, mgmt ${pct(M.opex.mgmtPctOfEgi)}. Capital: $50k gift + $20k own.\n`);
@@ -37,16 +38,41 @@ for (const [key, p] of Object.entries(M.provenance))
   md.push(`| ${key} | ${p.confidence} | ${p.url ? `[link](${p.url}) ` : ""}${p.source} |`);
 
 // 0. verdicts first
-md.push(`\n## Verdict: max offer at in-place rents\n`);
-md.push(`Max offer = lowest price that clears **every** constraint that applies (Phase 2 hurdles, $0 Phase 1 housing cost, FHA self-sufficiency, lender DSCR, capital).\n`);
-md.push(`| Deal | Ask | FHA base: max offer | Binding | FHA downside: max offer | Phase 2 hurdles only (base) | DSCR loan 25%: max offer | Binding |`);
-md.push(`|---|---|---|---|---|---|---|---|`);
+md.push(`\n## Verdict: max offer on each deal's primary rent case\n`);
+md.push(`Primary rent case = in-place where it exists, else MLS gross, else the listing's stated rent. Max offer = highest price clearing **every** constraint that applies (Phase 2 hurdles, $0 Phase 1 housing cost, FHA self-sufficiency, FHA loan limit, lender DSCR, capital).\n`);
+md.push(`| Deal | Units | Ask | Rent case | GRM | FHA base: max offer | vs ask | Binding | FHA downside | Phase 2 hurdles only |`);
+md.push(`|---|---|---|---|---|---|---|---|---|---|`);
+const verdictRows: { d: (typeof DEALS)[number]; offer: number | null }[] = [];
 for (const d of DEALS) {
-  const rc = d.rentCases.find((r) => r.basis === "in-place")!;
+  const rc = primaryRentCase(d);
+  if (!rc) {
+    md.push(`| ${d.name} | ${d.units.length} | ${k(d.askPrice)} | **no rents published** | — | — | — | needs rent roll | — | — |`);
+    verdictRows.push({ d, offer: null });
+    continue;
+  }
   const b = underwrite(d, rc, sc("base"), M, KYLE, grmMax);
   const dn = underwrite(d, rc, sc("downside"), M, KYLE, grmMax);
-  const ds = underwrite(d, rc, sc("dscr-25"), M, KYLE, grmMax);
-  md.push(`| ${d.name} | ${k(d.askPrice)} | **${k(b.solvers.maxOffer)}** (${pct(1 - (b.solvers.maxOffer ?? 0) / d.askPrice)} below) | ${b.solvers.bindingConstraint} | ${k(dn.solvers.maxOffer)} | ${k(b.solvers.maxPricePhase2Hurdles)} | ${k(ds.solvers.maxOffer)} | ${ds.solvers.bindingConstraint} |`);
+  verdictRows.push({ d, offer: b.solvers.maxOffer });
+  const gap = b.solvers.maxOffer == null ? "—" : `${pct(b.solvers.maxOffer / d.askPrice - 1)}`;
+  const noFinancing = d.units.length > M.fha.maxUnits;
+  md.push(`| ${d.name} | ${d.units.length} | ${k(d.askPrice)} | ${rc.label} | ${b.screen.grm.toFixed(1)}x | **${k(b.solvers.maxOffer)}** | ${gap} | ${b.solvers.bindingConstraint} | ${k(dn.solvers.maxOffer)} | ${noFinancing ? "n/a" : k(b.solvers.maxPricePhase2Hurdles)} |`);
+}
+
+// 0b. rent needed at ask
+md.push(`\n## Rent needed at asking price (FHA base)\n`);
+md.push(`What gross monthly rent (all doors) each ask would need. "Other doors for $0" = rent from the non-owner units for $0 Phase 1 housing cost.\n`);
+md.push(`| Deal | Ask | Primary rent | FHA self-sufficiency | DSCR 1.0x | Phase 2 hurdles | Other doors for $0 | Primary rent covers |`);
+md.push(`|---|---|---|---|---|---|---|---|`);
+for (const d of DEALS) {
+  const rc = primaryRentCase(d);
+  if (d.units.length > M.fha.maxUnits) {
+    md.push(`| ${d.name} | ${k(d.askPrice)} | ${rc ? $(rc.grossMo) : "none published"} | n/a | n/a | n/a | n/a | no eligible financing (${d.units.length} units) |`);
+    continue;
+  }
+  const n = rentNeededAt(d, sc("base"), M, KYLE);
+  const have = rc ? rc.grossMo : null;
+  const covers = have == null ? "—" : `${pct(have / (n.phase2Hurdles ?? Infinity))} of hurdle rent`;
+  md.push(`| ${d.name} | ${k(d.askPrice)} | ${have == null ? "none published" : $(have)} | ${n.selfSufficiency == null ? "n/a" : $(n.selfSufficiency)} | ${$(n.dscr1)} | ${$(n.phase2Hurdles)} | ${$(n.zeroHousingOtherDoors)} | ${covers} |`);
 }
 
 // 1. Screen calibration
@@ -77,7 +103,8 @@ for (const { item, screen } of batch)
 // 3. Per-deal grids
 for (const d of DEALS) {
   md.push(`\n## ${d.name}\n${d.address} · ask ${$(d.askPrice)} · listed ${d.listedOn} · [listing](${d.url})\n`);
-  for (const f of screeningFlags(d)) md.push(`- ${f.severity === "warn" ? "⚠️" : "ℹ️"} ${f.message}`);
+  for (const f of screeningFlags(d, M)) md.push(`- ${f.severity === "kill-candidate" ? "🚩" : f.severity === "warn" ? "⚠️" : "ℹ️"} ${f.message}`);
+  if (d.rentCases.length === 0) md.push(`\n_No rent cases: see the rent-needed table above._`);
   md.push("");
   const scenarios: Scenario[] = d.id === "3106-n-17th-st" ? [...STANDARD_SCENARIOS, ...YBOR_STRUCTURE_SCENARIOS] : STANDARD_SCENARIOS;
   for (const rc of d.rentCases) {

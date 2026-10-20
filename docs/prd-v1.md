@@ -126,3 +126,11 @@ Storage gate thresholds (from Kyle's source material, already numeric — see pr
 - Kyle's credit is in the 740+ tier (both bureaus). Buyer profile stores the tier only, not exact scores.
 - Loan products now price by credit tier (`rateByFico`): DSCR 25% down 7.00% (740+) vs 7.125% (720–739); 20% down 7.25% vs 7.375%. Verdicts unchanged: DSCR loans remain capital-bound (~$200k max price on $70k cash).
 - FHA rate still Kyle's web research (6.49% APR); a 740+ borrower may price better on a live quote.
+
+### 2026-10-20 (later) — Sept batch loaded (13 deals total)
+- Re-pulled the 10 Sept listings: all still active. Changes since Sept: 725 14th Ave S cut to $700k; 7711 Amherst to $530k; 2613 E 23rd to $779,900; 15501 61st to $649,990; 208–212 Elizabeth to $879k. 935 17th Ave S is a flip (bought 03/2026 at $265k, ask $539,990).
+- Engine additions: FHA loan limits by unit count (Tampa MSA at the 2026 national floor: $541,287 / ~$693k / ~$838k / ~$1.041M; 2–4 unit derived, verify on HUD); FHA 3-month reserves now only for 3–4 units (HUD; v0 applied them to duplexes too); rent-needed solver for deals without a rent roll; screening flags for single-family zoning codes, First Street flood score ≥5, missing FEMA zone, 5+ units.
+- Results (FHA base, primary rent case): nothing within 40% of ask. Max offers: 1761 19th St S $404k (ask $695k), 3106 N 17th $369k ($650k), 1846 2nd Ave N $366k ($750k), 725 14th Ave S $331k ($700k), 15501 61st $261k ($650k), 935 17th Ave S $175k ($540k), 2613 E 23rd $139k ($780k), 7711 Amherst $106k ($530k); 9502 Banyan / 7902 N 14th fail $0 housing at any price ≥ $100k. 236 W North + 208–212 Elizabeth publish no rents (need ~$11–14k/mo). 633 7th Ave N (6 units) has no eligible financing.
+- Duplex finding: $0 Phase 1 housing cost means one tenant's rent must cover the whole PITIA — structurally out of reach for Tampa duplexes at any realistic price. Phase 2 hurdle prices for duplexes run $186k–$346k vs $480k–$780k asks.
+- Insurance default (1.45%, from frame-quad comps) is likely heavy for block duplexes; at 0.9% the duplex max offers rise $25–50k — conclusion unchanged.
+- 64 tests; duplex/triplex/rent-needed outputs re-derived independently in Python (8/8 exact).

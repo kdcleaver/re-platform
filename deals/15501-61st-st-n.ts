@@ -1,0 +1,60 @@
+import type { Deal } from "../src/deal.js";
+
+/** Clearwater triplex (two block buildings) + RV pad. Redfin MLS TB8538782, pulled 2026-10-20. */
+export const CLW_15501_61ST_ST_N: Deal = {
+  id: "15501-61st-st-n",
+  name: "Clearwater triplex (15501 61st St N)",
+  address: "15501 61st St N, Clearwater, FL 33760",
+  url: "https://www.redfin.com/FL/Clearwater/15501-61st-St-N-33760/home/194440611",
+  mls: "TB8538782",
+  marketId: "tampa-msa",
+  askPrice: 649_990,
+  listedOn: "2026-08-13",
+  units: [
+    { id: "occupied", beds: 2, baths: 1, inPlaceRentMo: 1_850, note: "2BR + bonus room" },
+    { id: "leaseback", beds: 2, baths: 1, inPlaceRentMo: 1_550, note: "seller 12-month leaseback" },
+    { id: "vacant", beds: 2, baths: 1, note: "recently vacant; last rented $1,700 — owner unit" },
+  ],
+  yearBuilt: 1956,
+  construction: "Concrete block, block foundation; roof 2018, solar 2021 (permitted); central HVAC",
+  isFrame: false,
+  zoning: "R-4",
+  floodFactor: 6,
+  lastSale: { date: "2021-03-16", price: 390_000 },
+  rentCases: [
+    {
+      id: "in-place",
+      label: "In-place at close + vacant at last rent ($5,100)",
+      basis: "in-place",
+      grossMo: 1_850 + 1_550 + 1_700,
+      ownerUnitRentMo: 1_700,
+      note: "$3,400 contracted at closing (incl. seller leaseback) + vacant unit at its last rent.",
+    },
+    {
+      id: "with-rv",
+      label: "In-place + RV pad at $900 ($6,000)",
+      basis: "seller-pro-forma",
+      grossMo: 5_100 + 900,
+      ownerUnitRentMo: 1_700,
+      note: "RV pad needs power/water hookups first.",
+    },
+    {
+      id: "seller-pro-forma",
+      label: "Seller pro forma ($7,050)",
+      basis: "seller-pro-forma",
+      grossMo: 7_050,
+      note: "Seller's fully-leased figure ('8.8% cap'); unit-level rents not given.",
+    },
+  ],
+  overrides: { ownerUtilitiesPerDoorMo: 0, note: "Separate water + electric meters; tenants pay their own." },
+  gates: [
+    { id: "flood", label: "Flood risk / FEMA zone", state: "unverified", ifConfirmed: "reprice",
+      evidence: "First Street Flood Factor 6/10 (68–76% chance of flooding in 30 yrs); FEMA zone not stated. Flood insurance not in model." },
+    { id: "unit-mix", label: "Unit mix / bedroom count", state: "unverified", ifConfirmed: "reprice",
+      evidence: "Description: 2BR+bonus and two 2BR/1BA; public facts: one 3BR + two 2BR." },
+    { id: "leaseback", label: "Seller leaseback terms", state: "unverified", ifConfirmed: "reprice",
+      evidence: "$1,550/mo for 12 months, below the $1,700 last rent." },
+    { id: "rv-pad", label: "RV pad income", state: "unverified", ifConfirmed: "reprice", evidence: "Projected only; hookups not built." },
+  ],
+  notes: ["Cut from $699,990 to $649,990 since 08/13. Unincorporated Pinellas; STR permitted per listing."],
+};
