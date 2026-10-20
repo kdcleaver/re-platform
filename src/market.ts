@@ -34,12 +34,17 @@ export interface OperatingAssumptions {
   ownerUtilitiesPerDoorMo: number; // owner-paid water/sewer/trash
 }
 
+export type FicoBand = "740+" | "720-739" | "700-719" | "680-699";
+
 /** A non-FHA loan product available in this market. */
 export interface LoanProduct {
   id: string;
   label: string;
   lender: "bank" | "seller";
+  /** default rate (conservative band) */
   rate: number;
+  /** pricing by borrower credit tier, when the source publishes it */
+  rateByFico?: Partial<Record<FicoBand, number>>;
   downPct: number;
   amortMonths: number;
   balloonYears?: number;
@@ -141,9 +146,10 @@ export const TAMPA_MSA_2026_10: MarketAssumptions = {
   loanProducts: [
     {
       id: "dscr-25",
-      label: "DSCR investor loan, 25% down @ 7.125%",
+      label: "DSCR investor loan, 25% down",
       lender: "bank",
       rate: 0.07125,
+      rateByFico: { "740+": 0.07, "720-739": 0.07125 },
       downPct: 0.25,
       amortMonths: 360,
       closingCostPct: 0.04, // ~3% closing + ~1 point
@@ -153,9 +159,10 @@ export const TAMPA_MSA_2026_10: MarketAssumptions = {
     },
     {
       id: "dscr-20",
-      label: "DSCR investor loan, 20% down @ 7.375%",
+      label: "DSCR investor loan, 20% down",
       lender: "bank",
       rate: 0.07375,
+      rateByFico: { "740+": 0.0725, "720-739": 0.07375 },
       downPct: 0.2,
       amortMonths: 360,
       closingCostPct: 0.04,
@@ -198,12 +205,12 @@ export const TAMPA_MSA_2026_10: MarketAssumptions = {
     opex: { source: "Rule-of-thumb placeholders from buybox_check.py v0.", confidence: "placeholder" },
     "loanProducts.dscr-25": {
       source:
-        "DSCR Authority rate grid 2026-10-19: 720–739 FICO, 75% LTV, DSCR 1.00–1.24 = 7.00%, ~1 pt; 2–4 units +0–0.25% → 7.125%. HomeAbroad 2026-10-06: 75% LTV par 6.75% + 0.30% for DSCR 1.00–1.25. Kyle's FICO not yet confirmed.",
+        "DSCR Authority rate grid 2026-10-19, 75% LTV, DSCR 1.00–1.24, ~1 pt: 740+ = 6.875%, 720–739 = 7.00%; 2–4 units +0–0.25% (modeled +0.125%) → 7.00% / 7.125%. HomeAbroad 2026-10-06 (740 FICO): 75% LTV par 6.75% + 0.30% for DSCR 1.00–1.25.",
       confidence: "researched",
       url: "https://dscrauthority.com/rates/",
     },
     "loanProducts.dscr-20": {
-      source: "DSCR Authority 2026-10-19: 720–739 FICO, 80% LTV = 7.25%; +0.125% for 2–4 units.",
+      source: "DSCR Authority 2026-10-19, 80% LTV: 740+ = 7.125%, 720–739 = 7.25%; +0.125% for 2–4 units → 7.25% / 7.375%.",
       confidence: "researched",
       url: "https://dscrauthority.com/rates/",
     },

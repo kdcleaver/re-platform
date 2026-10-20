@@ -20,8 +20,8 @@ Market record **Tampa–St. Petersburg–Clearwater MSA @ 2026-10** (as of 2026-
 | closingCostPct | placeholder | Placeholder: buyer closing + prepaids, no seller credit. |
 | conventionalDownPctByUnits | placeholder | Only 1-unit 5% is solid; 2–4 unit figures need lender verification. |
 | opex | placeholder | Rule-of-thumb placeholders from buybox_check.py v0. |
-| loanProducts.dscr-25 | researched | [link](https://dscrauthority.com/rates/) DSCR Authority rate grid 2026-10-19: 720–739 FICO, 75% LTV, DSCR 1.00–1.24 = 7.00%, ~1 pt; 2–4 units +0–0.25% → 7.125%. HomeAbroad 2026-10-06: 75% LTV par 6.75% + 0.30% for DSCR 1.00–1.25. Kyle's FICO not yet confirmed. |
-| loanProducts.dscr-20 | researched | [link](https://dscrauthority.com/rates/) DSCR Authority 2026-10-19: 720–739 FICO, 80% LTV = 7.25%; +0.125% for 2–4 units. |
+| loanProducts.dscr-25 | researched | [link](https://dscrauthority.com/rates/) DSCR Authority rate grid 2026-10-19, 75% LTV, DSCR 1.00–1.24, ~1 pt: 740+ = 6.875%, 720–739 = 7.00%; 2–4 units +0–0.25% (modeled +0.125%) → 7.00% / 7.125%. HomeAbroad 2026-10-06 (740 FICO): 75% LTV par 6.75% + 0.30% for DSCR 1.00–1.25. |
+| loanProducts.dscr-20 | researched | [link](https://dscrauthority.com/rates/) DSCR Authority 2026-10-19, 80% LTV: 740+ = 7.125%, 720–739 = 7.25%; +0.125% for 2–4 units → 7.25% / 7.375%. |
 | loanProducts.commercial-sb | researched | [link](https://selectcommercial.com/commercial-mortgage-rates.php) Select Commercial indicative rates 2026-10-20: Apartment/Freddie SBL 6.60% 5-yr, 80% LTV purchase, 1.25x DSCR at 75–80% LTV, 30-yr amort. $1.5M minimum loan ('no exceptions'); 5+ unit programs. Reference only: not eligible for 2–4 unit deals of this size. |
 | screen | researched | Derived from this record's own defaults (FHA, Phase 2 DSCR 1.0x). Replaces fixed 7.5x after the 2026-10-20 stress test. |
 
@@ -78,14 +78,14 @@ _MLS total actual rent $4,420 on 3 leased doors; vacant 1bd at the brief's $1,35
 | Price -5% | $618k | $9,425 | $5,762 | ❌ -$1,434 | $2,005 | 0.69x | -$317 | -37.9% | ❌ | ✅ | $369k ($0 Phase 1 housing cost) |
 | Price -10% | $585k | $9,425 | $5,500 | ❌ -$1,172 | $1,743 | 0.74x | -$251 | -31.7% | ❌ | ✅ | $369k ($0 Phase 1 housing cost) |
 | Downside: tax 2.0%, ins high, rate 7.25% | $650k | $11,700 | $6,700 | ❌ -$2,372 | $2,943 | 0.52x | -$551 | -62.6% | ❌ | ❌ -$99 | $316k ($0 Phase 1 housing cost) |
-| DSCR loan 25% down @ 7.125% | $650k | $9,425 | $4,991 | n/a | $1,234 | 0.85x (lender 1x ❌) | -$124 | -3.2% | ❌ | ❌ -$148,444 | $199k (capital) |
-| DSCR loan 20% down @ 7.375% | $650k | $9,425 | $5,298 | n/a | $1,541 | 0.78x (lender 1x ❌) | -$201 | -6.2% | ❌ | ❌ -$117,787 | $232k (capital) |
+| DSCR loan 25% down @ 7.000% | $650k | $9,425 | $4,950 | n/a | $1,193 | 0.86x (lender 1x ❌) | -$114 | -2.9% | ❌ | ❌ -$148,198 | $199k (capital) |
+| DSCR loan 20% down @ 7.250% | $650k | $9,425 | $5,254 | n/a | $1,497 | 0.79x (lender 1x ❌) | -$190 | -5.8% | ❌ | ❌ -$117,521 | $232k (capital) |
 | Commercial SB 20% @ 6.60% (eligibility check) | $650k | $9,425 | $5,027 | n/a | $1,270 | 0.84x (lender 1.25x ❌) | -$133 | -4.3% | ❌ | ❌ -$109,664 | ineligible |
 | Brief: 10% down, 4.5% seller note, 7-yr balloon | $650k | $9,425 | $4,670 | n/a | $913 | 0.94x | -$44 | -2.5% | ❌ | ❌ -$28,511 | $457k (capital) |
 | Brief seller note + tax 2.0%, ins high | $650k | $11,700 | $5,022 | n/a | $1,265 | 0.82x | -$132 | -7.5% | ❌ | ❌ -$29,567 | $447k ($0 Phase 1 housing cost) |
 | Brief's FHA case (7.25%) | $650k | $9,425 | $6,348 | ❌ -$2,020 | $2,591 | 0.60x | -$463 | -52.6% | ❌ | ✅ | $347k ($0 Phase 1 housing cost) |
 
-- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $520k < $1500k minimum; 4 units < 5-unit minimum.
+- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $520k < $1500k minimum; 4 units < 5-unit minimum.
 - 🚩 Commercial SB 20% @ 6.60% (eligibility check): Balloon of ~$487,333 due in year 5; refinance risk.
 - 🚩 Brief: 10% down, 4.5% seller note, 7-yr balloon: Seller note $585,000 exceeds seller's equity ~$221,000 (recorded liens $429,000). Requires payoff at close or a wrap with due-on-sale risk.
 - 🚩 Brief: 10% down, 4.5% seller note, 7-yr balloon: Balloon of ~$509,104 due in year 7; refinance risk.
@@ -107,14 +107,14 @@ _Seller-reported gross; composition unknown (may include RUBS bill-back)._
 | Price -5% | $618k | $9,425 | $5,762 | ❌ -$1,905 | $2,484 | 0.57x | -$439 | -52.5% | ❌ | ✅ | $309k ($0 Phase 1 housing cost) |
 | Price -10% | $585k | $9,425 | $5,500 | ❌ -$1,643 | $2,222 | 0.62x | -$374 | -47.2% | ❌ | ✅ | $309k ($0 Phase 1 housing cost) |
 | Downside: tax 2.0%, ins high, rate 7.25% | $650k | $11,700 | $6,700 | ❌ -$2,843 | $3,422 | 0.42x | -$674 | -76.5% | ❌ | ❌ -$99 | $261k ($0 Phase 1 housing cost) |
-| DSCR loan 25% down @ 7.125% | $650k | $9,425 | $4,991 | n/a | $1,713 | 0.70x (lender 1x ❌) | -$246 | -6.3% | ❌ | ❌ -$148,444 | $199k (capital) |
-| DSCR loan 20% down @ 7.375% | $650k | $9,425 | $5,298 | n/a | $2,020 | 0.64x (lender 1x ❌) | -$323 | -9.9% | ❌ | ❌ -$117,787 | $232k (capital) |
+| DSCR loan 25% down @ 7.000% | $650k | $9,425 | $4,950 | n/a | $1,672 | 0.71x (lender 1x ❌) | -$236 | -6.0% | ❌ | ❌ -$148,198 | $199k (capital) |
+| DSCR loan 20% down @ 7.250% | $650k | $9,425 | $5,254 | n/a | $1,976 | 0.65x (lender 1x ❌) | -$312 | -9.6% | ❌ | ❌ -$117,521 | $232k (capital) |
 | Commercial SB 20% @ 6.60% (eligibility check) | $650k | $9,425 | $5,027 | n/a | $1,749 | 0.69x (lender 1.25x ❌) | -$255 | -8.2% | ❌ | ❌ -$109,664 | ineligible |
 | Brief: 10% down, 4.5% seller note, 7-yr balloon | $650k | $9,425 | $4,670 | n/a | $1,392 | 0.78x | -$166 | -9.4% | ❌ | ❌ -$28,511 | $417k ($0 Phase 1 housing cost) |
 | Brief seller note + tax 2.0%, ins high | $650k | $11,700 | $5,022 | n/a | $1,744 | 0.66x | -$254 | -14.4% | ❌ | ❌ -$29,567 | $370k ($0 Phase 1 housing cost) |
 | Brief's FHA case (7.25%) | $650k | $9,425 | $6,348 | ❌ -$2,491 | $3,070 | 0.50x | -$585 | -66.5% | ❌ | ✅ | $291k ($0 Phase 1 housing cost) |
 
-- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $520k < $1500k minimum; 4 units < 5-unit minimum.
+- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $520k < $1500k minimum; 4 units < 5-unit minimum.
 - 🚩 Commercial SB 20% @ 6.60% (eligibility check): Balloon of ~$487,333 due in year 5; refinance risk.
 - 🚩 Brief: 10% down, 4.5% seller note, 7-yr balloon: Seller note $585,000 exceeds seller's equity ~$221,000 (recorded liens $429,000). Requires payoff at close or a wrap with due-on-sale risk.
 - 🚩 Brief: 10% down, 4.5% seller note, 7-yr balloon: Balloon of ~$509,104 due in year 7; refinance risk.
@@ -136,14 +136,14 @@ _House $3,000, 2bd $1,700, 1bds $1,350 x2. Not supported by in-place leases._
 | Price -5% | $618k | $9,425 | $5,762 | ❌ -$212 | $619 | 1.00x | $1 | 0.1% | ❌ | ✅ | $530k (Phase 2 hurdles) |
 | Price -10% | $585k | $9,425 | $5,500 | ✅ | $357 | 1.07x | $66 | 8.4% | ❌ | ✅ | $530k (Phase 2 hurdles) |
 | Downside: tax 2.0%, ins high, rate 7.25% | $650k | $11,700 | $6,700 | ❌ -$1,150 | $1,557 | 0.80x | -$234 | -26.6% | ❌ | ❌ -$99 | $468k (Phase 2 hurdles) |
-| DSCR loan 25% down @ 7.125% | $650k | $9,425 | $4,991 | n/a | -$152 | 1.24x (lender 1x ✅) | $193 | 4.9% | ❌ | ❌ -$148,444 | $199k (capital) |
-| DSCR loan 20% down @ 7.375% | $650k | $9,425 | $5,298 | n/a | $155 | 1.13x (lender 1x ✅) | $117 | 3.6% | ❌ | ❌ -$117,787 | $232k (capital) |
+| DSCR loan 25% down @ 7.000% | $650k | $9,425 | $4,950 | n/a | -$193 | 1.25x (lender 1x ✅) | $204 | 5.2% | ❌ | ❌ -$148,198 | $199k (capital) |
+| DSCR loan 20% down @ 7.250% | $650k | $9,425 | $5,254 | n/a | $111 | 1.14x (lender 1x ✅) | $128 | 3.9% | ❌ | ❌ -$117,521 | $232k (capital) |
 | Commercial SB 20% @ 6.60% (eligibility check) | $650k | $9,425 | $5,027 | n/a | -$115 | 1.22x (lender 1.25x ❌) | $184 | 5.9% | ❌ | ❌ -$109,664 | ineligible |
 | Brief: 10% down, 4.5% seller note, 7-yr balloon | $650k | $9,425 | $4,670 | n/a | -$472 | 1.37x | $274 | 15.5% | ✅ | ❌ -$28,511 | $457k (capital) |
 | Brief seller note + tax 2.0%, ins high | $650k | $11,700 | $5,022 | n/a | -$120 | 1.25x | $186 | 10.5% | ✅ | ❌ -$29,567 | $451k (capital) |
 | Brief's FHA case (7.25%) | $650k | $9,425 | $6,348 | ❌ -$798 | $1,205 | 0.87x | -$146 | -16.6% | ❌ | ✅ | $499k (Phase 2 hurdles) |
 
-- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $520k < $1500k minimum; 4 units < 5-unit minimum.
+- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $520k < $1500k minimum; 4 units < 5-unit minimum.
 - 🚩 Commercial SB 20% @ 6.60% (eligibility check): Balloon of ~$487,333 due in year 5; refinance risk.
 - 🚩 Brief: 10% down, 4.5% seller note, 7-yr balloon: Seller note $585,000 exceeds seller's equity ~$221,000 (recorded liens $429,000). Requires payoff at close or a wrap with due-on-sale risk.
 - 🚩 Brief: 10% down, 4.5% seller note, 7-yr balloon: Balloon of ~$509,104 due in year 7; refinance risk.
@@ -185,11 +185,11 @@ _House $3,000, 2bd $1,700, 1bds $1,350 x2. Not supported by in-place leases._
 | Price -5% | $660k | $10,300 | $6,179 | ❌ -$1,111 | $2,063 | 0.72x | -$304 | -34.0% | ❌ | ✅ | $404k ($0 Phase 1 housing cost) |
 | Price -10% | $626k | $10,300 | $5,899 | ❌ -$831 | $1,783 | 0.77x | -$234 | -27.6% | ❌ | ✅ | $404k ($0 Phase 1 housing cost) |
 | Downside: tax 2.0%, ins high, rate 7.25% | $695k | $11,400 | $7,071 | ❌ -$2,003 | $2,955 | 0.58x | -$527 | -56.0% | ❌ | ❌ -$1,213 | $359k ($0 Phase 1 housing cost) |
-| DSCR loan 25% down @ 7.125% | $695k | $10,300 | $5,355 | n/a | $1,239 | 0.89x (lender 1x ❌) | -$98 | -2.3% | ❌ | ❌ -$163,678 | $197k (capital) |
-| DSCR loan 20% down @ 7.375% | $695k | $10,300 | $5,683 | n/a | $1,567 | 0.81x (lender 1x ❌) | -$180 | -5.2% | ❌ | ❌ -$130,898 | $230k (capital) |
+| DSCR loan 25% down @ 7.000% | $695k | $10,300 | $5,311 | n/a | $1,195 | 0.90x (lender 1x ❌) | -$87 | -2.1% | ❌ | ❌ -$163,415 | $197k (capital) |
+| DSCR loan 20% down @ 7.250% | $695k | $10,300 | $5,636 | n/a | $1,520 | 0.82x (lender 1x ❌) | -$168 | -4.8% | ❌ | ❌ -$130,615 | $231k (capital) |
 | Commercial SB 20% @ 6.60% (eligibility check) | $695k | $10,300 | $5,394 | n/a | $1,278 | 0.88x (lender 1.25x ❌) | -$108 | -3.2% | ❌ | ❌ -$122,213 | ineligible |
 
-- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $556k < $1500k minimum; 4 units < 5-unit minimum.
+- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $556k < $1500k minimum; 4 units < 5-unit minimum.
 - 🚩 Commercial SB 20% @ 6.60% (eligibility check): Balloon of ~$521,072 due in year 5; refinance risk.
 
 ### Seller's HUD FMR upside ($2,130/door) — $8,520/mo
@@ -207,11 +207,11 @@ _FMR is a Section 8 payment benchmark, not a market-rent comp for ~530 sf units.
 | Price -5% | $660k | $10,300 | $6,179 | ✅ | $1,048 | 1.04x | $39 | 4.4% | ❌ | ✅ | $530k ($0 Phase 1 housing cost) |
 | Price -10% | $626k | $10,300 | $5,899 | ✅ | $768 | 1.11x | $110 | 12.9% | ❌ | ✅ | $530k ($0 Phase 1 housing cost) |
 | Downside: tax 2.0%, ins high, rate 7.25% | $695k | $11,400 | $7,071 | ❌ -$681 | $1,939 | 0.85x | -$183 | -19.5% | ❌ | ❌ -$1,213 | $475k ($0 Phase 1 housing cost) |
-| DSCR loan 25% down @ 7.125% | $695k | $10,300 | $5,355 | n/a | $223 | 1.28x (lender 1x ✅) | $246 | 5.8% | ❌ | ❌ -$163,678 | $197k (capital) |
-| DSCR loan 20% down @ 7.375% | $695k | $10,300 | $5,683 | n/a | $552 | 1.17x (lender 1x ✅) | $164 | 4.7% | ❌ | ❌ -$130,898 | $230k (capital) |
+| DSCR loan 25% down @ 7.000% | $695k | $10,300 | $5,311 | n/a | $179 | 1.30x (lender 1x ✅) | $257 | 6.1% | ❌ | ❌ -$163,415 | $197k (capital) |
+| DSCR loan 20% down @ 7.250% | $695k | $10,300 | $5,636 | n/a | $504 | 1.18x (lender 1x ✅) | $175 | 5.0% | ❌ | ❌ -$130,615 | $231k (capital) |
 | Commercial SB 20% @ 6.60% (eligibility check) | $695k | $10,300 | $5,394 | n/a | $262 | 1.27x (lender 1.25x ✅) | $236 | 7.1% | ❌ | ❌ -$122,213 | ineligible |
 
-- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $556k < $1500k minimum; 4 units < 5-unit minimum.
+- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $556k < $1500k minimum; 4 units < 5-unit minimum.
 - 🚩 Commercial SB 20% @ 6.60% (eligibility check): Balloon of ~$521,072 due in year 5; refinance risk.
 
 **Gates (all Unverified until independently checked):**
@@ -246,11 +246,11 @@ _Per-unit split not disclosed; Phase 1 assumes owner takes an average door (a 1b
 | Price -5% | $713k | $10,300 | $6,600 | ❌ -$1,931 | $2,792 | 0.60x | -$478 | -49.5% | ❌ | ✅ | $366k ($0 Phase 1 housing cost) |
 | Price -10% | $675k | $10,300 | $6,298 | ❌ -$1,629 | $2,490 | 0.64x | -$402 | -44.0% | ❌ | ✅ | $366k ($0 Phase 1 housing cost) |
 | Downside: tax 2.0%, ins high, rate 7.25% | $750k | $11,400 | $7,555 | ❌ -$2,887 | $3,747 | 0.46x | -$717 | -70.6% | ❌ | ❌ -$2,666 | $325k ($0 Phase 1 housing cost) |
-| DSCR loan 25% down @ 7.125% | $750k | $10,300 | $5,711 | n/a | $1,902 | 0.73x (lender 1x ❌) | -$255 | -5.6% | ❌ | ❌ -$181,763 | $197k (capital) |
-| DSCR loan 20% down @ 7.375% | $750k | $10,300 | $6,065 | n/a | $2,256 | 0.67x (lender 1x ❌) | -$344 | -9.2% | ❌ | ❌ -$146,389 | $230k (capital) |
+| DSCR loan 25% down @ 7.000% | $750k | $10,300 | $5,663 | n/a | $1,855 | 0.74x (lender 1x ❌) | -$243 | -5.4% | ❌ | ❌ -$181,479 | $197k (capital) |
+| DSCR loan 20% down @ 7.250% | $750k | $10,300 | $6,014 | n/a | $2,205 | 0.68x (lender 1x ❌) | -$331 | -8.8% | ❌ | ❌ -$146,083 | $231k (capital) |
 | Commercial SB 20% @ 6.60% (eligibility check) | $750k | $10,300 | $5,753 | n/a | $1,944 | 0.72x (lender 1.25x ❌) | -$266 | -7.4% | ❌ | ❌ -$137,017 | ineligible |
 
-- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $600k < $1500k minimum; 4 units < 5-unit minimum.
+- 🚩 Commercial SB 20% @ 6.60% (eligibility check): Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $600k < $1500k minimum; 4 units < 5-unit minimum.
 - 🚩 Commercial SB 20% @ 6.60% (eligibility check): Balloon of ~$562,308 due in year 5; refinance risk.
 
 **Gates (all Unverified until independently checked):**

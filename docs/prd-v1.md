@@ -1,6 +1,6 @@
 # RE Platform — PRD v1 & Build Log
 
-Status: M0 engine built and tested; committed locally, awaiting GitHub repo
+Status: M0 engine built and tested; repo kdcleaver/re-platform created, awaiting Claude GitHub App install to push
 Last updated: 2026-10-20
 
 ## Purpose
@@ -91,9 +91,9 @@ Storage gate thresholds (from Kyle's source material, already numeric — see pr
 ## Open questions still outstanding
 
 1. Phase 2 hurdles: Kyle delegated to market benchmarks (2026-10-20). Engine uses DSCR 1.20x, $100/door/mo, 8% CoC, labeled as benchmarks. Revisit once he has a view.
-2. Real FHA lender quote (rate/MIP) and Kyle's FICO band (DSCR-loan pricing assumes 720–739).
+2. Real FHA lender quote (rate/MIP). Credit tier now known: 740+.
 3. Bound insurance quote + 4-point inspection on a pre-1950 frame quad (current figures are web comps, $9.2k–$11.4k/yr Pinellas).
-4. GitHub repo: Kyle delegated naming → `re-platform`, private. Session can't create repos; Kyle needs to create the empty repo once.
+4. GitHub repo `kdcleaver/re-platform` created by Kyle 2026-10-20. Pushing needs the Claude GitHub App installed on it.
 5. Gift-fund rules for non-FHA structures (engine currently pools gift + own cash outside FHA).
 
 ## Session/tooling decisions
@@ -121,3 +121,8 @@ Storage gate thresholds (from Kyle's source material, already numeric — see pr
 - New: buyer profile with hurdles, lender min-DSCR + eligibility checks, max-offer solver naming the binding constraint, capital solver.
 - Results (in-place rents, FHA base): max offer Ybor $369k (ask $650k), 1761 19th St S $404k ($695k), 1846 2nd Ave N $366k ($750k). Binding constraint in all three is Kyle's $0 Phase 1 housing cost; Phase 2 hurdles alone allow $395k / $437k / $408k. DSCR loans are capital-bound at ~$200k for $70k of cash.
 - 54 tests; new outputs re-derived independently in Python (8/8 exact).
+
+### 2026-10-20 (later) — credit tier
+- Kyle's credit is in the 740+ tier (both bureaus). Buyer profile stores the tier only, not exact scores.
+- Loan products now price by credit tier (`rateByFico`): DSCR 25% down 7.00% (740+) vs 7.125% (720–739); 20% down 7.25% vs 7.375%. Verdicts unchanged: DSCR loans remain capital-bound (~$200k max price on $70k cash).
+- FHA rate still Kyle's web research (6.49% APR); a 740+ borrower may price better on a live quote.

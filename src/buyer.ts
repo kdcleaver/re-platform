@@ -1,5 +1,5 @@
 /** Buyer profile: capital on hand and the hurdles a deal must clear. Separate from the market. */
-import type { Provenance } from "./market.js";
+import type { FicoBand, Provenance } from "./market.js";
 
 export interface BuyerCapital {
   giftFunds: number; // usable for down + closing
@@ -18,6 +18,8 @@ export interface Hurdles {
 export interface BuyerProfile {
   id: string;
   capital: BuyerCapital;
+  /** pricing tier only; exact scores are not stored */
+  ficoBand: FicoBand;
   hurdles: Hurdles;
   provenance: Record<string, Provenance>;
 }
@@ -25,6 +27,7 @@ export interface BuyerProfile {
 export const KYLE: BuyerProfile = {
   id: "kyle",
   capital: { giftFunds: 50_000, ownCash: 20_000 },
+  ficoBand: "740+",
   hurdles: {
     phase1MaxNetHousingCostMo: 0,
     phase2MinDscr: 1.2,
@@ -33,6 +36,10 @@ export const KYLE: BuyerProfile = {
   },
   provenance: {
     capital: { source: "Kyle, 2026-09: ~$50k likely gift + ~$20k own reserves.", confidence: "researched" },
+    ficoBand: {
+      source: "Kyle, 2026-10-20: two bureau scores, both 740+ (lenders use the lower of two / middle of three). Consumer scores; lender pull may differ slightly.",
+      confidence: "researched",
+    },
     "hurdles.phase1MaxNetHousingCostMo": {
       source: "Kyle's own stated hurdle (2026-09): NOI at least breakeven, $0 housing cost.",
       confidence: "quoted",

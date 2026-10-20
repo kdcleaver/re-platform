@@ -5,7 +5,7 @@
  * Ported from buybox_check.py v0 (hand-verified 2026-09-28). With FHA financing and
  * Tampa defaults it reproduces that script to the cent — see tests/parity.test.ts.
  */
-import type { LoanProduct, MarketAssumptions } from "./market.js";
+import type { FicoBand, LoanProduct, MarketAssumptions } from "./market.js";
 import type { BuyerCapital } from "./buyer.js";
 export type { BuyerCapital } from "./buyer.js";
 
@@ -35,18 +35,20 @@ export type Financing =
 
 export const FHA: Financing = { kind: "fha" };
 
-export function fromProduct(p: LoanProduct): Financing {
+export function fromProduct(p: LoanProduct, fico?: FicoBand): Financing {
+  const rate = (fico && p.rateByFico?.[fico]) ?? p.rate;
   return {
-    kind: "amortizing", label: p.label, lender: p.lender, rate: p.rate, downPct: p.downPct,
+    kind: "amortizing", label: `${p.label} @ ${(rate * 100).toFixed(3)}%${fico ? ` (${fico} FICO)` : ""}`,
+    lender: p.lender, rate, downPct: p.downPct,
     amortMonths: p.amortMonths, balloonYears: p.balloonYears, closingCostPct: p.closingCostPct,
     reserveMonths: p.reserveMonths, lenderMinDscr: p.lenderMinDscr, eligibility: p.eligibility,
   };
 }
 
-export function product(market: MarketAssumptions, id: string): Financing {
+export function product(market: MarketAssumptions, id: string, fico?: FicoBand): Financing {
   const p = market.loanProducts.find((x) => x.id === id);
   if (!p) throw new Error(`No loan product ${id} in ${market.marketId}@${market.version}`);
-  return fromProduct(p);
+  return fromProduct(p, fico);
 }
 
 // ---------- Primitives ----------

@@ -936,20 +936,20 @@
       "gapToGrmMaxPct": 0.2980040951614379
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 25% down @ 7.125%",
+      "financingLabel": "DSCR investor loan, 25% down @ 7.000% (740+ FICO)",
       "baseLoan": 487500,
       "totalLoan": 487500,
-      "rate": 0.07125,
-      "pi": 3284.377801093038,
+      "rate": 0.07,
+      "pi": 3243.3496639985137,
       "mip": 0,
       "tax": 920.8333333333334,
       "ins": 785.4166666666666,
-      "pitia": 4990.627801093038,
-      "debtServiceMo": 3284.377801093038,
+      "pitia": 4949.599663998514,
+      "debtServiceMo": 3243.3496639985137,
       "down": 162500,
       "closing": 26000,
       "cashToClose": 188500,
-      "reserves": 29943.76680655823
+      "reserves": 29697.597983991087
     },
     "selfSufficiency": {
       "applies": false,
@@ -957,16 +957,16 @@
     },
     "capital": {
       "cashToClose": 188500,
-      "reserves": 29943.76680655823,
+      "reserves": 29697.597983991087,
       "closeShortfall": 118500,
-      "reserveShortfall": 29943.76680655823,
+      "reserveShortfall": 29697.597983991087,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 4420,
       "collectedMo": 3757,
       "ownerUtilitiesMo": 0,
-      "netHousingCostMo": 1233.6278010930382,
+      "netHousingCostMo": 1192.5996639985142,
       "pass": false
     },
     "phase2": {
@@ -975,20 +975,20 @@
       "opexMo": 2692.92,
       "opexRatio": 0.4912742862355195,
       "noiYr": 33462.96,
-      "debtServiceMo": 3284.377801093038,
-      "dscr": 0.8490436146146045,
-      "cashFlowMo": -495.7978010930383,
-      "cashFlowPerDoorMo": -123.94945027325957,
-      "coc": -0.031562724738018355,
+      "debtServiceMo": 3243.3496639985137,
+      "dscr": 0.859783954518842,
+      "cashFlowMo": -454.7696639985138,
+      "cashFlowPerDoorMo": -113.69241599962845,
+      "coc": -0.02895085394154995,
       "capRate": 0.05148147692307692
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.85x < 1.2x",
-        "CF/door $-124 < $100",
-        "CoC -3.2% < 8%"
+        "DSCR 0.86x < 1.2x",
+        "CF/door $-114 < $100",
+        "CoC -2.9% < 8%"
       ]
     },
     "lender": {
@@ -999,12 +999,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 573364.4731718245,
-      "maxPricePhase2Hurdles": 441445.00380146736,
-      "maxPriceZeroHousing": 459317.99972039793,
-      "maxPriceLender": 573364.4731718245,
-      "maxPriceCapital": 198552.4889926767,
-      "maxOffer": 198552.4889926767,
+      "maxPriceDscr1": 579013.6188086746,
+      "maxPricePhase2Hurdles": 444786.11585184286,
+      "maxPriceZeroHousing": 463843.48812342586,
+      "maxPriceLender": 579013.6188086746,
+      "maxPriceCapital": 198781.43908284538,
+      "maxOffer": 198781.43908284538,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -1026,20 +1026,20 @@
       "gapToGrmMaxPct": 0.2980040951614379
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 20% down @ 7.375%",
+      "financingLabel": "DSCR investor loan, 20% down @ 7.250% (740+ FICO)",
       "baseLoan": 520000,
       "totalLoan": 520000,
-      "rate": 0.07375,
-      "pi": 3591.5107675061636,
+      "rate": 0.0725,
+      "pi": 3547.3166562921883,
       "mip": 0,
       "tax": 920.8333333333334,
       "ins": 785.4166666666666,
-      "pitia": 5297.760767506164,
-      "debtServiceMo": 3591.5107675061636,
+      "pitia": 5253.566656292189,
+      "debtServiceMo": 3547.3166562921883,
       "down": 130000,
       "closing": 26000,
       "cashToClose": 156000,
-      "reserves": 31786.564605036983
+      "reserves": 31521.399937753133
     },
     "selfSufficiency": {
       "applies": false,
@@ -1047,16 +1047,16 @@
     },
     "capital": {
       "cashToClose": 156000,
-      "reserves": 31786.564605036983,
+      "reserves": 31521.399937753133,
       "closeShortfall": 86000,
-      "reserveShortfall": 31786.564605036983,
+      "reserveShortfall": 31521.399937753133,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 4420,
       "collectedMo": 3757,
       "ownerUtilitiesMo": 0,
-      "netHousingCostMo": 1540.7607675061636,
+      "netHousingCostMo": 1496.5666562921888,
       "pass": false
     },
     "phase2": {
@@ -1065,20 +1065,20 @@
       "opexMo": 2692.92,
       "opexRatio": 0.4912742862355195,
       "noiYr": 33462.96,
-      "debtServiceMo": 3591.5107675061636,
-      "dscr": 0.7764364860685926,
-      "cashFlowMo": -802.9307675061636,
-      "cashFlowPerDoorMo": -200.7326918765409,
-      "coc": -0.06176390519278182,
+      "debtServiceMo": 3547.3166562921883,
+      "dscr": 0.7861096908429783,
+      "cashFlowMo": -758.7366562921884,
+      "cashFlowPerDoorMo": -189.6841640730471,
+      "coc": -0.058364358176322184,
       "capRate": 0.05148147692307692
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.78x < 1.2x",
-        "CF/door $-201 < $100",
-        "CoC -6.2% < 8%"
+        "DSCR 0.79x < 1.2x",
+        "CF/door $-190 < $100",
+        "CoC -5.8% < 8%"
       ]
     },
     "lender": {
@@ -1089,12 +1089,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 534338.3866088783,
-      "maxPricePhase2Hurdles": 434252.38473640586,
-      "maxPriceZeroHousing": 428054.4930754098,
-      "maxPriceLender": 534338.3866088783,
-      "maxPriceCapital": 231801.6759585968,
-      "maxOffer": 231801.6759585968,
+      "maxPriceDscr1": 539623.4844991727,
+      "maxPricePhase2Hurdles": 437736.5669431578,
+      "maxPriceZeroHousing": 432288.34554601624,
+      "maxPriceLender": 539623.4844991727,
+      "maxPriceCapital": 232137.9047434225,
+      "maxOffer": 232137.9047434225,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -1116,7 +1116,7 @@
       "gapToGrmMaxPct": 0.2980040951614379
     },
     "cost": {
-      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed)",
+      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO)",
       "baseLoan": 520000,
       "totalLoan": 520000,
       "rate": 0.066,
@@ -1197,7 +1197,7 @@
     "flags": [
       {
         "severity": "kill-candidate",
-        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $520k < $1500k minimum; 4 units < 5-unit minimum."
+        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $520k < $1500k minimum; 4 units < 5-unit minimum."
       },
       {
         "severity": "warn",
@@ -2486,20 +2486,20 @@
       "gapToGrmMaxPct": 0.3744085021352017
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 25% down @ 7.125%",
+      "financingLabel": "DSCR investor loan, 25% down @ 7.000% (740+ FICO)",
       "baseLoan": 487500,
       "totalLoan": 487500,
-      "rate": 0.07125,
-      "pi": 3284.377801093038,
+      "rate": 0.07,
+      "pi": 3243.3496639985137,
       "mip": 0,
       "tax": 920.8333333333334,
       "ins": 785.4166666666666,
-      "pitia": 4990.627801093038,
-      "debtServiceMo": 3284.377801093038,
+      "pitia": 4949.599663998514,
+      "debtServiceMo": 3243.3496639985137,
       "down": 162500,
       "closing": 26000,
       "cashToClose": 188500,
-      "reserves": 29943.76680655823
+      "reserves": 29697.597983991087
     },
     "selfSufficiency": {
       "applies": false,
@@ -2507,16 +2507,16 @@
     },
     "capital": {
       "cashToClose": 188500,
-      "reserves": 29943.76680655823,
+      "reserves": 29697.597983991087,
       "closeShortfall": 118500,
-      "reserveShortfall": 29943.76680655823,
+      "reserveShortfall": 29697.597983991087,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 3856.5,
       "collectedMo": 3278.025,
       "ownerUtilitiesMo": 0,
-      "netHousingCostMo": 1712.6028010930381,
+      "netHousingCostMo": 1671.574663998514,
       "pass": false
     },
     "phase2": {
@@ -2525,20 +2525,20 @@
       "opexMo": 2585.5319999999997,
       "opexRatio": 0.5292906712522262,
       "noiYr": 27592.415999999997,
-      "debtServiceMo": 3284.377801093038,
-      "dscr": 0.700092419098306,
-      "cashFlowMo": -985.0098010930383,
-      "cashFlowPerDoorMo": -246.25245027325957,
-      "coc": -0.06270619423403957,
+      "debtServiceMo": 3243.3496639985137,
+      "dscr": 0.7089485372247096,
+      "cashFlowMo": -943.9816639985138,
+      "cashFlowPerDoorMo": -235.99541599962845,
+      "coc": -0.06009432343757117,
       "capRate": 0.04244987076923076
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.70x < 1.2x",
-        "CF/door $-246 < $100",
-        "CoC -6.3% < 8%"
+        "DSCR 0.71x < 1.2x",
+        "CF/door $-236 < $100",
+        "CoC -6.0% < 8%"
       ]
     },
     "lender": {
@@ -2549,12 +2549,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 497746.91442506807,
-      "maxPricePhase2Hurdles": 383225.50282025465,
-      "maxPriceZeroHousing": 385282.7753172198,
-      "maxPriceLender": 497746.91442506807,
-      "maxPriceCapital": 198552.4889926767,
-      "maxOffer": 198552.4889926767,
+      "maxPriceDscr1": 502651.02854697214,
+      "maxPricePhase2Hurdles": 386125.9758904172,
+      "maxPriceZeroHousing": 389078.8223535777,
+      "maxPriceLender": 502651.02854697214,
+      "maxPriceCapital": 198781.43908284538,
+      "maxOffer": 198781.43908284538,
       "bindingConstraint": "capital"
     },
     "flags": [
@@ -2581,20 +2581,20 @@
       "gapToGrmMaxPct": 0.3744085021352017
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 20% down @ 7.375%",
+      "financingLabel": "DSCR investor loan, 20% down @ 7.250% (740+ FICO)",
       "baseLoan": 520000,
       "totalLoan": 520000,
-      "rate": 0.07375,
-      "pi": 3591.5107675061636,
+      "rate": 0.0725,
+      "pi": 3547.3166562921883,
       "mip": 0,
       "tax": 920.8333333333334,
       "ins": 785.4166666666666,
-      "pitia": 5297.760767506164,
-      "debtServiceMo": 3591.5107675061636,
+      "pitia": 5253.566656292189,
+      "debtServiceMo": 3547.3166562921883,
       "down": 130000,
       "closing": 26000,
       "cashToClose": 156000,
-      "reserves": 31786.564605036983
+      "reserves": 31521.399937753133
     },
     "selfSufficiency": {
       "applies": false,
@@ -2602,16 +2602,16 @@
     },
     "capital": {
       "cashToClose": 156000,
-      "reserves": 31786.564605036983,
+      "reserves": 31521.399937753133,
       "closeShortfall": 86000,
-      "reserveShortfall": 31786.564605036983,
+      "reserveShortfall": 31521.399937753133,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 3856.5,
       "collectedMo": 3278.025,
       "ownerUtilitiesMo": 0,
-      "netHousingCostMo": 2019.7357675061635,
+      "netHousingCostMo": 1975.5416562921887,
       "pass": false
     },
     "phase2": {
@@ -2620,20 +2620,20 @@
       "opexMo": 2585.5319999999997,
       "opexRatio": 0.5292906712522262,
       "noiYr": 27592.415999999997,
-      "debtServiceMo": 3591.5107675061636,
-      "dscr": 0.6402230562144775,
-      "cashFlowMo": -1292.1427675061636,
-      "cashFlowPerDoorMo": -323.0356918765409,
-      "coc": -0.09939559750047412,
+      "debtServiceMo": 3547.3166562921883,
+      "dscr": 0.6481992510934732,
+      "cashFlowMo": -1247.9486562921884,
+      "cashFlowPerDoorMo": -311.9871640730471,
+      "coc": -0.0959960504840145,
       "capRate": 0.04244987076923076
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.64x < 1.2x",
-        "CF/door $-323 < $100",
-        "CoC -9.9% < 8%"
+        "DSCR 0.65x < 1.2x",
+        "CF/door $-312 < $100",
+        "CoC -9.6% < 8%"
       ]
     },
     "lender": {
@@ -2644,12 +2644,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 463867.74144224747,
-      "maxPricePhase2Hurdles": 376981.47460820945,
-      "maxPriceZeroHousing": 359058.480572268,
-      "maxPriceLender": 463867.74144224747,
-      "maxPriceCapital": 231801.6759585968,
-      "maxOffer": 231801.6759585968,
+      "maxPriceDscr1": 468455.81986429525,
+      "maxPricePhase2Hurdles": 380006.1491805836,
+      "maxPriceZeroHousing": 362609.89904738095,
+      "maxPriceLender": 468455.81986429525,
+      "maxPriceCapital": 232137.9047434225,
+      "maxOffer": 232137.9047434225,
       "bindingConstraint": "capital"
     },
     "flags": [
@@ -2676,7 +2676,7 @@
       "gapToGrmMaxPct": 0.3744085021352017
     },
     "cost": {
-      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed)",
+      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO)",
       "baseLoan": 520000,
       "totalLoan": 520000,
       "rate": 0.066,
@@ -2761,7 +2761,7 @@
       },
       {
         "severity": "kill-candidate",
-        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $520k < $1500k minimum; 4 units < 5-unit minimum."
+        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $520k < $1500k minimum; 4 units < 5-unit minimum."
       },
       {
         "severity": "warn",
@@ -4012,20 +4012,20 @@
       "gapToGrmMaxPct": 0.09969329362125479
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 25% down @ 7.125%",
+      "financingLabel": "DSCR investor loan, 25% down @ 7.000% (740+ FICO)",
       "baseLoan": 487500,
       "totalLoan": 487500,
-      "rate": 0.07125,
-      "pi": 3284.377801093038,
+      "rate": 0.07,
+      "pi": 3243.3496639985137,
       "mip": 0,
       "tax": 920.8333333333334,
       "ins": 785.4166666666666,
-      "pitia": 4990.627801093038,
-      "debtServiceMo": 3284.377801093038,
+      "pitia": 4949.599663998514,
+      "debtServiceMo": 3243.3496639985137,
       "down": 162500,
       "closing": 26000,
       "cashToClose": 188500,
-      "reserves": 29943.76680655823
+      "reserves": 29697.597983991087
     },
     "selfSufficiency": {
       "applies": false,
@@ -4033,16 +4033,16 @@
     },
     "capital": {
       "cashToClose": 188500,
-      "reserves": 29943.76680655823,
+      "reserves": 29697.597983991087,
       "closeShortfall": 118500,
-      "reserveShortfall": 29943.76680655823,
+      "reserveShortfall": 29697.597983991087,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 6050,
       "collectedMo": 5142.5,
       "ownerUtilitiesMo": 0,
-      "netHousingCostMo": -151.87219890696178,
+      "netHousingCostMo": -192.9003360014858,
       "pass": true
     },
     "phase2": {
@@ -4051,18 +4051,18 @@
       "opexMo": 2971.6499999999996,
       "opexRatio": 0.4227098150782361,
       "noiYr": 48700.200000000004,
-      "debtServiceMo": 3284.377801093038,
-      "dscr": 1.2356526093463989,
-      "cashFlowMo": 773.9721989069621,
-      "cashFlowPerDoorMo": 193.49304972674054,
-      "coc": 0.0492714397182151,
+      "debtServiceMo": 3243.3496639985137,
+      "dscr": 1.251283524884186,
+      "cashFlowMo": 815.0003360014866,
+      "cashFlowPerDoorMo": 203.75008400037166,
+      "coc": 0.0518833105146835,
       "capRate": 0.07492338461538463
     },
     "hurdles": {
       "phase1Pass": true,
       "phase2Pass": false,
       "phase2Misses": [
-        "CoC 4.9% < 8%"
+        "CoC 5.2% < 8%"
       ]
     },
     "lender": {
@@ -4073,12 +4073,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 769632.9775622906,
-      "maxPricePhase2Hurdles": 592556.1289597106,
-      "maxPriceZeroHousing": 673474.9043826525,
-      "maxPriceLender": 769632.9775622906,
-      "maxPriceCapital": 198552.4889926767,
-      "maxOffer": 198552.4889926767,
+      "maxPriceDscr1": 777215.8833414376,
+      "maxPricePhase2Hurdles": 597040.9377262437,
+      "maxPriceZeroHousing": 680110.4006431286,
+      "maxPriceLender": 777215.8833414376,
+      "maxPriceCapital": 198781.43908284538,
+      "maxOffer": 198781.43908284538,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -4100,20 +4100,20 @@
       "gapToGrmMaxPct": 0.09969329362125479
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 20% down @ 7.375%",
+      "financingLabel": "DSCR investor loan, 20% down @ 7.250% (740+ FICO)",
       "baseLoan": 520000,
       "totalLoan": 520000,
-      "rate": 0.07375,
-      "pi": 3591.5107675061636,
+      "rate": 0.0725,
+      "pi": 3547.3166562921883,
       "mip": 0,
       "tax": 920.8333333333334,
       "ins": 785.4166666666666,
-      "pitia": 5297.760767506164,
-      "debtServiceMo": 3591.5107675061636,
+      "pitia": 5253.566656292189,
+      "debtServiceMo": 3547.3166562921883,
       "down": 130000,
       "closing": 26000,
       "cashToClose": 156000,
-      "reserves": 31786.564605036983
+      "reserves": 31521.399937753133
     },
     "selfSufficiency": {
       "applies": false,
@@ -4121,16 +4121,16 @@
     },
     "capital": {
       "cashToClose": 156000,
-      "reserves": 31786.564605036983,
+      "reserves": 31521.399937753133,
       "closeShortfall": 86000,
-      "reserveShortfall": 31786.564605036983,
+      "reserveShortfall": 31521.399937753133,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 6050,
       "collectedMo": 5142.5,
       "ownerUtilitiesMo": 0,
-      "netHousingCostMo": 155.26076750616357,
+      "netHousingCostMo": 111.06665629218878,
       "pass": false
     },
     "phase2": {
@@ -4139,19 +4139,19 @@
       "opexMo": 2971.6499999999996,
       "opexRatio": 0.4227098150782361,
       "noiYr": 48700.200000000004,
-      "debtServiceMo": 3591.5107675061636,
-      "dscr": 1.129984082664465,
-      "cashFlowMo": 466.8392324938368,
-      "cashFlowPerDoorMo": 116.7098081234592,
-      "coc": 0.035910710191833596,
+      "debtServiceMo": 3547.3166562921883,
+      "dscr": 1.144061946880707,
+      "cashFlowMo": 511.03334370781204,
+      "cashFlowPerDoorMo": 127.75833592695301,
+      "coc": 0.03931025720829323,
       "capRate": 0.07492338461538463
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 1.13x < 1.2x",
-        "CoC 3.6% < 8%"
+        "DSCR 1.14x < 1.2x",
+        "CoC 3.9% < 8%"
       ]
     },
     "lender": {
@@ -4162,12 +4162,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 717247.86371335,
-      "maxPricePhase2Hurdles": 582901.4030627753,
-      "maxPriceZeroHousing": 627634.7954358731,
-      "maxPriceLender": 717247.86371335,
-      "maxPriceCapital": 231801.6759585968,
-      "maxOffer": 231801.6759585968,
+      "maxPriceDscr1": 724342.1044909722,
+      "maxPricePhase2Hurdles": 587578.2563587563,
+      "maxPriceZeroHousing": 633842.6805819978,
+      "maxPriceLender": 724342.1044909722,
+      "maxPriceCapital": 232137.9047434225,
+      "maxOffer": 232137.9047434225,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -4189,7 +4189,7 @@
       "gapToGrmMaxPct": 0.09969329362125479
     },
     "cost": {
-      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed)",
+      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO)",
       "baseLoan": 520000,
       "totalLoan": 520000,
       "rate": 0.066,
@@ -4268,7 +4268,7 @@
     "flags": [
       {
         "severity": "kill-candidate",
-        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $520k < $1500k minimum; 4 units < 5-unit minimum."
+        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $520k < $1500k minimum; 4 units < 5-unit minimum."
       },
       {
         "severity": "warn",
@@ -5499,20 +5499,20 @@
       "gapToGrmMaxPct": 0.2311506766963315
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 25% down @ 7.125%",
+      "financingLabel": "DSCR investor loan, 25% down @ 7.000% (740+ FICO)",
       "baseLoan": 521250,
       "totalLoan": 521250,
-      "rate": 0.07125,
-      "pi": 3511.757802707172,
+      "rate": 0.07,
+      "pi": 3467.889256121488,
       "mip": 0,
       "tax": 984.5833333333334,
       "ins": 858.3333333333334,
-      "pitia": 5354.674469373838,
-      "debtServiceMo": 3511.757802707172,
+      "pitia": 5310.805922788154,
+      "debtServiceMo": 3467.889256121488,
       "down": 173750,
       "closing": 27800,
       "cashToClose": 201550,
-      "reserves": 32128.04681624303
+      "reserves": 31864.835536728926
     },
     "selfSufficiency": {
       "applies": false,
@@ -5520,16 +5520,16 @@
     },
     "capital": {
       "cashToClose": 201550,
-      "reserves": 32128.04681624303,
+      "reserves": 31864.835536728926,
       "closeShortfall": 131550,
-      "reserveShortfall": 32128.04681624303,
+      "reserveShortfall": 31864.835536728926,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 5195,
       "collectedMo": 4415.75,
       "ownerUtilitiesMo": 300,
-      "netHousingCostMo": 1238.9244693738383,
+      "netHousingCostMo": 1195.055922788154,
       "pass": false
     },
     "phase2": {
@@ -5538,20 +5538,20 @@
       "opexMo": 3298.3636666666666,
       "opexRatio": 0.5138318417028215,
       "noiYr": 37449.435999999994,
-      "debtServiceMo": 3511.757802707172,
-      "dscr": 0.8886678719493573,
-      "cashFlowMo": -390.9714693738388,
-      "cashFlowPerDoorMo": -97.7428673434597,
-      "coc": -0.023277884557112702,
+      "debtServiceMo": 3467.889256121488,
+      "dscr": 0.8999094558237545,
+      "cashFlowMo": -347.10292278815496,
+      "cashFlowPerDoorMo": -86.77573069703874,
+      "coc": -0.020666013760644305,
       "capRate": 0.05388408057553956
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.89x < 1.2x",
-        "CF/door $-98 < $100",
-        "CoC -2.3% < 8%"
+        "DSCR 0.90x < 1.2x",
+        "CF/door $-87 < $100",
+        "CoC -2.1% < 8%"
       ]
     },
     "lender": {
@@ -5562,12 +5562,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 634567.492102234,
-      "maxPricePhase2Hurdles": 488566.45653978403,
-      "maxPriceZeroHousing": 503499.29305562796,
-      "maxPriceLender": 634567.492102234,
-      "maxPriceCapital": 197221.9630277631,
-      "maxOffer": 197221.9630277631,
+      "maxPriceDscr1": 640819.648186244,
+      "maxPricePhase2Hurdles": 492264.21109878336,
+      "maxPriceZeroHousing": 508460.0832119968,
+      "maxPriceLender": 640819.648186244,
+      "maxPriceCapital": 197449.37889370127,
+      "maxOffer": 197449.37889370127,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -5589,20 +5589,20 @@
       "gapToGrmMaxPct": 0.2311506766963315
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 20% down @ 7.375%",
+      "financingLabel": "DSCR investor loan, 20% down @ 7.250% (740+ FICO)",
       "baseLoan": 556000,
       "totalLoan": 556000,
-      "rate": 0.07375,
-      "pi": 3840.1538206412056,
+      "rate": 0.0725,
+      "pi": 3792.900117112417,
       "mip": 0,
       "tax": 984.5833333333334,
       "ins": 858.3333333333334,
-      "pitia": 5683.070487307872,
-      "debtServiceMo": 3840.1538206412056,
+      "pitia": 5635.816783779083,
+      "debtServiceMo": 3792.900117112417,
       "down": 139000,
       "closing": 27800,
       "cashToClose": 166800,
-      "reserves": 34098.42292384723
+      "reserves": 33814.9007026745
     },
     "selfSufficiency": {
       "applies": false,
@@ -5610,16 +5610,16 @@
     },
     "capital": {
       "cashToClose": 166800,
-      "reserves": 34098.42292384723,
+      "reserves": 33814.9007026745,
       "closeShortfall": 96800,
-      "reserveShortfall": 34098.42292384723,
+      "reserveShortfall": 33814.9007026745,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 5195,
       "collectedMo": 4415.75,
       "ownerUtilitiesMo": 300,
-      "netHousingCostMo": 1567.320487307872,
+      "netHousingCostMo": 1520.0667837790834,
       "pass": false
     },
     "phase2": {
@@ -5628,20 +5628,20 @@
       "opexMo": 3298.3636666666666,
       "opexRatio": 0.5138318417028215,
       "noiYr": 37449.435999999994,
-      "debtServiceMo": 3840.1538206412056,
-      "dscr": 0.8126722207216801,
-      "cashFlowMo": -719.3674873078726,
-      "cashFlowPerDoorMo": -179.84187182696814,
-      "coc": -0.05175305664085414,
+      "debtServiceMo": 3792.900117112417,
+      "dscr": 0.8227968670340909,
+      "cashFlowMo": -672.1137837790839,
+      "cashFlowPerDoorMo": -168.02844594477097,
+      "coc": -0.048353509624394525,
       "capRate": 0.05388408057553956
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.81x < 1.2x",
-        "CF/door $-180 < $100",
-        "CoC -5.2% < 8%"
+        "DSCR 0.82x < 1.2x",
+        "CF/door $-168 < $100",
+        "CoC -4.8% < 8%"
       ]
     },
     "lender": {
@@ -5652,12 +5652,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 591375.6184589014,
-      "maxPricePhase2Hurdles": 480606.07103400986,
-      "maxPriceZeroHousing": 469228.58408325235,
-      "maxPriceLender": 591375.6184589014,
-      "maxPriceCapital": 230248.34288209843,
-      "maxOffer": 230248.34288209843,
+      "maxPriceDscr1": 597224.8670096637,
+      "maxPricePhase2Hurdles": 484462.1675806532,
+      "maxPriceZeroHousing": 473869.6861675378,
+      "maxPriceLender": 597224.8670096637,
+      "maxPriceCapital": 230582.3185542554,
+      "maxOffer": 230582.3185542554,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -5679,7 +5679,7 @@
       "gapToGrmMaxPct": 0.2311506766963315
     },
     "cost": {
-      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed)",
+      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO)",
       "baseLoan": 556000,
       "totalLoan": 556000,
       "rate": 0.066,
@@ -5760,7 +5760,7 @@
     "flags": [
       {
         "severity": "kill-candidate",
-        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $556k < $1500k minimum; 4 units < 5-unit minimum."
+        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $556k < $1500k minimum; 4 units < 5-unit minimum."
       },
       {
         "severity": "warn",
@@ -6702,20 +6702,20 @@
       "gapToGrmMaxPct": 0.030546657607332217
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 25% down @ 7.125%",
+      "financingLabel": "DSCR investor loan, 25% down @ 7.000% (740+ FICO)",
       "baseLoan": 521250,
       "totalLoan": 521250,
-      "rate": 0.07125,
-      "pi": 3511.757802707172,
+      "rate": 0.07,
+      "pi": 3467.889256121488,
       "mip": 0,
       "tax": 984.5833333333334,
       "ins": 858.3333333333334,
-      "pitia": 5354.674469373838,
-      "debtServiceMo": 3511.757802707172,
+      "pitia": 5310.805922788154,
+      "debtServiceMo": 3467.889256121488,
       "down": 173750,
       "closing": 27800,
       "cashToClose": 201550,
-      "reserves": 32128.04681624303
+      "reserves": 31864.835536728926
     },
     "selfSufficiency": {
       "applies": false,
@@ -6723,16 +6723,16 @@
     },
     "capital": {
       "cashToClose": 201550,
-      "reserves": 32128.04681624303,
+      "reserves": 31864.835536728926,
       "closeShortfall": 131550,
-      "reserveShortfall": 32128.04681624303,
+      "reserveShortfall": 31864.835536728926,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 6390,
       "collectedMo": 5431.5,
       "ownerUtilitiesMo": 300,
-      "netHousingCostMo": 223.1744693738383,
+      "netHousingCostMo": 179.30592278815402,
       "pass": false
     },
     "phase2": {
@@ -6741,18 +6741,18 @@
       "opexMo": 3599.8366666666666,
       "opexRatio": 0.44475372704060623,
       "noiYr": 53929.96000000001,
-      "debtServiceMo": 3511.757802707172,
-      "dscr": 1.2797475184276197,
-      "cashFlowMo": 982.4055306261621,
-      "cashFlowPerDoorMo": 245.60138265654052,
-      "coc": 0.05849102638310069,
+      "debtServiceMo": 3467.889256121488,
+      "dscr": 1.2959362313546419,
+      "cashFlowMo": 1026.274077211846,
+      "cashFlowPerDoorMo": 256.5685193029615,
+      "coc": 0.06110289717956909,
       "capRate": 0.07759706474820145
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "CoC 5.8% < 8%"
+        "CoC 6.1% < 8%"
       ]
     },
     "lender": {
@@ -6763,12 +6763,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 846850.5431699592,
-      "maxPricePhase2Hurdles": 652007.5078612458,
-      "maxPriceZeroHousing": 660503.894939919,
-      "maxPriceLender": 846850.5431699592,
-      "maxPriceCapital": 197221.9630277631,
-      "maxOffer": 197221.9630277631,
+      "maxPriceDscr1": 855194.2447330299,
+      "maxPricePhase2Hurdles": 656942.279175206,
+      "maxPriceZeroHousing": 667011.5926973004,
+      "maxPriceLender": 855194.2447330299,
+      "maxPriceCapital": 197449.37889370127,
+      "maxOffer": 197449.37889370127,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -6790,20 +6790,20 @@
       "gapToGrmMaxPct": 0.030546657607332217
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 20% down @ 7.375%",
+      "financingLabel": "DSCR investor loan, 20% down @ 7.250% (740+ FICO)",
       "baseLoan": 556000,
       "totalLoan": 556000,
-      "rate": 0.07375,
-      "pi": 3840.1538206412056,
+      "rate": 0.0725,
+      "pi": 3792.900117112417,
       "mip": 0,
       "tax": 984.5833333333334,
       "ins": 858.3333333333334,
-      "pitia": 5683.070487307872,
-      "debtServiceMo": 3840.1538206412056,
+      "pitia": 5635.816783779083,
+      "debtServiceMo": 3792.900117112417,
       "down": 139000,
       "closing": 27800,
       "cashToClose": 166800,
-      "reserves": 34098.42292384723
+      "reserves": 33814.9007026745
     },
     "selfSufficiency": {
       "applies": false,
@@ -6811,16 +6811,16 @@
     },
     "capital": {
       "cashToClose": 166800,
-      "reserves": 34098.42292384723,
+      "reserves": 33814.9007026745,
       "closeShortfall": 96800,
-      "reserveShortfall": 34098.42292384723,
+      "reserveShortfall": 33814.9007026745,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 6390,
       "collectedMo": 5431.5,
       "ownerUtilitiesMo": 300,
-      "netHousingCostMo": 551.5704873078721,
+      "netHousingCostMo": 504.3167837790834,
       "pass": false
     },
     "phase2": {
@@ -6829,19 +6829,19 @@
       "opexMo": 3599.8366666666666,
       "opexRatio": 0.44475372704060623,
       "noiYr": 53929.96000000001,
-      "debtServiceMo": 3840.1538206412056,
-      "dscr": 1.1703081551516927,
-      "cashFlowMo": 654.0095126921283,
-      "cashFlowPerDoorMo": 163.50237817303207,
-      "coc": 0.04705104407857038,
+      "debtServiceMo": 3792.900117112417,
+      "dscr": 1.1848883953091804,
+      "cashFlowMo": 701.263216220917,
+      "cashFlowPerDoorMo": 175.31580405522925,
+      "coc": 0.05045059109503,
       "capRate": 0.07759706474820145
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 1.17x < 1.2x",
-        "CoC 4.7% < 8%"
+        "DSCR 1.18x < 1.2x",
+        "CoC 5.0% < 8%"
       ]
     },
     "lender": {
@@ -6852,12 +6852,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 789209.6111798729,
-      "maxPricePhase2Hurdles": 641384.119690077,
-      "maxPriceZeroHousing": 615546.6585131625,
-      "maxPriceLender": 789209.6111798729,
-      "maxPriceCapital": 230248.34288209843,
-      "maxOffer": 230248.34288209843,
+      "maxPriceDscr1": 797015.6197983405,
+      "maxPricePhase2Hurdles": 646530.2034332302,
+      "maxPriceZeroHousing": 621634.9808718311,
+      "maxPriceLender": 797015.6197983405,
+      "maxPriceCapital": 230582.3185542554,
+      "maxOffer": 230582.3185542554,
       "bindingConstraint": "capital"
     },
     "flags": []
@@ -6879,7 +6879,7 @@
       "gapToGrmMaxPct": 0.030546657607332217
     },
     "cost": {
-      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed)",
+      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO)",
       "baseLoan": 556000,
       "totalLoan": 556000,
       "rate": 0.066,
@@ -6958,7 +6958,7 @@
     "flags": [
       {
         "severity": "kill-candidate",
-        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $556k < $1500k minimum; 4 units < 5-unit minimum."
+        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $556k < $1500k minimum; 4 units < 5-unit minimum."
       },
       {
         "severity": "warn",
@@ -7953,20 +7953,20 @@
       "gapToGrmMaxPct": 0.343627745822523
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 25% down @ 7.125%",
+      "financingLabel": "DSCR investor loan, 25% down @ 7.000% (740+ FICO)",
       "baseLoan": 562500,
       "totalLoan": 562500,
-      "rate": 0.07125,
-      "pi": 3789.6666935688904,
+      "rate": 0.07,
+      "pi": 3742.3265353829006,
       "mip": 0,
       "tax": 1062.5000000000002,
       "ins": 858.3333333333334,
-      "pitia": 5710.500026902224,
-      "debtServiceMo": 3789.6666935688904,
+      "pitia": 5663.159868716234,
+      "debtServiceMo": 3742.3265353829006,
       "down": 187500,
       "closing": 30000,
       "cashToClose": 217500,
-      "reserves": 34263.00016141334
+      "reserves": 33978.959212297406
     },
     "selfSufficiency": {
       "applies": false,
@@ -7974,16 +7974,16 @@
     },
     "capital": {
       "cashToClose": 217500,
-      "reserves": 34263.00016141334,
+      "reserves": 33978.959212297406,
       "closeShortfall": 147500,
-      "reserveShortfall": 34263.00016141334,
+      "reserveShortfall": 33978.959212297406,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 4668.75,
       "collectedMo": 3968.4375,
       "ownerUtilitiesMo": 160,
-      "netHousingCostMo": 1902.062526902224,
+      "netHousingCostMo": 1854.722368716234,
       "pass": false
     },
     "phase2": {
@@ -7992,20 +7992,20 @@
       "opexMo": 3145.308333333334,
       "opexRatio": 0.5318635947297965,
       "noiYr": 33221.299999999996,
-      "debtServiceMo": 3789.6666935688904,
-      "dscr": 0.7305237875839437,
-      "cashFlowMo": -1021.2250269022243,
-      "cashFlowPerDoorMo": -255.30625672555607,
-      "coc": -0.05634344976012272,
+      "debtServiceMo": 3742.3265353829006,
+      "dscr": 0.7397648603059193,
+      "cashFlowMo": -973.8848687162345,
+      "cashFlowPerDoorMo": -243.4712171790586,
+      "coc": -0.05373157896365431,
       "capRate": 0.04429506666666666
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.73x < 1.2x",
-        "CF/door $-255 < $100",
-        "CoC -5.6% < 8%"
+        "DSCR 0.74x < 1.2x",
+        "CF/door $-243 < $100",
+        "CoC -5.4% < 8%"
       ]
     },
     "lender": {
@@ -8016,12 +8016,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 592149.1225369845,
-      "maxPricePhase2Hurdles": 455907.6885306751,
-      "maxPriceZeroHousing": 455997.96229848673,
-      "maxPriceLender": 592149.1225369845,
-      "maxPriceCapital": 197221.9630277631,
-      "maxOffer": 197221.9630277631,
+      "maxPriceDscr1": 597983.3462959826,
+      "maxPricePhase2Hurdles": 459358.26257476077,
+      "maxPriceZeroHousing": 460490.73961494805,
+      "maxPriceLender": 597983.3462959826,
+      "maxPriceCapital": 197449.37889370127,
+      "maxOffer": 197449.37889370127,
       "bindingConstraint": "capital"
     },
     "flags": [
@@ -8048,20 +8048,20 @@
       "gapToGrmMaxPct": 0.343627745822523
     },
     "cost": {
-      "financingLabel": "DSCR investor loan, 20% down @ 7.375%",
+      "financingLabel": "DSCR investor loan, 20% down @ 7.250% (740+ FICO)",
       "baseLoan": 600000,
       "totalLoan": 600000,
-      "rate": 0.07375,
-      "pi": 4144.050885584035,
+      "rate": 0.0725,
+      "pi": 4093.057680337141,
       "mip": 0,
       "tax": 1062.5000000000002,
       "ins": 858.3333333333334,
-      "pitia": 6064.884218917368,
-      "debtServiceMo": 4144.050885584035,
+      "pitia": 6013.891013670474,
+      "debtServiceMo": 4093.057680337141,
       "down": 150000,
       "closing": 30000,
       "cashToClose": 180000,
-      "reserves": 36389.305313504214
+      "reserves": 36083.34608202285
     },
     "selfSufficiency": {
       "applies": false,
@@ -8069,16 +8069,16 @@
     },
     "capital": {
       "cashToClose": 180000,
-      "reserves": 36389.305313504214,
+      "reserves": 36083.34608202285,
       "closeShortfall": 110000,
-      "reserveShortfall": 36389.305313504214,
+      "reserveShortfall": 36083.34608202285,
       "pass": false
     },
     "phase1": {
       "otherRentMo": 4668.75,
       "collectedMo": 3968.4375,
       "ownerUtilitiesMo": 160,
-      "netHousingCostMo": 2256.4467189173683,
+      "netHousingCostMo": 2205.4535136704744,
       "pass": false
     },
     "phase2": {
@@ -8087,20 +8087,20 @@
       "opexMo": 3145.308333333334,
       "opexRatio": 0.5318635947297965,
       "noiYr": 33221.299999999996,
-      "debtServiceMo": 4144.050885584035,
-      "dscr": 0.6680520445097045,
-      "cashFlowMo": -1375.6092189173692,
-      "cashFlowPerDoorMo": -343.9023047293423,
-      "coc": -0.09170728126115796,
+      "debtServiceMo": 4093.057680337141,
+      "dscr": 0.6763749457932468,
+      "cashFlowMo": -1324.6160136704748,
+      "cashFlowPerDoorMo": -331.1540034176187,
+      "coc": -0.08830773424469832,
       "capRate": 0.04429506666666666
     },
     "hurdles": {
       "phase1Pass": false,
       "phase2Pass": false,
       "phase2Misses": [
-        "DSCR 0.67x < 1.2x",
-        "CF/door $-344 < $100",
-        "CoC -9.2% < 8%"
+        "DSCR 0.68x < 1.2x",
+        "CF/door $-331 < $100",
+        "CoC -8.8% < 8%"
       ]
     },
     "lender": {
@@ -8111,12 +8111,12 @@
     },
     "solvers": {
       "maxPriceSelfSufficiency": null,
-      "maxPriceDscr1": 551844.457711029,
-      "maxPricePhase2Hurdles": 448479.4238449371,
-      "maxPriceZeroHousing": 424960.43419573875,
-      "maxPriceLender": 551844.457711029,
-      "maxPriceCapital": 230248.34288209843,
-      "maxOffer": 230248.34288209843,
+      "maxPriceDscr1": 557302.7067388198,
+      "maxPricePhase2Hurdles": 452077.7553304474,
+      "maxPriceZeroHousing": 429163.68357948645,
+      "maxPriceLender": 557302.7067388198,
+      "maxPriceCapital": 230582.3185542554,
+      "maxOffer": 230582.3185542554,
       "bindingConstraint": "capital"
     },
     "flags": [
@@ -8143,7 +8143,7 @@
       "gapToGrmMaxPct": 0.343627745822523
     },
     "cost": {
-      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed)",
+      "financingLabel": "Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO)",
       "baseLoan": 600000,
       "totalLoan": 600000,
       "rate": 0.066,
@@ -8228,7 +8228,7 @@
       },
       {
         "severity": "kill-candidate",
-        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed): loan $600k < $1500k minimum; 4 units < 5-unit minimum."
+        "message": "Not eligible for Small-balance commercial MF, 20% down @ 6.60% (5-yr fixed) @ 6.600% (740+ FICO): loan $600k < $1500k minimum; 4 units < 5-unit minimum."
       },
       {
         "severity": "warn",

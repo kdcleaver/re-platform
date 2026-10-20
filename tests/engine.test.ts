@@ -150,3 +150,16 @@ describe("hurdle and capital solvers", () => {
     expect(capitalCheck(costBuild({ price: p + 1_000, market: M10, financing: f }), cap, f).pass).toBe(false);
   });
 });
+
+describe("credit-tier pricing", () => {
+  it("740+ prices below 720–739, and unknown band falls back to the conservative rate", () => {
+    const hi = product(M10, "dscr-25", "740+");
+    const mid = product(M10, "dscr-25", "720-739");
+    const none = product(M10, "dscr-25");
+    if (hi.kind !== "amortizing" || mid.kind !== "amortizing" || none.kind !== "amortizing") throw new Error();
+    expect(hi.rate).toBe(0.07);
+    expect(mid.rate).toBe(0.07125);
+    expect(none.rate).toBe(0.07125);
+    expect(product(M10, "commercial-sb", "740+").kind === "amortizing" && (product(M10, "commercial-sb", "740+") as { rate: number }).rate).toBe(0.066);
+  });
+});

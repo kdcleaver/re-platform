@@ -2,6 +2,12 @@
 import type { Scenario } from "./underwrite.js";
 import { CURRENT_TAMPA } from "./market.js";
 import { product } from "./engine.js";
+import { KYLE } from "./buyer.js";
+
+const rateLabel = (id: string) => {
+  const f = product(CURRENT_TAMPA, id, KYLE.ficoBand);
+  return f.kind === "amortizing" ? ` @ ${(f.rate * 100).toFixed(3)}%` : "";
+};
 
 export const STANDARD_SCENARIOS: Scenario[] = [
   { id: "base", label: "Base (tax 1.7%, insurance estimate mid / 1.45%)" },
@@ -18,9 +24,9 @@ export const STANDARD_SCENARIOS: Scenario[] = [
     label: "Downside: tax 2.0%, ins high, rate 7.25%",
     taxPct: 0.02, insBasis: "estimate-high", insPct: 0.018, financing: { kind: "fha", rate: 0.0725 },
   },
-  { id: "dscr-25", label: "DSCR loan 25% down @ 7.125%", financing: product(CURRENT_TAMPA, "dscr-25") },
-  { id: "dscr-20", label: "DSCR loan 20% down @ 7.375%", financing: product(CURRENT_TAMPA, "dscr-20") },
-  { id: "commercial-sb", label: "Commercial SB 20% @ 6.60% (eligibility check)", financing: product(CURRENT_TAMPA, "commercial-sb") },
+  { id: "dscr-25", label: `DSCR loan 25% down${rateLabel("dscr-25")}`, financing: product(CURRENT_TAMPA, "dscr-25", KYLE.ficoBand) },
+  { id: "dscr-20", label: `DSCR loan 20% down${rateLabel("dscr-20")}`, financing: product(CURRENT_TAMPA, "dscr-20", KYLE.ficoBand) },
+  { id: "commercial-sb", label: "Commercial SB 20% @ 6.60% (eligibility check)", financing: product(CURRENT_TAMPA, "commercial-sb", KYLE.ficoBand) },
 ];
 
 const BRIEF_NOTE = {
