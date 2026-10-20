@@ -10,6 +10,7 @@ export const CLW_15501_61ST_ST_N: Deal = {
   marketId: "tampa-msa",
   askPrice: 649_990,
   listedOn: "2026-08-13",
+  priceCuts: 3,
   units: [
     { id: "occupied", beds: 2, baths: 1, inPlaceRentMo: 1_850, note: "2BR + bonus room" },
     { id: "leaseback", beds: 2, baths: 1, inPlaceRentMo: 1_550, note: "seller 12-month leaseback" },

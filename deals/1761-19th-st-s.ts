@@ -10,6 +10,7 @@ export const STPETE_1761_19TH_S: Deal = {
   marketId: "tampa-msa",
   askPrice: 695_000,
   listedOn: "2026-06-29",
+  priceCuts: 1,
   units: [
     { id: "u1", beds: 2, baths: 1, inPlaceRentMo: 1_650 },
     { id: "u2", beds: 2, baths: 1, inPlaceRentMo: 1_650 },

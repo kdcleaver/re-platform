@@ -10,6 +10,7 @@ export const YBOR_3106_N_17TH: Deal = {
   marketId: "tampa-msa",
   askPrice: 650_000,
   listedOn: "2026-10-14",
+  priceCuts: 0,
   units: [
     { id: "house", beds: 4, baths: 3, note: "1924 bungalow; leased into 2027" },
     { id: "tri-2bd", beds: 2, baths: 1, note: "triplex; leased into 2027" },

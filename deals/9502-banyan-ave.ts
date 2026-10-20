@@ -10,6 +10,8 @@ export const TPA_9502_BANYAN_AVE: Deal = {
   marketId: "tampa-msa",
   askPrice: 480_000,
   listedOn: "2026-09-17",
+  firstListedOn: "2025-09-19",
+  priceCuts: 1,
   units: [
     { id: "A", beds: 3, baths: 1, inPlaceRentMo: 1_590 },
     { id: "B", beds: 3, baths: 1, inPlaceRentMo: 1_590 },

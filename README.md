@@ -11,10 +11,12 @@ Local-first underwriting engine for paper house-hack deals. TypeScript, no UI ye
 | `src/engine.ts` | Pure math: PITIA build, FHA self-sufficiency, capital check, Phase 1 housing cost, Phase 2 DSCR/CF/CoC, price solvers (self-sufficiency, DSCR, hurdles, $0 housing, capital), GRM pre-screen, implied breakeven GRM, seller-note/bank financing. |
 | `src/deal.ts` | Deal record shape: units, rent cases (in-place vs. pro forma), liens, gates (Kill/Reprice/Clear/Unverified). |
 | `src/underwrite.ts` | Runs one deal × rent case × scenario: hurdle pass/fail, lender eligibility + DSCR, **max offer** (lowest price clearing every constraint) and which constraint binds; screening red flags. |
+| `src/paths.ts` | **What could work?** Per deal: as-listed, negotiated price, rent upside, 6% seller credit/buydown, seller financing, loan assumption (VA/FHA on record), and a realistic package — each solved for the number it needs and rated (supported / plausible / long-shot / very unlikely / blocked) by explicit rules on deal facts. Tests: beats Kyle's current rent, $0 housing, Phase 2 DSCR, hurdles, capital; rough 5-yr wealth vs renting (move out vs stay; 0% / 3% appreciation). |
 | `src/stress.ts` | Standard stress grid (rate, tax, insurance, price, combined) + Ybor brief structures. |
 | `deals/` | 13 paper deals, one file each: the Oct batch (3) and the Sept `buybox_check.py` batch (10, re-pulled 2026-10-20). Deals may have no rent cases; the report then shows rent needed at ask. |
 | `tests/` | Parity with `buybox_check.py` v0 (to the cent), engine unit tests, deal-level guards. |
 | `scripts/run-stress.ts` | Writes `out/stress-report.md` and `out/stress-results.json`. |
+| `scripts/run-paths.ts` | Writes `out/paths-report.md` and `out/paths-results.json`. |
 
 ## Run it (Mac)
 
@@ -22,8 +24,9 @@ Local-first underwriting engine for paper house-hack deals. TypeScript, no UI ye
 # one time: install Node 22+ from nodejs.org, then in this folder:
 npm install
 
-npm test          # 64 tests, incl. parity with the original Python script
+npm test          # 75 tests, incl. parity with the original Python script
 npm run stress    # regenerate out/stress-report.md
+npm run paths     # regenerate out/paths-report.md (what could work)
 npm run typecheck
 ```
 
@@ -44,4 +47,5 @@ and stays constant across price cuts and solvers.
 ## Still not verified
 
 FHA rate/MIP (no live quote) · insurance (web comps, no bound quote) ·
-conventional down % for 2–4 units · opex ratios · Phase 2 hurdles are benchmarks, not Kyle's own.
+conventional down % for 2–4 units · opex ratios · Phase 2 hurdles are benchmarks, not Kyle's own ·
+path feasibility rules and wealth assumptions (appreciation, opportunity rate, buydown per point) are placeholders.

@@ -10,6 +10,8 @@ export const STPETE_935_17TH_AVE_S: Deal = {
   marketId: "tampa-msa",
   askPrice: 539_990,
   listedOn: "2026-09-02",
+  firstListedOn: "2026-07-06",
+  priceCuts: 0,
   units: [
     { id: "a", beds: 4, baths: 2, note: "vacant, listed for rent" },
     { id: "b", beds: 4, baths: 2, note: "vacant, listed for rent" },

@@ -4,7 +4,8 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "stress": "tsx scripts/run-stress.ts"
+    "stress": "tsx scripts/run-stress.ts",
+    "paths": "tsx scripts/run-paths.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

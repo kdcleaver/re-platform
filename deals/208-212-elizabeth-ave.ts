@@ -10,6 +10,7 @@ export const CLW_208_212_ELIZABETH: Deal = {
   marketId: "tampa-msa",
   askPrice: 879_000,
   listedOn: "2026-01-07",
+  priceCuts: 3,
   units: [
     { id: "u1", beds: 2, baths: 2, note: "per-unit mix not given (9 bd / 6 ba total)" },
     { id: "u2", beds: 2, baths: 1 },

@@ -26,6 +26,13 @@
       "ins": 785.4166666666666,
       "pitia": 6023.571189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -119,6 +126,13 @@
       "ins": 487.5,
       "pitia": 5617.321189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -212,6 +226,13 @@
       "ins": 785.4166666666666,
       "pitia": 5816.129846861184,
       "debtServiceMo": 4109.879846861184,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -305,6 +326,13 @@
       "ins": 785.4166666666666,
       "pitia": 6347.571937527203,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -398,6 +426,13 @@
       "ins": 785.4166666666666,
       "pitia": 6186.071189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -491,6 +526,13 @@
       "ins": 975,
       "pitia": 6213.1545230609145,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -584,6 +626,13 @@
       "ins": 1218.75,
       "pitia": 6456.9045230609145,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -677,6 +726,13 @@
       "ins": 785.4166666666666,
       "pitia": 5761.663463574536,
       "debtServiceMo": 4101.455130241202,
+      "amortization": [
+        {
+          "principal": 606315.53125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21612.500000000004,
       "closing": 18525,
       "cashToClose": 40137.5,
@@ -770,6 +826,13 @@
       "ins": 785.4166666666666,
       "pitia": 5499.75573742149,
       "debtServiceMo": 3885.5890707548233,
+      "amortization": [
+        {
+          "principal": 574404.1875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 20475.000000000004,
       "closing": 17550,
       "cashToClose": 38025,
@@ -863,6 +926,13 @@
       "ins": 975,
       "pitia": 6699.655270860536,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -956,6 +1026,13 @@
       "ins": 785.4166666666666,
       "pitia": 4949.599663998514,
       "debtServiceMo": 3243.3496639985137,
+      "amortization": [
+        {
+          "principal": 487500,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 162500,
       "closing": 26000,
       "cashToClose": 188500,
@@ -1047,6 +1124,13 @@
       "ins": 785.4166666666666,
       "pitia": 5253.566656292189,
       "debtServiceMo": 3547.3166562921883,
+      "amortization": [
+        {
+          "principal": 520000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 130000,
       "closing": 26000,
       "cashToClose": 156000,
@@ -1138,6 +1222,13 @@
       "ins": 785.4166666666666,
       "pitia": 5027.275853728188,
       "debtServiceMo": 3321.0258537281875,
+      "amortization": [
+        {
+          "principal": 520000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 130000,
       "closing": 19500,
       "cashToClose": 149500,
@@ -1245,6 +1336,13 @@
       "ins": 785.4166666666666,
       "pitia": 4670.359062481432,
       "debtServiceMo": 2964.109062481432,
+      "amortization": [
+        {
+          "principal": 585000,
+          "rate": 0.045,
+          "months": 360
+        }
+      ],
       "down": 65000,
       "closing": 19500,
       "cashToClose": 84500,
@@ -1347,6 +1445,13 @@
       "ins": 975,
       "pitia": 5022.442395814765,
       "debtServiceMo": 2964.109062481432,
+      "amortization": [
+        {
+          "principal": 585000,
+          "rate": 0.045,
+          "months": 360
+        }
+      ],
       "down": 65000,
       "closing": 19500,
       "cashToClose": 84500,
@@ -1449,6 +1554,13 @@
       "ins": 785.4166666666666,
       "pitia": 6347.571937527203,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -1542,6 +1654,13 @@
       "ins": 785.4166666666666,
       "pitia": 6023.571189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -1640,6 +1759,13 @@
       "ins": 487.5,
       "pitia": 5617.321189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -1738,6 +1864,13 @@
       "ins": 785.4166666666666,
       "pitia": 5816.129846861184,
       "debtServiceMo": 4109.879846861184,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -1836,6 +1969,13 @@
       "ins": 785.4166666666666,
       "pitia": 6347.571937527203,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -1934,6 +2074,13 @@
       "ins": 785.4166666666666,
       "pitia": 6186.071189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -2032,6 +2179,13 @@
       "ins": 975,
       "pitia": 6213.1545230609145,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -2130,6 +2284,13 @@
       "ins": 1218.75,
       "pitia": 6456.9045230609145,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -2228,6 +2389,13 @@
       "ins": 785.4166666666666,
       "pitia": 5761.663463574536,
       "debtServiceMo": 4101.455130241202,
+      "amortization": [
+        {
+          "principal": 606315.53125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21612.500000000004,
       "closing": 18525,
       "cashToClose": 40137.5,
@@ -2326,6 +2494,13 @@
       "ins": 785.4166666666666,
       "pitia": 5499.75573742149,
       "debtServiceMo": 3885.5890707548233,
+      "amortization": [
+        {
+          "principal": 574404.1875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 20475.000000000004,
       "closing": 17550,
       "cashToClose": 38025,
@@ -2424,6 +2599,13 @@
       "ins": 975,
       "pitia": 6699.655270860536,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -2522,6 +2704,13 @@
       "ins": 785.4166666666666,
       "pitia": 4949.599663998514,
       "debtServiceMo": 3243.3496639985137,
+      "amortization": [
+        {
+          "principal": 487500,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 162500,
       "closing": 26000,
       "cashToClose": 188500,
@@ -2618,6 +2807,13 @@
       "ins": 785.4166666666666,
       "pitia": 5253.566656292189,
       "debtServiceMo": 3547.3166562921883,
+      "amortization": [
+        {
+          "principal": 520000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 130000,
       "closing": 26000,
       "cashToClose": 156000,
@@ -2714,6 +2910,13 @@
       "ins": 785.4166666666666,
       "pitia": 5027.275853728188,
       "debtServiceMo": 3321.0258537281875,
+      "amortization": [
+        {
+          "principal": 520000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 130000,
       "closing": 19500,
       "cashToClose": 149500,
@@ -2825,6 +3028,13 @@
       "ins": 785.4166666666666,
       "pitia": 4670.359062481432,
       "debtServiceMo": 2964.109062481432,
+      "amortization": [
+        {
+          "principal": 585000,
+          "rate": 0.045,
+          "months": 360
+        }
+      ],
       "down": 65000,
       "closing": 19500,
       "cashToClose": 84500,
@@ -2931,6 +3141,13 @@
       "ins": 975,
       "pitia": 5022.442395814765,
       "debtServiceMo": 2964.109062481432,
+      "amortization": [
+        {
+          "principal": 585000,
+          "rate": 0.045,
+          "months": 360
+        }
+      ],
       "down": 65000,
       "closing": 19500,
       "cashToClose": 84500,
@@ -3037,6 +3254,13 @@
       "ins": 785.4166666666666,
       "pitia": 6347.571937527203,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3135,6 +3359,13 @@
       "ins": 785.4166666666666,
       "pitia": 6023.571189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3228,6 +3459,13 @@
       "ins": 487.5,
       "pitia": 5617.321189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3321,6 +3559,13 @@
       "ins": 785.4166666666666,
       "pitia": 5816.129846861184,
       "debtServiceMo": 4109.879846861184,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3414,6 +3659,13 @@
       "ins": 785.4166666666666,
       "pitia": 6347.571937527203,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3507,6 +3759,13 @@
       "ins": 785.4166666666666,
       "pitia": 6186.071189727581,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3600,6 +3859,13 @@
       "ins": 975,
       "pitia": 6213.1545230609145,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3693,6 +3959,13 @@
       "ins": 1218.75,
       "pitia": 6456.9045230609145,
       "debtServiceMo": 4317.321189727581,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -3786,6 +4059,13 @@
       "ins": 785.4166666666666,
       "pitia": 5761.663463574536,
       "debtServiceMo": 4101.455130241202,
+      "amortization": [
+        {
+          "principal": 606315.53125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21612.500000000004,
       "closing": 18525,
       "cashToClose": 40137.5,
@@ -3879,6 +4159,13 @@
       "ins": 785.4166666666666,
       "pitia": 5499.75573742149,
       "debtServiceMo": 3885.5890707548233,
+      "amortization": [
+        {
+          "principal": 574404.1875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 20475.000000000004,
       "closing": 17550,
       "cashToClose": 38025,
@@ -3971,6 +4258,13 @@
       "ins": 975,
       "pitia": 6699.655270860536,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -4064,6 +4358,13 @@
       "ins": 785.4166666666666,
       "pitia": 4949.599663998514,
       "debtServiceMo": 3243.3496639985137,
+      "amortization": [
+        {
+          "principal": 487500,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 162500,
       "closing": 26000,
       "cashToClose": 188500,
@@ -4153,6 +4454,13 @@
       "ins": 785.4166666666666,
       "pitia": 5253.566656292189,
       "debtServiceMo": 3547.3166562921883,
+      "amortization": [
+        {
+          "principal": 520000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 130000,
       "closing": 26000,
       "cashToClose": 156000,
@@ -4243,6 +4551,13 @@
       "ins": 785.4166666666666,
       "pitia": 5027.275853728188,
       "debtServiceMo": 3321.0258537281875,
+      "amortization": [
+        {
+          "principal": 520000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 130000,
       "closing": 19500,
       "cashToClose": 149500,
@@ -4348,6 +4663,13 @@
       "ins": 785.4166666666666,
       "pitia": 4670.359062481432,
       "debtServiceMo": 2964.109062481432,
+      "amortization": [
+        {
+          "principal": 585000,
+          "rate": 0.045,
+          "months": 360
+        }
+      ],
       "down": 65000,
       "closing": 19500,
       "cashToClose": 84500,
@@ -4446,6 +4768,13 @@
       "ins": 975,
       "pitia": 5022.442395814765,
       "debtServiceMo": 2964.109062481432,
+      "amortization": [
+        {
+          "principal": 585000,
+          "rate": 0.045,
+          "months": 360
+        }
+      ],
       "down": 65000,
       "closing": 19500,
       "cashToClose": 84500,
@@ -4544,6 +4873,13 @@
       "ins": 785.4166666666666,
       "pitia": 6347.571937527203,
       "debtServiceMo": 4641.321937527203,
+      "amortization": [
+        {
+          "principal": 638226.875,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22750.000000000004,
       "closing": 19500,
       "cashToClose": 42250,
@@ -4637,6 +4973,13 @@
       "ins": 858.3333333333334,
       "pitia": 6459.129323375388,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -4730,6 +5073,13 @@
       "ins": 521.2499999999999,
       "pitia": 6006.212656708722,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -4823,6 +5173,13 @@
       "ins": 858.3333333333334,
       "pitia": 6237.326656772086,
       "debtServiceMo": 4394.40999010542,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -4916,6 +5273,13 @@
       "ins": 858.3333333333334,
       "pitia": 6805.5608921765215,
       "debtServiceMo": 4962.6442255098555,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -5009,6 +5373,13 @@
       "ins": 858.3333333333334,
       "pitia": 6632.879323375388,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -5102,6 +5473,13 @@
       "ins": 950,
       "pitia": 6550.795990042055,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -5195,6 +5573,13 @@
       "ins": 1303.125,
       "pitia": 6903.920990042055,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -5288,6 +5673,13 @@
       "ins": 858.3333333333334,
       "pitia": 6179.0895238732855,
       "debtServiceMo": 4385.4020238732855,
+      "amortization": [
+        {
+          "principal": 648291.221875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 23108.750000000004,
       "closing": 19807.5,
       "cashToClose": 42916.25,
@@ -5381,6 +5773,13 @@
       "ins": 858.3333333333334,
       "pitia": 5899.0497243711825,
       "debtServiceMo": 4154.5913910378495,
+      "amortization": [
+        {
+          "principal": 614170.6312500001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21892.500000000004,
       "closing": 18765,
       "cashToClose": 40657.5,
@@ -5474,6 +5873,13 @@
       "ins": 950,
       "pitia": 7070.9775588431885,
       "debtServiceMo": 4962.6442255098555,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -5567,6 +5973,13 @@
       "ins": 858.3333333333334,
       "pitia": 5310.805922788154,
       "debtServiceMo": 3467.889256121488,
+      "amortization": [
+        {
+          "principal": 521250,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 173750,
       "closing": 27800,
       "cashToClose": 201550,
@@ -5658,6 +6071,13 @@
       "ins": 858.3333333333334,
       "pitia": 5635.816783779083,
       "debtServiceMo": 3792.900117112417,
+      "amortization": [
+        {
+          "principal": 556000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 139000,
       "closing": 27800,
       "cashToClose": 166800,
@@ -5749,6 +6169,13 @@
       "ins": 858.3333333333334,
       "pitia": 5393.8596948837285,
       "debtServiceMo": 3550.943028217062,
+      "amortization": [
+        {
+          "principal": 556000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 139000,
       "closing": 20850,
       "cashToClose": 159850,
@@ -5856,6 +6283,13 @@
       "ins": 858.3333333333334,
       "pitia": 6459.129323375388,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -5949,6 +6383,13 @@
       "ins": 521.2499999999999,
       "pitia": 6006.212656708722,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6041,6 +6482,13 @@
       "ins": 858.3333333333334,
       "pitia": 6237.326656772086,
       "debtServiceMo": 4394.40999010542,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6134,6 +6582,13 @@
       "ins": 858.3333333333334,
       "pitia": 6805.5608921765215,
       "debtServiceMo": 4962.6442255098555,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6227,6 +6682,13 @@
       "ins": 858.3333333333334,
       "pitia": 6632.879323375388,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6320,6 +6782,13 @@
       "ins": 950,
       "pitia": 6550.795990042055,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6413,6 +6882,13 @@
       "ins": 1303.125,
       "pitia": 6903.920990042055,
       "debtServiceMo": 4616.212656708722,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6506,6 +6982,13 @@
       "ins": 858.3333333333334,
       "pitia": 6179.0895238732855,
       "debtServiceMo": 4385.4020238732855,
+      "amortization": [
+        {
+          "principal": 648291.221875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 23108.750000000004,
       "closing": 19807.5,
       "cashToClose": 42916.25,
@@ -6599,6 +7082,13 @@
       "ins": 858.3333333333334,
       "pitia": 5899.0497243711825,
       "debtServiceMo": 4154.5913910378495,
+      "amortization": [
+        {
+          "principal": 614170.6312500001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21892.500000000004,
       "closing": 18765,
       "cashToClose": 40657.5,
@@ -6690,6 +7180,13 @@
       "ins": 950,
       "pitia": 7070.9775588431885,
       "debtServiceMo": 4962.6442255098555,
+      "amortization": [
+        {
+          "principal": 682411.8125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 24325.000000000004,
       "closing": 20850,
       "cashToClose": 45175,
@@ -6783,6 +7280,13 @@
       "ins": 858.3333333333334,
       "pitia": 5310.805922788154,
       "debtServiceMo": 3467.889256121488,
+      "amortization": [
+        {
+          "principal": 521250,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 173750,
       "closing": 27800,
       "cashToClose": 201550,
@@ -6872,6 +7376,13 @@
       "ins": 858.3333333333334,
       "pitia": 5635.816783779083,
       "debtServiceMo": 3792.900117112417,
+      "amortization": [
+        {
+          "principal": 556000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 139000,
       "closing": 27800,
       "cashToClose": 166800,
@@ -6962,6 +7473,13 @@
       "ins": 858.3333333333334,
       "pitia": 5393.8596948837285,
       "debtServiceMo": 3550.943028217062,
+      "amortization": [
+        {
+          "principal": 556000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 139000,
       "closing": 20850,
       "cashToClose": 159850,
@@ -7067,6 +7585,13 @@
       "ins": 858.3333333333334,
       "pitia": 6902.357783019004,
       "debtServiceMo": 4981.524449685671,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7165,6 +7690,13 @@
       "ins": 562.4999999999999,
       "pitia": 6481.524449685671,
       "debtServiceMo": 4981.524449685671,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7263,6 +7795,13 @@
       "ins": 858.3333333333334,
       "pitia": 6663.00238740393,
       "debtServiceMo": 4742.169054070597,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7361,6 +7900,13 @@
       "ins": 858.3333333333334,
       "pitia": 7276.204799710876,
       "debtServiceMo": 5355.371466377543,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7459,6 +8005,13 @@
       "ins": 858.3333333333334,
       "pitia": 7089.857783019004,
       "debtServiceMo": 4981.524449685671,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7557,6 +8110,13 @@
       "ins": 950,
       "pitia": 6994.024449685671,
       "debtServiceMo": 4981.524449685671,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7655,6 +8215,13 @@
       "ins": 1406.25,
       "pitia": 7450.274449685671,
       "debtServiceMo": 4981.524449685671,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -7753,6 +8320,13 @@
       "ins": 858.3333333333334,
       "pitia": 6600.1565605347205,
       "debtServiceMo": 4732.448227201387,
+      "amortization": [
+        {
+          "principal": 699594.84375,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24937.500000000004,
       "closing": 21375,
       "cashToClose": 46312.5,
@@ -7851,6 +8425,13 @@
       "ins": 858.3333333333334,
       "pitia": 6297.955338050437,
       "debtServiceMo": 4483.372004717104,
+      "amortization": [
+        {
+          "principal": 662774.0625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 23625.000000000004,
       "closing": 20250,
       "cashToClose": 43875,
@@ -7949,6 +8530,13 @@
       "ins": 950,
       "pitia": 7555.371466377543,
       "debtServiceMo": 5355.371466377543,
+      "amortization": [
+        {
+          "principal": 736415.625,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 26250.000000000004,
       "closing": 22500,
       "cashToClose": 48750,
@@ -8047,6 +8635,13 @@
       "ins": 858.3333333333334,
       "pitia": 5663.159868716234,
       "debtServiceMo": 3742.3265353829006,
+      "amortization": [
+        {
+          "principal": 562500,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 187500,
       "closing": 30000,
       "cashToClose": 217500,
@@ -8143,6 +8738,13 @@
       "ins": 858.3333333333334,
       "pitia": 6013.891013670474,
       "debtServiceMo": 4093.057680337141,
+      "amortization": [
+        {
+          "principal": 600000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 150000,
       "closing": 30000,
       "cashToClose": 180000,
@@ -8239,6 +8841,13 @@
       "ins": 858.3333333333334,
       "pitia": 5752.786241481242,
       "debtServiceMo": 3831.9529081479086,
+      "amortization": [
+        {
+          "principal": 600000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 150000,
       "closing": 22500,
       "cashToClose": 172500,
@@ -8350,6 +8959,13 @@
       "ins": 1208.3333333333333,
       "pitia": 9427.865932914228,
       "debtServiceMo": 6802.865932914228,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -8448,6 +9064,13 @@
       "ins": 750,
       "pitia": 8802.865932914228,
       "debtServiceMo": 6802.865932914228,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -8546,6 +9169,13 @@
       "ins": 1208.3333333333333,
       "pitia": 9108.725405427464,
       "debtServiceMo": 6483.725405427463,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -8644,6 +9274,13 @@
       "ins": 1208.3333333333333,
       "pitia": 9926.328621836725,
       "debtServiceMo": 7301.328621836724,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -8742,6 +9379,13 @@
       "ins": 1208.3333333333333,
       "pitia": 9677.865932914228,
       "debtServiceMo": 6802.865932914228,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -8840,6 +9484,13 @@
       "ins": 1500,
       "pitia": 9719.532599580894,
       "debtServiceMo": 6802.865932914228,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -8938,6 +9589,13 @@
       "ins": 1875,
       "pitia": 10094.532599580894,
       "debtServiceMo": 6802.865932914228,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -9036,6 +9694,13 @@
       "ins": 1208.3333333333333,
       "pitia": 9016.889302935184,
       "debtServiceMo": 6462.722636268517,
+      "amortization": [
+        {
+          "principal": 932793.1250000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 33250,
       "closing": 28500,
       "cashToClose": 61750,
@@ -9134,6 +9799,13 @@
       "ins": 1208.3333333333333,
       "pitia": 8605.91267295614,
       "debtServiceMo": 6122.5793396228055,
+      "amortization": [
+        {
+          "principal": 883698.7500000001,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 31500.000000000004,
       "closing": 27000,
       "cashToClose": 58500,
@@ -9232,6 +9904,13 @@
       "ins": 1500,
       "pitia": 10467.99528850339,
       "debtServiceMo": 7301.328621836724,
+      "amortization": [
+        {
+          "principal": 981887.5000000001,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 35000,
       "closing": 30000,
       "cashToClose": 65000,
@@ -9330,6 +10009,13 @@
       "ins": 1208.3333333333333,
       "pitia": 7614.768713843868,
       "debtServiceMo": 4989.768713843868,
+      "amortization": [
+        {
+          "principal": 750000,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 250000,
       "closing": 40000,
       "cashToClose": 290000,
@@ -9432,6 +10118,13 @@
       "ins": 1208.3333333333333,
       "pitia": 8082.410240449521,
       "debtServiceMo": 5457.410240449521,
+      "amortization": [
+        {
+          "principal": 800000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 200000,
       "closing": 40000,
       "cashToClose": 240000,
@@ -9534,6 +10227,13 @@
       "ins": 1208.3333333333333,
       "pitia": 7734.27054419721,
       "debtServiceMo": 5109.27054419721,
+      "amortization": [
+        {
+          "principal": 800000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 200000,
       "closing": 30000,
       "cashToClose": 230000,
@@ -9644,6 +10344,13 @@
       "ins": 845.8333333333334,
       "pitia": 6486.922819706626,
       "debtServiceMo": 4649.422819706626,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -9742,6 +10449,13 @@
       "ins": 524.9999999999999,
       "pitia": 6049.422819706626,
       "debtServiceMo": 4649.422819706626,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -9840,6 +10554,13 @@
       "ins": 845.8333333333334,
       "pitia": 6263.52445046589,
       "debtServiceMo": 4426.02445046589,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -9938,6 +10659,13 @@
       "ins": 845.8333333333334,
       "pitia": 6835.846701952374,
       "debtServiceMo": 4998.346701952374,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -10036,6 +10764,13 @@
       "ins": 845.8333333333334,
       "pitia": 6661.922819706626,
       "debtServiceMo": 4649.422819706626,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -10134,6 +10869,13 @@
       "ins": 1049.9999999999998,
       "pitia": 6691.089486373293,
       "debtServiceMo": 4649.422819706626,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -10232,6 +10974,13 @@
       "ins": 1312.5,
       "pitia": 6953.589486373293,
       "debtServiceMo": 4649.422819706626,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -10330,6 +11079,13 @@
       "ins": 845.8333333333334,
       "pitia": 6204.868345387961,
       "debtServiceMo": 4416.951678721295,
+      "amortization": [
+        {
+          "principal": 652955.1875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 23275.000000000004,
       "closing": 19950,
       "cashToClose": 43225,
@@ -10428,6 +11184,13 @@
       "ins": 845.8333333333334,
       "pitia": 5922.8138710692965,
       "debtServiceMo": 4184.4805377359635,
+      "amortization": [
+        {
+          "principal": 618589.125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22050.000000000004,
       "closing": 18900,
       "cashToClose": 40950,
@@ -10526,6 +11289,13 @@
       "ins": 1049.9999999999998,
       "pitia": 7215.013368619041,
       "debtServiceMo": 4998.346701952374,
+      "amortization": [
+        {
+          "principal": 687321.25,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 24500.000000000004,
       "closing": 21000,
       "cashToClose": 45500,
@@ -10624,6 +11394,13 @@
       "ins": 845.8333333333334,
       "pitia": 5330.338099690707,
       "debtServiceMo": 3492.838099690707,
+      "amortization": [
+        {
+          "principal": 525000,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 175000,
       "closing": 28000,
       "cashToClose": 203000,
@@ -10720,6 +11497,13 @@
       "ins": 845.8333333333334,
       "pitia": 5657.687168314665,
       "debtServiceMo": 3820.187168314665,
+      "amortization": [
+        {
+          "principal": 560000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 140000,
       "closing": 28000,
       "cashToClose": 168000,
@@ -10816,6 +11600,13 @@
       "ins": 845.8333333333334,
       "pitia": 5413.989380938047,
       "debtServiceMo": 3576.489380938048,
+      "amortization": [
+        {
+          "principal": 560000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 140000,
       "closing": 21000,
       "cashToClose": 161000,
@@ -10927,6 +11718,13 @@
       "ins": 652.4879166666667,
       "pitia": 5004.1049334476875,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11016,6 +11814,13 @@
       "ins": 404.9925,
       "pitia": 4666.611183447687,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11105,6 +11910,13 @@
       "ins": 652.4879166666667,
       "pitia": 4831.772240010108,
       "debtServiceMo": 3414.2984900101083,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11194,6 +12006,13 @@
       "ins": 652.4879166666667,
       "pitia": 5273.269800838946,
       "debtServiceMo": 3855.7960508389456,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11283,6 +12102,13 @@
       "ins": 652.4879166666667,
       "pitia": 5139.102433447687,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11372,6 +12198,13 @@
       "ins": 809.985,
       "pitia": 5161.60201678102,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11461,6 +12294,13 @@
       "ins": 1012.4812499999999,
       "pitia": 5364.09826678102,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11550,6 +12390,13 @@
       "ins": 652.4879166666667,
       "pitia": 4786.5240826086365,
       "debtServiceMo": 3407.299624275303,
+      "amortization": [
+        {
+          "principal": 503698.95956875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 17954.667500000003,
       "closing": 15389.715,
       "cashToClose": 33344.38250000001,
@@ -11639,6 +12486,13 @@
       "ins": 652.4879166666667,
       "pitia": 4568.9432317695855,
       "debtServiceMo": 3227.9680651029184,
+      "amortization": [
+        {
+          "principal": 477188.48801250005,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 17009.685,
       "closing": 14579.73,
       "cashToClose": 31589.415,
@@ -11728,6 +12582,13 @@
       "ins": 809.985,
       "pitia": 5565.764384172278,
       "debtServiceMo": 3855.7960508389456,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -11817,6 +12678,13 @@
       "ins": 652.4879166666667,
       "pitia": 4111.89895778855,
       "debtServiceMo": 2694.4252077885503,
+      "amortization": [
+        {
+          "principal": 404992.5,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 134997.5,
       "closing": 21599.600000000002,
       "cashToClose": 156597.1,
@@ -11908,6 +12776,13 @@
       "ins": 652.4879166666667,
       "pitia": 4364.420705740337,
       "debtServiceMo": 2946.946955740337,
+      "amortization": [
+        {
+          "principal": 431992,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 107998,
       "closing": 21599.600000000002,
       "cashToClose": 129597.6,
@@ -11999,6 +12874,13 @@
       "ins": 652.4879166666667,
       "pitia": 4176.428751161052,
       "debtServiceMo": 2758.9550011610518,
+      "amortization": [
+        {
+          "principal": 431992,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 107998,
       "closing": 16199.699999999999,
       "cashToClose": 124197.7,
@@ -12106,6 +12988,13 @@
       "ins": 652.4879166666667,
       "pitia": 5004.1049334476875,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12195,6 +13084,13 @@
       "ins": 404.9925,
       "pitia": 4666.611183447687,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12284,6 +13180,13 @@
       "ins": 652.4879166666667,
       "pitia": 4831.772240010108,
       "debtServiceMo": 3414.2984900101083,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12373,6 +13276,13 @@
       "ins": 652.4879166666667,
       "pitia": 5273.269800838946,
       "debtServiceMo": 3855.7960508389456,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12462,6 +13372,13 @@
       "ins": 652.4879166666667,
       "pitia": 5139.102433447687,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12551,6 +13468,13 @@
       "ins": 809.985,
       "pitia": 5161.60201678102,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12640,6 +13564,13 @@
       "ins": 1012.4812499999999,
       "pitia": 5364.09826678102,
       "debtServiceMo": 3586.631183447687,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12729,6 +13660,13 @@
       "ins": 652.4879166666667,
       "pitia": 4786.5240826086365,
       "debtServiceMo": 3407.299624275303,
+      "amortization": [
+        {
+          "principal": 503698.95956875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 17954.667500000003,
       "closing": 15389.715,
       "cashToClose": 33344.38250000001,
@@ -12818,6 +13756,13 @@
       "ins": 652.4879166666667,
       "pitia": 4568.9432317695855,
       "debtServiceMo": 3227.9680651029184,
+      "amortization": [
+        {
+          "principal": 477188.48801250005,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 17009.685,
       "closing": 14579.73,
       "cashToClose": 31589.415,
@@ -12905,6 +13850,13 @@
       "ins": 809.985,
       "pitia": 5565.764384172278,
       "debtServiceMo": 3855.7960508389456,
+      "amortization": [
+        {
+          "principal": 530209.431125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 18899.65,
       "closing": 16199.699999999999,
       "cashToClose": 35099.35,
@@ -12994,6 +13946,13 @@
       "ins": 652.4879166666667,
       "pitia": 4111.89895778855,
       "debtServiceMo": 2694.4252077885503,
+      "amortization": [
+        {
+          "principal": 404992.5,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 134997.5,
       "closing": 21599.600000000002,
       "cashToClose": 156597.1,
@@ -13083,6 +14042,13 @@
       "ins": 652.4879166666667,
       "pitia": 4364.420705740337,
       "debtServiceMo": 2946.946955740337,
+      "amortization": [
+        {
+          "principal": 431992,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 107998,
       "closing": 21599.600000000002,
       "cashToClose": 129597.6,
@@ -13173,6 +14139,13 @@
       "ins": 652.4879166666667,
       "pitia": 4176.428751161052,
       "debtServiceMo": 2758.9550011610518,
+      "amortization": [
+        {
+          "principal": 431992,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 107998,
       "closing": 16199.699999999999,
       "cashToClose": 124197.7,
@@ -13278,6 +14251,13 @@
       "ins": 785.4045833333334,
       "pitia": 6023.478519401586,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13371,6 +14351,13 @@
       "ins": 487.4925,
       "pitia": 5617.234769401586,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13464,6 +14451,13 @@
       "ins": 785.4045833333334,
       "pitia": 5816.040367940463,
       "debtServiceMo": 4109.816617940463,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13557,6 +14551,13 @@
       "ins": 785.4045833333334,
       "pitia": 6347.474282574318,
       "debtServiceMo": 4641.250532574319,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13650,6 +14651,13 @@
       "ins": 785.4045833333334,
       "pitia": 6185.976019401585,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13743,6 +14751,13 @@
       "ins": 974.985,
       "pitia": 6213.0589360682525,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13836,6 +14851,13 @@
       "ins": 1218.73125,
       "pitia": 6456.805186068253,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -13929,6 +14951,13 @@
       "ins": 785.4045833333334,
       "pitia": 5761.574822598173,
       "debtServiceMo": 4101.392030931506,
+      "amortization": [
+        {
+          "principal": 606306.20331875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21612.167500000003,
       "closing": 18524.715,
       "cashToClose": 40136.88250000001,
@@ -14022,6 +15051,13 @@
       "ins": 785.4045833333334,
       "pitia": 5499.671125794761,
       "debtServiceMo": 3885.529292461427,
+      "amortization": [
+        {
+          "principal": 574395.3505125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 20474.685,
       "closing": 17549.73,
       "cashToClose": 38024.415,
@@ -14115,6 +15151,13 @@
       "ins": 974.985,
       "pitia": 6699.552199240985,
       "debtServiceMo": 4641.250532574319,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -14208,6 +15251,13 @@
       "ins": 785.4045833333334,
       "pitia": 4949.523516311376,
       "debtServiceMo": 3243.2997663113756,
+      "amortization": [
+        {
+          "principal": 487492.5,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 162497.5,
       "closing": 25999.600000000002,
       "cashToClose": 188497.1,
@@ -14299,6 +15349,13 @@
       "ins": 785.4045833333334,
       "pitia": 5253.485832189785,
       "debtServiceMo": 3547.262082189784,
+      "amortization": [
+        {
+          "principal": 519992,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 129998,
       "closing": 25999.600000000002,
       "cashToClose": 155997.6,
@@ -14390,6 +15447,13 @@
       "ins": 785.4045833333334,
       "pitia": 5027.198511022745,
       "debtServiceMo": 3320.974761022745,
+      "amortization": [
+        {
+          "principal": 519992,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 129998,
       "closing": 19499.7,
       "cashToClose": 149497.7,
@@ -14497,6 +15561,13 @@
       "ins": 785.4045833333334,
       "pitia": 6023.478519401586,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -14590,6 +15661,13 @@
       "ins": 487.4925,
       "pitia": 5617.234769401586,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -14683,6 +15761,13 @@
       "ins": 785.4045833333334,
       "pitia": 5816.040367940463,
       "debtServiceMo": 4109.816617940463,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -14776,6 +15861,13 @@
       "ins": 785.4045833333334,
       "pitia": 6347.474282574318,
       "debtServiceMo": 4641.250532574319,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -14869,6 +15961,13 @@
       "ins": 785.4045833333334,
       "pitia": 6185.976019401585,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -14962,6 +16061,13 @@
       "ins": 974.985,
       "pitia": 6213.0589360682525,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -15055,6 +16161,13 @@
       "ins": 1218.73125,
       "pitia": 6456.805186068253,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -15148,6 +16261,13 @@
       "ins": 785.4045833333334,
       "pitia": 5761.574822598173,
       "debtServiceMo": 4101.392030931506,
+      "amortization": [
+        {
+          "principal": 606306.20331875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21612.167500000003,
       "closing": 18524.715,
       "cashToClose": 40136.88250000001,
@@ -15241,6 +16361,13 @@
       "ins": 785.4045833333334,
       "pitia": 5499.671125794761,
       "debtServiceMo": 3885.529292461427,
+      "amortization": [
+        {
+          "principal": 574395.3505125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 20474.685,
       "closing": 17549.73,
       "cashToClose": 38024.415,
@@ -15334,6 +16461,13 @@
       "ins": 974.985,
       "pitia": 6699.552199240985,
       "debtServiceMo": 4641.250532574319,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -15427,6 +16561,13 @@
       "ins": 785.4045833333334,
       "pitia": 4949.523516311376,
       "debtServiceMo": 3243.2997663113756,
+      "amortization": [
+        {
+          "principal": 487492.5,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 162497.5,
       "closing": 25999.600000000002,
       "cashToClose": 188497.1,
@@ -15518,6 +16659,13 @@
       "ins": 785.4045833333334,
       "pitia": 5253.485832189785,
       "debtServiceMo": 3547.262082189784,
+      "amortization": [
+        {
+          "principal": 519992,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 129998,
       "closing": 25999.600000000002,
       "cashToClose": 155997.6,
@@ -15609,6 +16757,13 @@
       "ins": 785.4045833333334,
       "pitia": 5027.198511022745,
       "debtServiceMo": 3320.974761022745,
+      "amortization": [
+        {
+          "principal": 519992,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 129998,
       "closing": 19499.7,
       "cashToClose": 149497.7,
@@ -15716,6 +16871,13 @@
       "ins": 785.4045833333334,
       "pitia": 6023.478519401586,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -15814,6 +16976,13 @@
       "ins": 487.4925,
       "pitia": 5617.234769401586,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -15912,6 +17081,13 @@
       "ins": 785.4045833333334,
       "pitia": 5816.040367940463,
       "debtServiceMo": 4109.816617940463,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -16010,6 +17186,13 @@
       "ins": 785.4045833333334,
       "pitia": 6347.474282574318,
       "debtServiceMo": 4641.250532574319,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -16108,6 +17291,13 @@
       "ins": 785.4045833333334,
       "pitia": 6185.976019401585,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -16206,6 +17396,13 @@
       "ins": 974.985,
       "pitia": 6213.0589360682525,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -16304,6 +17501,13 @@
       "ins": 1218.73125,
       "pitia": 6456.805186068253,
       "debtServiceMo": 4317.254769401586,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -16402,6 +17606,13 @@
       "ins": 785.4045833333334,
       "pitia": 5761.574822598173,
       "debtServiceMo": 4101.392030931506,
+      "amortization": [
+        {
+          "principal": 606306.20331875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 21612.167500000003,
       "closing": 18524.715,
       "cashToClose": 40136.88250000001,
@@ -16500,6 +17711,13 @@
       "ins": 785.4045833333334,
       "pitia": 5499.671125794761,
       "debtServiceMo": 3885.529292461427,
+      "amortization": [
+        {
+          "principal": 574395.3505125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 20474.685,
       "closing": 17549.73,
       "cashToClose": 38024.415,
@@ -16598,6 +17816,13 @@
       "ins": 974.985,
       "pitia": 6699.552199240985,
       "debtServiceMo": 4641.250532574319,
+      "amortization": [
+        {
+          "principal": 638217.056125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 22749.65,
       "closing": 19499.7,
       "cashToClose": 42249.350000000006,
@@ -16696,6 +17921,13 @@
       "ins": 785.4045833333334,
       "pitia": 4949.523516311376,
       "debtServiceMo": 3243.2997663113756,
+      "amortization": [
+        {
+          "principal": 487492.5,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 162497.5,
       "closing": 25999.600000000002,
       "cashToClose": 188497.1,
@@ -16791,6 +18023,13 @@
       "ins": 785.4045833333334,
       "pitia": 5253.485832189785,
       "debtServiceMo": 3547.262082189784,
+      "amortization": [
+        {
+          "principal": 519992,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 129998,
       "closing": 25999.600000000002,
       "cashToClose": 155997.6,
@@ -16887,6 +18126,13 @@
       "ins": 785.4045833333334,
       "pitia": 5027.198511022745,
       "debtServiceMo": 3320.974761022745,
+      "amortization": [
+        {
+          "principal": 519992,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 129998,
       "closing": 19499.7,
       "cashToClose": 149497.7,
@@ -16997,6 +18243,13 @@
       "ins": 942.3791666666667,
       "pitia": 7352.792641079806,
       "debtServiceMo": 5305.555141079806,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17091,6 +18344,13 @@
       "ins": 584.925,
       "pitia": 6865.355141079806,
       "debtServiceMo": 5305.555141079806,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17185,6 +18445,13 @@
       "ins": 942.3791666666667,
       "pitia": 7103.894943692878,
       "debtServiceMo": 5056.657443692878,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17279,6 +18546,13 @@
       "ins": 942.3791666666667,
       "pitia": 7741.543692170461,
       "debtServiceMo": 5694.306192170461,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17373,6 +18647,13 @@
       "ins": 942.3791666666667,
       "pitia": 7547.767641079806,
       "debtServiceMo": 5305.555141079806,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17467,6 +18748,13 @@
       "ins": 1169.85,
       "pitia": 7580.263474413139,
       "debtServiceMo": 5305.555141079806,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17561,6 +18849,13 @@
       "ins": 1462.3125,
       "pitia": 7872.72597441314,
       "debtServiceMo": 5305.555141079806,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17655,6 +18950,13 @@
       "ins": 942.3791666666667,
       "pitia": 6913.109746525815,
       "debtServiceMo": 4921.115163192482,
+      "amortization": [
+        {
+          "principal": 727485.3581875,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 25931.675000000003,
       "closing": 22227.149999999998,
       "cashToClose": 48158.825,
@@ -17749,6 +19051,13 @@
       "ins": 942.3791666666667,
       "pitia": 6598.860768638492,
       "debtServiceMo": 4662.109101971825,
+      "amortization": [
+        {
+          "principal": 689196.655125,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 24566.850000000002,
       "closing": 21057.3,
       "cashToClose": 45624.15,
@@ -17838,6 +19147,13 @@
       "ins": 1169.85,
       "pitia": 8163.989525503794,
       "debtServiceMo": 5694.306192170461,
+      "amortization": [
+        {
+          "principal": 765774.06125,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 27296.500000000004,
       "closing": 23397,
       "cashToClose": 50693.5,
@@ -17932,6 +19248,13 @@
       "ins": 942.3791666666667,
       "pitia": 5938.7581199268325,
       "debtServiceMo": 3891.5206199268323,
+      "amortization": [
+        {
+          "principal": 584925,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 194975,
       "closing": 31196,
       "cashToClose": 226171,
@@ -18023,6 +19346,13 @@
       "ins": 942.3791666666667,
       "pitia": 6303.471746526581,
       "debtServiceMo": 4256.234246526581,
+      "amortization": [
+        {
+          "principal": 623920,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 155980,
       "closing": 31196,
       "cashToClose": 187176,
@@ -18114,6 +19444,13 @@
       "ins": 942.3791666666667,
       "pitia": 6031.957597419405,
       "debtServiceMo": 3984.7200974194047,
+      "amortization": [
+        {
+          "principal": 623920,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 155980,
       "closing": 23397,
       "cashToClose": 179377,
@@ -18221,6 +19558,13 @@
       "ins": 640.4166666666666,
       "pitia": 4911.527277777875,
       "debtServiceMo": 3520.2772777778746,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18315,6 +19659,13 @@
       "ins": 397.5,
       "pitia": 4580.277277777875,
       "debtServiceMo": 3520.2772777778746,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18409,6 +19760,13 @@
       "ins": 640.4166666666666,
       "pitia": 4742.382798209888,
       "debtServiceMo": 3351.1327982098883,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18503,6 +19861,13 @@
       "ins": 640.4166666666666,
       "pitia": 5175.712502906797,
       "debtServiceMo": 3784.4625029067975,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18597,6 +19962,13 @@
       "ins": 640.4166666666666,
       "pitia": 5044.027277777875,
       "debtServiceMo": 3520.2772777778746,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18691,6 +20063,13 @@
       "ins": 795,
       "pitia": 5066.110611111208,
       "debtServiceMo": 3520.2772777778746,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18785,6 +20164,13 @@
       "ins": 993.75,
       "pitia": 5264.860611111208,
       "debtServiceMo": 3520.2772777778746,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -18879,6 +20265,13 @@
       "ins": 640.4166666666666,
       "pitia": 4697.971747222314,
       "debtServiceMo": 3344.2634138889807,
+      "amortization": [
+        {
+          "principal": 494380.35625,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 17622.5,
       "closing": 15105,
       "cashToClose": 32727.5,
@@ -18973,6 +20366,13 @@
       "ins": 640.4166666666666,
       "pitia": 4484.416216666754,
       "debtServiceMo": 3168.249550000087,
+      "amortization": [
+        {
+          "principal": 468360.3375,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16695,
       "closing": 14310,
       "cashToClose": 31005,
@@ -19067,6 +20467,13 @@
       "ins": 795,
       "pitia": 5462.7958362401305,
       "debtServiceMo": 3784.4625029067975,
+      "amortization": [
+        {
+          "principal": 520400.37500000006,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 18550,
       "closing": 15900,
       "cashToClose": 34450,
@@ -19161,6 +20568,13 @@
       "ins": 640.4166666666666,
       "pitia": 4035.8274183372496,
       "debtServiceMo": 2644.5774183372496,
+      "amortization": [
+        {
+          "principal": 397500,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 132500,
       "closing": 21200,
       "cashToClose": 153700,
@@ -19257,6 +20671,13 @@
       "ins": 640.4166666666666,
       "pitia": 4283.677427438246,
       "debtServiceMo": 2892.427427438246,
+      "amortization": [
+        {
+          "principal": 424000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 106000,
       "closing": 21200,
       "cashToClose": 127200,
@@ -19353,6 +20774,13 @@
       "ins": 640.4166666666666,
       "pitia": 4099.163388424522,
       "debtServiceMo": 2707.913388424522,
+      "amortization": [
+        {
+          "principal": 424000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 106000,
       "closing": 15900,
       "cashToClose": 121900,
@@ -19464,6 +20892,13 @@
       "ins": 580,
       "pitia": 4448.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -19553,6 +20988,13 @@
       "ins": 360,
       "pitia": 4148.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -19642,6 +21084,13 @@
       "ins": 580,
       "pitia": 4294.988194605183,
       "debtServiceMo": 3034.9881946051823,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -19731,6 +21180,13 @@
       "ins": 580,
       "pitia": 4687.437738481628,
       "debtServiceMo": 3427.4377384816275,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -19820,6 +21276,13 @@
       "ins": 580,
       "pitia": 4568.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -19909,6 +21372,13 @@
       "ins": 720,
       "pitia": 4588.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -19998,6 +21468,13 @@
       "ins": 900,
       "pitia": 4768.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -20087,6 +21564,13 @@
       "ins": 580,
       "pitia": 4254.766865408888,
       "debtServiceMo": 3028.766865408888,
+      "amortization": [
+        {
+          "principal": 447740.7,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 15960.000000000002,
       "closing": 13680,
       "cashToClose": 29640,
@@ -20176,6 +21660,13 @@
       "ins": 580,
       "pitia": 4061.3580830189467,
       "debtServiceMo": 2869.3580830189467,
+      "amortization": [
+        {
+          "principal": 424175.4,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 15120.000000000002,
       "closing": 12960,
       "cashToClose": 28080,
@@ -20265,6 +21756,13 @@
       "ins": 720,
       "pitia": 4947.437738481627,
       "debtServiceMo": 3427.4377384816275,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -20354,6 +21852,13 @@
       "ins": 580,
       "pitia": 3655.088982645056,
       "debtServiceMo": 2395.088982645056,
+      "amortization": [
+        {
+          "principal": 360000,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 120000,
       "closing": 19200,
       "cashToClose": 139200,
@@ -20445,6 +21950,13 @@
       "ins": 580,
       "pitia": 3879.55691541577,
       "debtServiceMo": 2619.55691541577,
+      "amortization": [
+        {
+          "principal": 384000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 96000,
       "closing": 19200,
       "cashToClose": 115200,
@@ -20536,6 +22048,13 @@
       "ins": 580,
       "pitia": 3712.4498612146613,
       "debtServiceMo": 2452.4498612146613,
+      "amortization": [
+        {
+          "principal": 384000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 96000,
       "closing": 14400,
       "cashToClose": 110400,
@@ -20643,6 +22162,13 @@
       "ins": 580,
       "pitia": 4448.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -20732,6 +22258,13 @@
       "ins": 360,
       "pitia": 4148.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -20821,6 +22354,13 @@
       "ins": 580,
       "pitia": 4294.988194605183,
       "debtServiceMo": 3034.9881946051823,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0599,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -20910,6 +22450,13 @@
       "ins": 580,
       "pitia": 4687.437738481628,
       "debtServiceMo": 3427.4377384816275,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -20999,6 +22546,13 @@
       "ins": 580,
       "pitia": 4568.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -21088,6 +22642,13 @@
       "ins": 720,
       "pitia": 4588.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -21177,6 +22738,13 @@
       "ins": 900,
       "pitia": 4768.175647798829,
       "debtServiceMo": 3188.1756477988297,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -21266,6 +22834,13 @@
       "ins": 580,
       "pitia": 4254.766865408888,
       "debtServiceMo": 3028.766865408888,
+      "amortization": [
+        {
+          "principal": 447740.7,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 15960.000000000002,
       "closing": 13680,
       "cashToClose": 29640,
@@ -21355,6 +22930,13 @@
       "ins": 580,
       "pitia": 4061.3580830189467,
       "debtServiceMo": 2869.3580830189467,
+      "amortization": [
+        {
+          "principal": 424175.4,
+          "rate": 0.0649,
+          "months": 360
+        }
+      ],
       "down": 15120.000000000002,
       "closing": 12960,
       "cashToClose": 28080,
@@ -21444,6 +23026,13 @@
       "ins": 720,
       "pitia": 4947.437738481627,
       "debtServiceMo": 3427.4377384816275,
+      "amortization": [
+        {
+          "principal": 471306.00000000006,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 16800,
       "closing": 14400,
       "cashToClose": 31200,
@@ -21533,6 +23122,13 @@
       "ins": 580,
       "pitia": 3655.088982645056,
       "debtServiceMo": 2395.088982645056,
+      "amortization": [
+        {
+          "principal": 360000,
+          "rate": 0.07,
+          "months": 360
+        }
+      ],
       "down": 120000,
       "closing": 19200,
       "cashToClose": 139200,
@@ -21624,6 +23220,13 @@
       "ins": 580,
       "pitia": 3879.55691541577,
       "debtServiceMo": 2619.55691541577,
+      "amortization": [
+        {
+          "principal": 384000,
+          "rate": 0.0725,
+          "months": 360
+        }
+      ],
       "down": 96000,
       "closing": 19200,
       "cashToClose": 115200,
@@ -21715,6 +23318,13 @@
       "ins": 580,
       "pitia": 3712.4498612146613,
       "debtServiceMo": 2452.4498612146613,
+      "amortization": [
+        {
+          "principal": 384000,
+          "rate": 0.066,
+          "months": 360
+        }
+      ],
       "down": 96000,
       "closing": 14400,
       "cashToClose": 110400,

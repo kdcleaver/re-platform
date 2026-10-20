@@ -1,0 +1,5078 @@
+[
+  {
+    "dealId": "3106-n-17th-st",
+    "name": "Ybor City quad (bungalow + triplex)",
+    "askPrice": 650000,
+    "motivation": {
+      "daysOnMarket": 6,
+      "priceCuts": 0,
+      "motivated": false,
+      "summary": "6 days on market, 0 cuts → no clear motivation"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 650000,
+        "grossMo": 5770,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 2266.5711897275814,
+        "savingsVsRentMo": 183.42881027241856,
+        "p2Dscr": 0.6459051521658866,
+        "p2CashFlowPerDoorMo": -382.1852974318954,
+        "cashToClose": 42250,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -40734.38660693021,
+            "parts": {
+              "phase1SavingsVsRent": 2201.1457232690227,
+              "phase2CashFlow": -73379.57710692391,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 62793.76168806984,
+            "parts": {
+              "phase1SavingsVsRent": 2201.1457232690227,
+              "phase2CashFlow": -73379.57710692391,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 41449.77339306979,
+            "parts": {
+              "phase1SavingsVsRent": 11005.728616345114,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 144977.92168806985,
+            "parts": {
+              "phase1SavingsVsRent": 11005.728616345114,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $39k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "long-shot",
+        "reason": "costs the seller about what a 6% price cut would.",
+        "price": 650000,
+        "grossMo": 5770,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 1946.1888375017124,
+        "savingsVsRentMo": 503.81116249828756,
+        "p2Dscr": 0.697678927141903,
+        "p2CashFlowPerDoorMo": -302.08970937542813,
+        "cashToClose": 22750.000000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -11079.86044666614,
+            "parts": {
+              "phase1SavingsVsRent": 6045.733949979451,
+              "phase2CashFlow": -58001.2242000822,
+              "principalPaydown": 46476.268885045196,
+              "appreciation": 0,
+              "cashOpportunityCost": -5600.639081608582
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 92448.28784833392,
+            "parts": {
+              "phase1SavingsVsRent": 6045.733949979451,
+              "phase2CashFlow": -58001.2242000822,
+              "principalPaydown": 46476.268885045196,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -5600.639081608582
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 71104.29955333387,
+            "parts": {
+              "phase1SavingsVsRent": 30228.669749897253,
+              "phase2CashFlow": 0,
+              "principalPaydown": 46476.268885045196,
+              "appreciation": 0,
+              "cashOpportunityCost": -5600.639081608582
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 174632.4478483339,
+            "parts": {
+              "phase1SavingsVsRent": 30228.669749897253,
+              "phase2CashFlow": 0,
+              "principalPaydown": 46476.268885045196,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -5600.639081608582
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 5% off + 3% seller credit",
+        "requirement": "$618k price and seller pays closing costs (~$19k).",
+        "feasibility": "long-shot",
+        "reason": "5% below ask with no clear motivation. Credit + cut total 8% of ask.",
+        "price": 617500,
+        "grossMo": 5770,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2004.6634635745359,
+        "savingsVsRentMo": 445.33653642546415,
+        "p2Dscr": 0.6911258508635607,
+        "p2CashFlowPerDoorMo": -316.70836589363375,
+        "cashToClose": 21612.500000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -21981.60488155967,
+            "parts": {
+              "phase1SavingsVsRent": 5344.03843710557,
+              "phase2CashFlow": -60808.00625157768,
+              "principalPaydown": 38802.970060440595,
+              "appreciation": 0,
+              "cashOpportunityCost": -5320.607127528153
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 76370.13599869037,
+            "parts": {
+              "phase1SavingsVsRent": 5344.03843710557,
+              "phase2CashFlow": -60808.00625157768,
+              "principalPaydown": 38802.970060440595,
+              "appreciation": 98351.74088025004,
+              "cashOpportunityCost": -5320.607127528153
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 60202.555118440294,
+            "parts": {
+              "phase1SavingsVsRent": 26720.19218552785,
+              "phase2CashFlow": 0,
+              "principalPaydown": 38802.970060440595,
+              "appreciation": 0,
+              "cashOpportunityCost": -5320.607127528153
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 158554.29599869033,
+            "parts": {
+              "phase1SavingsVsRent": 26720.19218552785,
+              "phase2CashFlow": 0,
+              "principalPaydown": 38802.970060440595,
+              "appreciation": 98351.74088025004,
+              "cashOpportunityCost": -5320.607127528153
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $7,732/mo at ask",
+        "requirement": "Gross rent $7,732/mo vs $5,770 today (+34%).",
+        "feasibility": "very-unlikely",
+        "reason": "+34% over in-place with no evidence.",
+        "price": 650000,
+        "grossMo": 7732.4405516400275,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 598.4967208335584,
+        "savingsVsRentMo": 1851.5032791664416,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 42250,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 52662.08412672197,
+            "parts": {
+              "phase1SavingsVsRent": 22218.0393499973,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 156190.23242172203,
+            "parts": {
+              "phase1SavingsVsRent": 22218.0393499973,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 141534.24152671118,
+            "parts": {
+              "phase1SavingsVsRent": 111090.1967499865,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 245062.38982171123,
+            "parts": {
+              "phase1SavingsVsRent": 111090.1967499865,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40845.23164256918,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -10401.18686584451
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $460k",
+        "requirement": "Price ≤ $460k (29% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "29% below ask.",
+        "price": 460299.26304230717,
+        "grossMo": 5770,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 737.8299999999999,
+        "savingsVsRentMo": 1712.17,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 29919.452097749967,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 42105.072884235735,
+            "parts": {
+              "phase1SavingsVsRent": 20546.04,
+              "phase2CashFlow": 0,
+              "principalPaydown": 28924.661575179663,
+              "appreciation": 0,
+              "cashOpportunityCost": -7365.628690943926
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 115418.81190627145,
+            "parts": {
+              "phase1SavingsVsRent": 20546.04,
+              "phase2CashFlow": 0,
+              "principalPaydown": 28924.661575179663,
+              "appreciation": 73313.7390220357,
+              "cashOpportunityCost": -7365.628690943926
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 124289.23288423575,
+            "parts": {
+              "phase1SavingsVsRent": 102730.20000000001,
+              "phase2CashFlow": 0,
+              "principalPaydown": 28924.661575179663,
+              "appreciation": 0,
+              "cashOpportunityCost": -7365.628690943926
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 197602.97190627144,
+            "parts": {
+              "phase1SavingsVsRent": 102730.20000000001,
+              "phase2CashFlow": 0,
+              "principalPaydown": 28924.661575179663,
+              "appreciation": 73313.7390220357,
+              "cashOpportunityCost": -7365.628690943926
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $585k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Seller has ~$221k of equity over a $429k recorded loan; can't carry a $585k note.",
+        "price": 650000,
+        "grossMo": 5770,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 1456.6205721436281,
+        "savingsVsRentMo": 993.3794278563719,
+        "p2Dscr": 0.7950628377131194,
+        "p2CashFlowPerDoorMo": -179.69764303590705,
+        "cashToClose": 84500,
+        "capitalShortfall": 30140.861716430885,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -2751.755473800393,
+            "parts": {
+              "phase1SavingsVsRent": 11920.553134276463,
+              "phase2CashFlow": -34501.94746289415,
+              "principalPaydown": 40632.01258650632,
+              "appreciation": 0,
+              "cashOpportunityCost": -20802.37373168902
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 100776.39282119965,
+            "parts": {
+              "phase1SavingsVsRent": 11920.553134276463,
+              "phase2CashFlow": -34501.94746289415,
+              "principalPaydown": 40632.01258650632,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -20802.37373168902
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 79432.4045261996,
+            "parts": {
+              "phase1SavingsVsRent": 59602.76567138231,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40632.01258650632,
+              "appreciation": 0,
+              "cashOpportunityCost": -20802.37373168902
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 182960.55282119964,
+            "parts": {
+              "phase1SavingsVsRent": 59602.76567138231,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40632.01258650632,
+              "appreciation": 103528.14829500005,
+              "cashOpportunityCost": -20802.37373168902
+            }
+          }
+        ],
+        "flags": [
+          "Seller note $585,000 exceeds seller's equity ~$221,000 (recorded liens $429,000). Requires payoff at close or a wrap with due-on-sale risk.",
+          "Balloon of ~$544,368 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place (3 leased) + vacant 1bd at $1,350",
+      "basis": "in-place",
+      "grossMo": 5770,
+      "ownerUnitRentMo": 1350,
+      "note": "MLS total actual rent $4,420 on 3 leased doors; vacant 1bd at the brief's $1,350 (unverified)."
+    },
+    "bestBeatsRent": {
+      "id": "as-is",
+      "lever": "as-is",
+      "label": "As listed (FHA, ask, current rents)",
+      "requirement": "Nothing changes.",
+      "feasibility": "supported",
+      "reason": "Today's numbers.",
+      "price": 650000,
+      "grossMo": 5770,
+      "financingLabel": "FHA 3.5% down @ 6.49%",
+      "netHousingMo": 2266.5711897275814,
+      "savingsVsRentMo": 183.42881027241856,
+      "p2Dscr": 0.6459051521658866,
+      "p2CashFlowPerDoorMo": -382.1852974318954,
+      "cashToClose": 42250,
+      "capitalShortfall": 0,
+      "tests": {
+        "beatsRent": true,
+        "zeroHousing": false,
+        "dscr1": false,
+        "hurdles": false,
+        "capital": true
+      },
+      "wealth": [
+        {
+          "plan": "move-out-after-year-1",
+          "appreciation": 0,
+          "total": -40734.38660693021,
+          "parts": {
+            "phase1SavingsVsRent": 2201.1457232690227,
+            "phase2CashFlow": -73379.57710692391,
+            "principalPaydown": 40845.23164256918,
+            "appreciation": 0,
+            "cashOpportunityCost": -10401.18686584451
+          }
+        },
+        {
+          "plan": "move-out-after-year-1",
+          "appreciation": 0.03,
+          "total": 62793.76168806984,
+          "parts": {
+            "phase1SavingsVsRent": 2201.1457232690227,
+            "phase2CashFlow": -73379.57710692391,
+            "principalPaydown": 40845.23164256918,
+            "appreciation": 103528.14829500005,
+            "cashOpportunityCost": -10401.18686584451
+          }
+        },
+        {
+          "plan": "stay-full-hold",
+          "appreciation": 0,
+          "total": 41449.77339306979,
+          "parts": {
+            "phase1SavingsVsRent": 11005.728616345114,
+            "phase2CashFlow": 0,
+            "principalPaydown": 40845.23164256918,
+            "appreciation": 0,
+            "cashOpportunityCost": -10401.18686584451
+          }
+        },
+        {
+          "plan": "stay-full-hold",
+          "appreciation": 0.03,
+          "total": 144977.92168806985,
+          "parts": {
+            "phase1SavingsVsRent": 11005.728616345114,
+            "phase2CashFlow": 0,
+            "principalPaydown": 40845.23164256918,
+            "appreciation": 103528.14829500005,
+            "cashOpportunityCost": -10401.18686584451
+          }
+        }
+      ],
+      "flags": []
+    }
+  },
+  {
+    "dealId": "1761-19th-st-s",
+    "name": "Midtown St. Pete quad (4 x 2bd)",
+    "askPrice": 695000,
+    "motivation": {
+      "daysOnMarket": 113,
+      "priceCuts": 1,
+      "motivated": true,
+      "summary": "113 days on market, 1 cut → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 695000,
+        "grossMo": 6757,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 2343.3793233753877,
+        "savingsVsRentMo": 106.62067662461232,
+        "p2Dscr": 0.6760490829636949,
+        "p2CashFlowPerDoorMo": -373.85658084384715,
+        "cashToClose": 45175,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -37949.30598741026,
+            "parts": {
+              "phase1SavingsVsRent": 1279.4481194953478,
+              "phase2CashFlow": -71780.46352201866,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 0,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 72746.17565108978,
+            "parts": {
+              "phase1SavingsVsRent": 1279.4481194953478,
+              "phase2CashFlow": -71780.46352201866,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 38948.95001258978,
+            "parts": {
+              "phase1SavingsVsRent": 6397.240597476739,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 0,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 149644.4316510898,
+            "parts": {
+              "phase1SavingsVsRent": 6397.240597476739,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$626k price and seller pays closing costs (~$19k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 625500,
+        "grossMo": 6757,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 1783.2997243711825,
+        "savingsVsRentMo": 666.7002756288175,
+        "p2Dscr": 0.7748643280807632,
+        "p2CashFlowPerDoorMo": -233.83668109279574,
+        "cashToClose": 21892.500000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -2980.0969286082454,
+            "parts": {
+              "phase1SavingsVsRent": 8000.40330754581,
+              "phase2CashFlow": -44896.64276981678,
+              "principalPaydown": 39305.68060373375,
+              "appreciation": 0,
+              "cashOpportunityCost": -5389.538070071028
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 96645.8365460418,
+            "parts": {
+              "phase1SavingsVsRent": 8000.40330754581,
+              "phase2CashFlow": -44896.64276981678,
+              "principalPaydown": 39305.68060373375,
+              "appreciation": 99625.93347465004,
+              "cashOpportunityCost": -5389.538070071028
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 73918.15907139178,
+            "parts": {
+              "phase1SavingsVsRent": 40002.016537729054,
+              "phase2CashFlow": 0,
+              "principalPaydown": 39305.68060373375,
+              "appreciation": 0,
+              "cashOpportunityCost": -5389.538070071028
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 173544.09254604182,
+            "parts": {
+              "phase1SavingsVsRent": 40002.016537729054,
+              "phase2CashFlow": 0,
+              "principalPaydown": 39305.68060373375,
+              "appreciation": 99625.93347465004,
+              "cashOpportunityCost": -5389.538070071028
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $42k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 695000,
+        "grossMo": 6757,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 2000.8166544569576,
+        "savingsVsRentMo": 449.1833455430424,
+        "p2Dscr": 0.7302391029329355,
+        "p2CashFlowPerDoorMo": -288.21591361423964,
+        "cashToClose": 24325.000000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -6241.774169896804,
+            "parts": {
+              "phase1SavingsVsRent": 5390.2001465165085,
+              "phase2CashFlow": -55337.45541393401,
+              "principalPaydown": 49693.85673093295,
+              "appreciation": 0,
+              "cashOpportunityCost": -5988.375633412254
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 104453.70746860323,
+            "parts": {
+              "phase1SavingsVsRent": 5390.2001465165085,
+              "phase2CashFlow": -55337.45541393401,
+              "principalPaydown": 49693.85673093295,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -5988.375633412254
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 70656.48183010324,
+            "parts": {
+              "phase1SavingsVsRent": 26951.000732582543,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49693.85673093295,
+              "appreciation": 0,
+              "cashOpportunityCost": -5988.375633412254
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 181351.9634686033,
+            "parts": {
+              "phase1SavingsVsRent": 26951.000732582543,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49693.85673093295,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -5988.375633412254
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $8,677/mo at ask",
+        "requirement": "Gross rent $8,677/mo vs $6,757 today (+28%).",
+        "feasibility": "very-unlikely",
+        "reason": "+28% over in-place rent roll with no evidence.",
+        "price": 695000,
+        "grossMo": 8676.674356065967,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 711.6561207193163,
+        "savingsVsRentMo": 1738.3438792806837,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 45175,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 53411.835966481245,
+            "parts": {
+              "phase1SavingsVsRent": 20860.126551368205,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 0,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 164107.3176049813,
+            "parts": {
+              "phase1SavingsVsRent": 20860.126551368205,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 136852.34217195405,
+            "parts": {
+              "phase1SavingsVsRent": 104300.63275684102,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 0,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 247547.8238104541,
+            "parts": {
+              "phase1SavingsVsRent": 104300.63275684102,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43672.97844859294,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -11121.269033479897
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $509k",
+        "requirement": "Price ≤ $509k (27% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "27% below ask.",
+        "price": 509433.2883051341,
+        "grossMo": 6757,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 847.9529999999995,
+        "savingsVsRentMo": 1602.0470000000005,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 33113.16373983372,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 43084.886830639225,
+            "parts": {
+              "phase1SavingsVsRent": 19224.564000000006,
+              "phase2CashFlow": 0,
+              "principalPaydown": 32012.185641936667,
+              "appreciation": 0,
+              "cashOpportunityCost": -8151.862811297447
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 124224.40224304452,
+            "parts": {
+              "phase1SavingsVsRent": 19224.564000000006,
+              "phase2CashFlow": 0,
+              "principalPaydown": 32012.185641936667,
+              "appreciation": 81139.51541240528,
+              "cashOpportunityCost": -8151.862811297447
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 119983.14283063926,
+            "parts": {
+              "phase1SavingsVsRent": 96122.82000000004,
+              "phase2CashFlow": 0,
+              "principalPaydown": 32012.185641936667,
+              "appreciation": 0,
+              "cashOpportunityCost": -8151.862811297447
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 201122.65824304454,
+            "parts": {
+              "phase1SavingsVsRent": 96122.82000000004,
+              "phase2CashFlow": 0,
+              "principalPaydown": 32012.185641936667,
+              "appreciation": 81139.51541240528,
+              "cashOpportunityCost": -8151.862811297447
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $626k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Seller has ~$264k of equity over a $431k recorded loan; can't carry a $626k note.",
+        "price": 695000,
+        "grossMo": 6757,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 1477.355201497161,
+        "savingsVsRentMo": 972.644798502839,
+        "p2Dscr": 0.8321678508556344,
+        "p2CashFlowPerDoorMo": -157.35055037429038,
+        "cashToClose": 90350,
+        "capitalShortfall": 37129.31560449148,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 2662.891916475128,
+            "parts": {
+              "phase1SavingsVsRent": 11671.737582034068,
+              "phase2CashFlow": -30211.305671863753,
+              "principalPaydown": 43444.99807326461,
+              "appreciation": 0,
+              "cashOpportunityCost": -22242.538066959794
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 113358.37355497517,
+            "parts": {
+              "phase1SavingsVsRent": 11671.737582034068,
+              "phase2CashFlow": -30211.305671863753,
+              "principalPaydown": 43444.99807326461,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -22242.538066959794
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 79561.14791647515,
+            "parts": {
+              "phase1SavingsVsRent": 58358.68791017034,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43444.99807326461,
+              "appreciation": 0,
+              "cashOpportunityCost": -22242.538066959794
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 190256.6295549752,
+            "parts": {
+              "phase1SavingsVsRent": 58358.68791017034,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43444.99807326461,
+              "appreciation": 110695.48163850004,
+              "cashOpportunityCost": -22242.538066959794
+            }
+          }
+        ],
+        "flags": [
+          "Seller note $625,500 exceeds seller's equity ~$264,000 (recorded liens $431,000). Requires payoff at close or a wrap with due-on-sale risk.",
+          "Balloon of ~$582,055 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place rent roll ($6,757/mo)",
+      "basis": "in-place",
+      "grossMo": 6757,
+      "ownerUnitRentMo": 1562
+    },
+    "bestBeatsRent": {
+      "id": "combo",
+      "lever": "combo",
+      "label": "Package: 10% off + 3% seller credit",
+      "requirement": "$626k price and seller pays closing costs (~$19k).",
+      "feasibility": "plausible",
+      "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+      "price": 625500,
+      "grossMo": 6757,
+      "financingLabel": "FHA + 3% seller closing credit",
+      "netHousingMo": 1783.2997243711825,
+      "savingsVsRentMo": 666.7002756288175,
+      "p2Dscr": 0.7748643280807632,
+      "p2CashFlowPerDoorMo": -233.83668109279574,
+      "cashToClose": 21892.500000000004,
+      "capitalShortfall": 0,
+      "tests": {
+        "beatsRent": true,
+        "zeroHousing": false,
+        "dscr1": false,
+        "hurdles": false,
+        "capital": true
+      },
+      "wealth": [
+        {
+          "plan": "move-out-after-year-1",
+          "appreciation": 0,
+          "total": -2980.0969286082454,
+          "parts": {
+            "phase1SavingsVsRent": 8000.40330754581,
+            "phase2CashFlow": -44896.64276981678,
+            "principalPaydown": 39305.68060373375,
+            "appreciation": 0,
+            "cashOpportunityCost": -5389.538070071028
+          }
+        },
+        {
+          "plan": "move-out-after-year-1",
+          "appreciation": 0.03,
+          "total": 96645.8365460418,
+          "parts": {
+            "phase1SavingsVsRent": 8000.40330754581,
+            "phase2CashFlow": -44896.64276981678,
+            "principalPaydown": 39305.68060373375,
+            "appreciation": 99625.93347465004,
+            "cashOpportunityCost": -5389.538070071028
+          }
+        },
+        {
+          "plan": "stay-full-hold",
+          "appreciation": 0,
+          "total": 73918.15907139178,
+          "parts": {
+            "phase1SavingsVsRent": 40002.016537729054,
+            "phase2CashFlow": 0,
+            "principalPaydown": 39305.68060373375,
+            "appreciation": 0,
+            "cashOpportunityCost": -5389.538070071028
+          }
+        },
+        {
+          "plan": "stay-full-hold",
+          "appreciation": 0.03,
+          "total": 173544.09254604182,
+          "parts": {
+            "phase1SavingsVsRent": 40002.016537729054,
+            "phase2CashFlow": 0,
+            "principalPaydown": 39305.68060373375,
+            "appreciation": 99625.93347465004,
+            "cashOpportunityCost": -5389.538070071028
+          }
+        }
+      ],
+      "flags": []
+    }
+  },
+  {
+    "dealId": "1846-2nd-ave-n",
+    "name": "Historic Kenwood quad (3 x 1bd + 3bd)",
+    "askPrice": 750000,
+    "motivation": {
+      "daysOnMarket": 248,
+      "priceCuts": 0,
+      "motivated": true,
+      "summary": "248 days on market, 0 cuts → motivated"
+    },
+    "paths": [
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$675k price and seller pays closing costs (~$20k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 675000,
+        "grossMo": 6225,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2489.5178380504367,
+        "savingsVsRentMo": -39.517838050436694,
+        "p2Dscr": 0.6411896366489572,
+        "p2CashFlowPerDoorMo": -402.17008451260926,
+        "cashToClose": 23625.000000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -41090.71646972118,
+            "parts": {
+              "phase1SavingsVsRent": -474.21405660524033,
+              "phase2CashFlow": -77216.65622642098,
+              "principalPaydown": 42416.20209036011,
+              "appreciation": 0,
+              "cashOpportunityCost": -5816.048277055066
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 66419.28368277886,
+            "parts": {
+              "phase1SavingsVsRent": -474.21405660524033,
+              "phase2CashFlow": -77216.65622642098,
+              "principalPaydown": 42416.20209036011,
+              "appreciation": 107510.00015250004,
+              "cashOpportunityCost": -5816.048277055066
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 34229.08353027884,
+            "parts": {
+              "phase1SavingsVsRent": -2371.0702830262017,
+              "phase2CashFlow": 0,
+              "principalPaydown": 42416.20209036011,
+              "appreciation": 0,
+              "cashOpportunityCost": -5816.048277055066
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 141739.0836827789,
+            "parts": {
+              "phase1SavingsVsRent": -2371.0702830262017,
+              "phase2CashFlow": 0,
+              "principalPaydown": 42416.20209036011,
+              "appreciation": 107510.00015250004,
+              "cashOpportunityCost": -5816.048277055066
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $45k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 750000,
+        "grossMo": 6225,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 2724.248338143001,
+        "savingsVsRentMo": -274.2483381430011,
+        "p2Dscr": 0.6002884228798466,
+        "p2CashFlowPerDoorMo": -460.8527095357505,
+        "cashToClose": 26250.000000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -44610.51205384557,
+            "parts": {
+              "phase1SavingsVsRent": -3290.980057716013,
+              "phase2CashFlow": -88483.7202308641,
+              "principalPaydown": 53626.46409812907,
+              "appreciation": 0,
+              "cashOpportunityCost": -6462.275863394518
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 74845.04367115449,
+            "parts": {
+              "phase1SavingsVsRent": -3290.980057716013,
+              "phase2CashFlow": -88483.7202308641,
+              "principalPaydown": 53626.46409812907,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -6462.275863394518
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 30709.287946154487,
+            "parts": {
+              "phase1SavingsVsRent": -16454.900288580066,
+              "phase2CashFlow": 0,
+              "principalPaydown": 53626.46409812907,
+              "appreciation": 0,
+              "cashOpportunityCost": -6462.275863394518
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 150164.84367115455,
+            "parts": {
+              "phase1SavingsVsRent": -16454.900288580066,
+              "phase2CashFlow": 0,
+              "principalPaydown": 53626.46409812907,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -6462.275863394518
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "long-shot",
+        "reason": "Short $707 of cash (small gap). Today's numbers.",
+        "price": 750000,
+        "grossMo": 6225,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 3093.9202830190043,
+        "savingsVsRentMo": -643.9202830190043,
+        "p2Dscr": 0.5557418606750694,
+        "p2CashFlowPerDoorMo": -553.2706957547513,
+        "cashToClose": 48750,
+        "capitalShortfall": 707.0733490570128,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -78827.27300799654,
+            "parts": {
+              "phase1SavingsVsRent": -7727.043396228051,
+              "phase2CashFlow": -106227.97358491225,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 0,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 40628.282717003516,
+            "parts": {
+              "phase1SavingsVsRent": -7727.043396228051,
+              "phase2CashFlow": -106227.97358491225,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -3507.473007996492,
+            "parts": {
+              "phase1SavingsVsRent": -38635.21698114026,
+              "phase2CashFlow": 0,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 0,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 115948.08271700356,
+            "parts": {
+              "phase1SavingsVsRent": -38635.21698114026,
+              "phase2CashFlow": 0,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $475k",
+        "requirement": "Price ≤ $475k (37% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "37% below ask.",
+        "price": 475379.65372549504,
+        "grossMo": 6225,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 880.8374999999996,
+        "savingsVsRentMo": 1569.1625000000004,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 30899.677492157178,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 41095.30302148122,
+            "parts": {
+              "phase1SavingsVsRent": 18829.950000000004,
+              "phase2CashFlow": 0,
+              "principalPaydown": 29872.295499357104,
+              "appreciation": 0,
+              "cashOpportunityCost": -7606.942477875891
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 116810.95730966402,
+            "parts": {
+              "phase1SavingsVsRent": 18829.950000000004,
+              "phase2CashFlow": 0,
+              "principalPaydown": 29872.295499357104,
+              "appreciation": 75715.6542881828,
+              "cashOpportunityCost": -7606.942477875891
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 116415.10302148125,
+            "parts": {
+              "phase1SavingsVsRent": 94149.75000000003,
+              "phase2CashFlow": 0,
+              "principalPaydown": 29872.295499357104,
+              "appreciation": 0,
+              "cashOpportunityCost": -7606.942477875891
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 192130.75730966407,
+            "parts": {
+              "phase1SavingsVsRent": 94149.75000000003,
+              "phase2CashFlow": 0,
+              "principalPaydown": 29872.295499357104,
+              "appreciation": 75715.6542881828,
+              "cashOpportunityCost": -7606.942477875891
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $9,066/mo at ask",
+        "requirement": "Gross rent $9,066/mo vs $6,225 today (+46%).",
+        "feasibility": "very-unlikely",
+        "reason": "Short $707 of cash (small gap). +46% over in-place / mls gross with no evidence.",
+        "price": 750000,
+        "grossMo": 9065.927834427479,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1282.8287885714863,
+        "savingsVsRentMo": 1167.1712114285137,
+        "p2Dscr": 1.0000000000000002,
+        "p2CashFlowPerDoorMo": 2.2737367544323206e-13,
+        "cashToClose": 48750,
+        "capitalShortfall": 707.0733490570128,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 49133.79851028597,
+            "parts": {
+              "phase1SavingsVsRent": 14006.054537142165,
+              "phase2CashFlow": 4.3655745685100555e-11,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 0,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 168589.35423528604,
+            "parts": {
+              "phase1SavingsVsRent": 14006.054537142165,
+              "phase2CashFlow": 4.3655745685100555e-11,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 105158.01665885458,
+            "parts": {
+              "phase1SavingsVsRent": 70030.27268571082,
+              "phase2CashFlow": 0,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 0,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 224613.57238385465,
+            "parts": {
+              "phase1SavingsVsRent": 70030.27268571082,
+              "phase2CashFlow": 0,
+              "principalPaydown": 47129.11343373358,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -12001.369460589818
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $675k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Needs $45k more cash than Kyle has. No open loan shown in listing data (verify); most sellers want cash.",
+        "price": 750000,
+        "grossMo": 6225,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2159.3618781144423,
+        "savingsVsRentMo": 290.63812188555767,
+        "p2Dscr": 0.6840783036064254,
+        "p2CashFlowPerDoorMo": -319.6310945286108,
+        "cashToClose": 97500,
+        "capitalShortfall": 45403.398134343326,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -35001.16016207727,
+            "parts": {
+              "phase1SavingsVsRent": 3487.657462626692,
+              "phase2CashFlow": -61369.17014949327,
+              "principalPaydown": 46883.09144596895,
+              "appreciation": 0,
+              "cashOpportunityCost": -24002.738921179636
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 84454.39556292279,
+            "parts": {
+              "phase1SavingsVsRent": 3487.657462626692,
+              "phase2CashFlow": -61369.17014949327,
+              "principalPaydown": 46883.09144596895,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -24002.738921179636
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 40318.639837922776,
+            "parts": {
+              "phase1SavingsVsRent": 17438.28731313346,
+              "phase2CashFlow": 0,
+              "principalPaydown": 46883.09144596895,
+              "appreciation": 0,
+              "cashOpportunityCost": -24002.738921179636
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 159774.19556292283,
+            "parts": {
+              "phase1SavingsVsRent": 17438.28731313346,
+              "phase2CashFlow": 0,
+              "principalPaydown": 46883.09144596895,
+              "appreciation": 119455.55572500006,
+              "cashOpportunityCost": -24002.738921179636
+            }
+          }
+        ],
+        "flags": [
+          "Balloon of ~$628,117 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place / MLS gross ($6,225/mo)",
+      "basis": "in-place",
+      "grossMo": 6225,
+      "note": "Per-unit split not disclosed; Phase 1 assumes owner takes an average door (a 1bd is likely cheaper)."
+    }
+  },
+  {
+    "dealId": "236-w-north-st",
+    "name": "Seminole Heights quad (236 W North St)",
+    "askPrice": 998000,
+    "motivation": {
+      "daysOnMarket": 91,
+      "priceCuts": 0,
+      "motivated": true,
+      "summary": "91 days on market, 0 cuts → motivated"
+    },
+    "paths": [],
+    "note": "No rents published. At ask, the other 3 doors would need ~$8,540/mo for Kyle to beat his current rent, and the building ~$12,463/mo for Phase 2 to break even. Get the rent roll before anything else."
+  },
+  {
+    "dealId": "633-7th-ave-n",
+    "name": "St. Pete 6-plex (633 7th Ave N)",
+    "askPrice": 1000000,
+    "motivation": {
+      "daysOnMarket": 98,
+      "priceCuts": 0,
+      "motivated": true,
+      "summary": "98 days on market, 0 cuts → motivated"
+    },
+    "paths": [],
+    "note": "6 units: no FHA or 1–4 unit DSCR loan. Only paths are commercial debt (20%+ down, $1.5M+ minimums here) or partners — both outside the current plan."
+  },
+  {
+    "dealId": "725-14th-ave-s",
+    "name": "St. Pete quad (725 14th Ave S)",
+    "askPrice": 700000,
+    "motivation": {
+      "daysOnMarket": 110,
+      "priceCuts": 3,
+      "motivated": true,
+      "summary": "110 days on market, 3 cuts → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 700000,
+        "grossMo": 5980,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 2974.672819706626,
+        "savingsVsRentMo": -524.6728197066259,
+        "p2Dscr": 0.5422006338754684,
+        "p2CashFlowPerDoorMo": -532.1257049266565,
+        "cashToClose": 45500,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -75678.31480746345,
+            "parts": {
+              "phase1SavingsVsRent": -6296.073836479511,
+              "phase2CashFlow": -102168.13534591804,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 0,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 35813.5372025366,
+            "parts": {
+              "phase1SavingsVsRent": -6296.073836479511,
+              "phase2CashFlow": -102168.13534591804,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 1305.52519253655,
+            "parts": {
+              "phase1SavingsVsRent": -31480.369182397553,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 0,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 112797.37720253659,
+            "parts": {
+              "phase1SavingsVsRent": -31480.369182397553,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$630k price and seller pays closing costs (~$19k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 630000,
+        "grossMo": 5980,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2410.5638710692965,
+        "savingsVsRentMo": 39.43612893070349,
+        "p2Dscr": 0.6261438290938447,
+        "p2CashFlowPerDoorMo": -391.0984677673242,
+        "cashToClose": 22050.000000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -40457.5287050731,
+            "parts": {
+              "phase1SavingsVsRent": 473.2335471684419,
+              "phase2CashFlow": -75090.90581132626,
+              "principalPaydown": 39588.455284336116,
+              "appreciation": 0,
+              "cashOpportunityCost": -5428.311725251395
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 59885.13810392695,
+            "parts": {
+              "phase1SavingsVsRent": 473.2335471684419,
+              "phase2CashFlow": -75090.90581132626,
+              "principalPaydown": 39588.455284336116,
+              "appreciation": 100342.66680900005,
+              "cashOpportunityCost": -5428.311725251395
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 36526.31129492693,
+            "parts": {
+              "phase1SavingsVsRent": 2366.1677358422094,
+              "phase2CashFlow": 0,
+              "principalPaydown": 39588.455284336116,
+              "appreciation": 0,
+              "cashOpportunityCost": -5428.311725251395
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 136868.97810392696,
+            "parts": {
+              "phase1SavingsVsRent": 2366.1677358422094,
+              "phase2CashFlow": 0,
+              "principalPaydown": 39588.455284336116,
+              "appreciation": 100342.66680900005,
+              "cashOpportunityCost": -5428.311725251395
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $42k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 700000,
+        "grossMo": 5980,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 2629.6456711556903,
+        "savingsVsRentMo": -179.64567115569025,
+        "p2Dscr": 0.5856617728925363,
+        "p2CashFlowPerDoorMo": -445.86891778892254,
+        "cashToClose": 24500.000000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -43742.67125025583,
+            "parts": {
+              "phase1SavingsVsRent": -2155.748053868283,
+              "phase2CashFlow": -85606.83221547313,
+              "principalPaydown": 50051.366491587134,
+              "appreciation": 0,
+              "cashOpportunityCost": -6031.45747250155
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 67749.18075974421,
+            "parts": {
+              "phase1SavingsVsRent": -2155.748053868283,
+              "phase2CashFlow": -85606.83221547313,
+              "principalPaydown": 50051.366491587134,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -6031.45747250155
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 33241.16874974417,
+            "parts": {
+              "phase1SavingsVsRent": -10778.740269341415,
+              "phase2CashFlow": 0,
+              "principalPaydown": 50051.366491587134,
+              "appreciation": 0,
+              "cashOpportunityCost": -6031.45747250155
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 144733.02075974422,
+            "parts": {
+              "phase1SavingsVsRent": -10778.740269341415,
+              "phase2CashFlow": 0,
+              "principalPaydown": 50051.366491587134,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -6031.45747250155
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "assumption",
+        "lever": "assumption",
+        "label": "Assume seller's low-rate loan + seller second",
+        "requirement": "Lender/agency approves assumption of ~$350k (est.); seller carries $313k (45% of price).",
+        "feasibility": "long-shot",
+        "reason": "Short $4,191 of cash (small gap). Rate and balance estimated from the 2021 recording. A non-veteran assumption leaves the seller's VA entitlement tied up — a big ask. Seller must also carry a large second.",
+        "price": 700000,
+        "grossMo": 5980,
+        "financingLabel": "Assume VA ~$350k @ ~3.0% + seller 2nd $313k @ 6%",
+        "netHousingMo": 1884.7236879140255,
+        "savingsVsRentMo": 565.2763120859745,
+        "p2Dscr": 0.7082283003129449,
+        "p2CashFlowPerDoorMo": -259.63842197850636,
+        "cashToClose": 58000,
+        "capitalShortfall": 4190.9210637420765,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 16572.840120870434,
+            "parts": {
+              "phase1SavingsVsRent": 6783.315745031694,
+              "phase2CashFlow": -49850.57701987322,
+              "principalPaydown": 73918.65377959318,
+              "appreciation": 0,
+              "cashOpportunityCost": -14278.552383881219
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 128064.69213087049,
+            "parts": {
+              "phase1SavingsVsRent": 6783.315745031694,
+              "phase2CashFlow": -49850.57701987322,
+              "principalPaydown": 73918.65377959318,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -14278.552383881219
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 93556.68012087043,
+            "parts": {
+              "phase1SavingsVsRent": 33916.57872515847,
+              "phase2CashFlow": 0,
+              "principalPaydown": 73918.65377959318,
+              "appreciation": 0,
+              "cashOpportunityCost": -14278.552383881219
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 205048.53213087047,
+            "parts": {
+              "phase1SavingsVsRent": 33916.57872515847,
+              "phase2CashFlow": 0,
+              "principalPaydown": 73918.65377959318,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -14278.552383881219
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $436k",
+        "requirement": "Price ≤ $436k (38% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "38% below ask.",
+        "price": 435875.1394754877,
+        "grossMo": 5980,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 846.1700000000001,
+        "savingsVsRentMo": 1603.83,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 28331.8840659067,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 39661.040405004365,
+            "parts": {
+              "phase1SavingsVsRent": 19245.96,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27389.878521712963,
+              "appreciation": 0,
+              "cashOpportunityCost": -6974.798116708594
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 109084.64975534608,
+            "parts": {
+              "phase1SavingsVsRent": 19245.96,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27389.878521712963,
+              "appreciation": 69423.60935034172,
+              "cashOpportunityCost": -6974.798116708594
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 116644.88040500435,
+            "parts": {
+              "phase1SavingsVsRent": 96229.79999999999,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27389.878521712963,
+              "appreciation": 0,
+              "cashOpportunityCost": -6974.798116708594
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 186068.4897553461,
+            "parts": {
+              "phase1SavingsVsRent": 96229.79999999999,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27389.878521712963,
+              "appreciation": 69423.60935034172,
+              "cashOpportunityCost": -6974.798116708594
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $8,712/mo at ask",
+        "requirement": "Gross rent $8,712/mo vs $5,980 today (+46%).",
+        "feasibility": "very-unlikely",
+        "reason": "+46% over mls gross income with no evidence.",
+        "price": 700000,
+        "grossMo": 8712.35278524599,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1232.7979191123068,
+        "savingsVsRentMo": 1217.2020808876932,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 45500,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 47392.319345586424,
+            "parts": {
+              "phase1SavingsVsRent": 14606.424970652319,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 0,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 158884.17135558647,
+            "parts": {
+              "phase1SavingsVsRent": 14606.424970652319,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 105818.0192281957,
+            "parts": {
+              "phase1SavingsVsRent": 73032.1248532616,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 0,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 217309.87123819577,
+            "parts": {
+              "phase1SavingsVsRent": 73032.1248532616,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43987.172538151266,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -11201.278163217163
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $630k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Seller has ~$301k of equity over a $399k recorded loan; can't carry a $630k note.",
+        "price": 700000,
+        "grossMo": 5980,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2102.4183084623683,
+        "savingsVsRentMo": 347.58169153763174,
+        "p2Dscr": 0.6674100262760678,
+        "p2CashFlowPerDoorMo": -314.06207711559216,
+        "cashToClose": 91000,
+        "capitalShortfall": 37844.004925387104,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -34773.94281793869,
+            "parts": {
+              "phase1SavingsVsRent": 4170.980298451581,
+              "phase2CashFlow": -60299.918806193695,
+              "principalPaydown": 43757.55201623775,
+              "appreciation": 0,
+              "cashOpportunityCost": -22402.556326434325
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 76717.90919206136,
+            "parts": {
+              "phase1SavingsVsRent": 4170.980298451581,
+              "phase2CashFlow": -60299.918806193695,
+              "principalPaydown": 43757.55201623775,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -22402.556326434325
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 42209.89718206134,
+            "parts": {
+              "phase1SavingsVsRent": 20854.901492257904,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43757.55201623775,
+              "appreciation": 0,
+              "cashOpportunityCost": -22402.556326434325
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 153701.74919206137,
+            "parts": {
+              "phase1SavingsVsRent": 20854.901492257904,
+              "phase2CashFlow": 0,
+              "principalPaydown": 43757.55201623775,
+              "appreciation": 111491.85201000005,
+              "cashOpportunityCost": -22402.556326434325
+            }
+          }
+        ],
+        "flags": [
+          "Seller note $630,000 exceeds seller's equity ~$301,275 (recorded liens $398,725). Requires payoff at close or a wrap with due-on-sale risk.",
+          "Balloon of ~$586,242 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "mls-gross",
+      "label": "MLS gross income ($71,760/yr)",
+      "basis": "mls-gross",
+      "grossMo": 5980,
+      "note": "Basis not stated; one unit vacant, so likely includes the vacant door at an assumed rent. No per-unit rents."
+    },
+    "bestBeatsRent": {
+      "id": "combo",
+      "lever": "combo",
+      "label": "Package: 10% off + 3% seller credit",
+      "requirement": "$630k price and seller pays closing costs (~$19k).",
+      "feasibility": "plausible",
+      "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+      "price": 630000,
+      "grossMo": 5980,
+      "financingLabel": "FHA + 3% seller closing credit",
+      "netHousingMo": 2410.5638710692965,
+      "savingsVsRentMo": 39.43612893070349,
+      "p2Dscr": 0.6261438290938447,
+      "p2CashFlowPerDoorMo": -391.0984677673242,
+      "cashToClose": 22050.000000000004,
+      "capitalShortfall": 0,
+      "tests": {
+        "beatsRent": true,
+        "zeroHousing": false,
+        "dscr1": false,
+        "hurdles": false,
+        "capital": true
+      },
+      "wealth": [
+        {
+          "plan": "move-out-after-year-1",
+          "appreciation": 0,
+          "total": -40457.5287050731,
+          "parts": {
+            "phase1SavingsVsRent": 473.2335471684419,
+            "phase2CashFlow": -75090.90581132626,
+            "principalPaydown": 39588.455284336116,
+            "appreciation": 0,
+            "cashOpportunityCost": -5428.311725251395
+          }
+        },
+        {
+          "plan": "move-out-after-year-1",
+          "appreciation": 0.03,
+          "total": 59885.13810392695,
+          "parts": {
+            "phase1SavingsVsRent": 473.2335471684419,
+            "phase2CashFlow": -75090.90581132626,
+            "principalPaydown": 39588.455284336116,
+            "appreciation": 100342.66680900005,
+            "cashOpportunityCost": -5428.311725251395
+          }
+        },
+        {
+          "plan": "stay-full-hold",
+          "appreciation": 0,
+          "total": 36526.31129492693,
+          "parts": {
+            "phase1SavingsVsRent": 2366.1677358422094,
+            "phase2CashFlow": 0,
+            "principalPaydown": 39588.455284336116,
+            "appreciation": 0,
+            "cashOpportunityCost": -5428.311725251395
+          }
+        },
+        {
+          "plan": "stay-full-hold",
+          "appreciation": 0.03,
+          "total": 136868.97810392696,
+          "parts": {
+            "phase1SavingsVsRent": 2366.1677358422094,
+            "phase2CashFlow": 0,
+            "principalPaydown": 39588.455284336116,
+            "appreciation": 100342.66680900005,
+            "cashOpportunityCost": -5428.311725251395
+          }
+        }
+      ],
+      "flags": []
+    }
+  },
+  {
+    "dealId": "935-17th-ave-s",
+    "name": "St. Pete duplex (935 17th Ave S)",
+    "askPrice": 539990,
+    "motivation": {
+      "daysOnMarket": 106,
+      "priceCuts": 0,
+      "motivated": true,
+      "summary": "106 days on market (incl. prior run), 0 cuts → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 539990,
+        "grossMo": 5200,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 2944.1049334476875,
+        "savingsVsRentMo": -494.1049334476875,
+        "p2Dscr": 0.6923840570674112,
+        "p2CashFlowPerDoorMo": -551.6524667238434,
+        "cashToClose": 35099.35,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -33596.3887161174,
+            "parts": {
+              "phase1SavingsVsRent": -5929.25920137225,
+              "phase2CashFlow": -52958.63680548897,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 0,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 52410.01866513964,
+            "parts": {
+              "phase1SavingsVsRent": -5929.25920137225,
+              "phase2CashFlow": -52958.63680548897,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -4354.788716117426,
+            "parts": {
+              "phase1SavingsVsRent": -29646.29600686125,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 0,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 81651.61866513963,
+            "parts": {
+              "phase1SavingsVsRent": -29646.29600686125,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$486k price and seller pays closing costs (~$15k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 485991,
+        "grossMo": 5200,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2508.9432317695855,
+        "savingsVsRentMo": -58.94323176958551,
+        "p2Dscr": 0.7930142993071145,
+        "p2CashFlowPerDoorMo": -334.07161588479266,
+        "cashToClose": 17009.685,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -6426.571162646337,
+            "parts": {
+              "phase1SavingsVsRent": -707.3187812350261,
+              "phase2CashFlow": -32070.875124940096,
+              "principalPaydown": 30539.099955698068,
+              "appreciation": 0,
+              "cashOpportunityCost": -4187.477212169287
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 70979.195480485,
+            "parts": {
+              "phase1SavingsVsRent": -707.3187812350261,
+              "phase2CashFlow": -32070.875124940096,
+              "principalPaydown": 30539.099955698068,
+              "appreciation": 77405.76664313133,
+              "cashOpportunityCost": -4187.477212169287
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 22815.02883735365,
+            "parts": {
+              "phase1SavingsVsRent": -3536.5939061751305,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30539.099955698068,
+              "appreciation": 0,
+              "cashOpportunityCost": -4187.477212169287
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 100220.79548048499,
+            "parts": {
+              "phase1SavingsVsRent": -3536.5939061751305,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30539.099955698068,
+              "appreciation": 77405.76664313133,
+              "cashOpportunityCost": -4187.477212169287
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $32k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 539990,
+        "grossMo": 5200,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 2677.94606209623,
+        "savingsVsRentMo": -227.94606209622998,
+        "p2Dscr": 0.7478834384353786,
+        "p2CashFlowPerDoorMo": -418.5730310481149,
+        "cashToClose": 18899.65,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -8960.777052608126,
+            "parts": {
+              "phase1SavingsVsRent": -2735.3527451547598,
+              "phase2CashFlow": -40183.01098061903,
+              "principalPaydown": 38610.339131131535,
+              "appreciation": 0,
+              "cashOpportunityCost": -4652.752457965874
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 77045.63032864891,
+            "parts": {
+              "phase1SavingsVsRent": -2735.3527451547598,
+              "phase2CashFlow": -40183.01098061903,
+              "principalPaydown": 38610.339131131535,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -4652.752457965874
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 20280.82294739186,
+            "parts": {
+              "phase1SavingsVsRent": -13676.763725773799,
+              "phase2CashFlow": 0,
+              "principalPaydown": 38610.339131131535,
+              "appreciation": 0,
+              "cashOpportunityCost": -4652.752457965874
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 106287.2303286489,
+            "parts": {
+              "phase1SavingsVsRent": -13676.763725773799,
+              "phase2CashFlow": 0,
+              "principalPaydown": 38610.339131131535,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -4652.752457965874
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $6,616/mo at ask",
+        "requirement": "Gross rent $6,616/mo vs $5,200 today (+27%).",
+        "feasibility": "very-unlikely",
+        "reason": "+27% over asking rent from sept listing with no evidence.",
+        "price": 539990,
+        "grossMo": 6616.30928555544,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1740.242040725564,
+        "savingsVsRentMo": 709.757959274436,
+        "p2Dscr": 1.0000000000000002,
+        "p2CashFlowPerDoorMo": 2.2737367544323206e-13,
+        "cashToClose": 35099.35,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 33808.60280203708,
+            "parts": {
+              "phase1SavingsVsRent": 8517.095511293232,
+              "phase2CashFlow": 2.1827872842550278e-11,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 0,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 119815.01018329413,
+            "parts": {
+              "phase1SavingsVsRent": 8517.095511293232,
+              "phase2CashFlow": 2.1827872842550278e-11,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 67876.98484720997,
+            "parts": {
+              "phase1SavingsVsRent": 42585.477556466154,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 0,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 153883.392228467,
+            "parts": {
+              "phase1SavingsVsRent": 42585.477556466154,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33932.333284109016,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -8640.825993365193
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $403k",
+        "requirement": "Price ≤ $403k (25% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "25% below ask.",
+        "price": 403081.4373404297,
+        "grossMo": 5200,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1840.8000000000002,
+        "savingsVsRentMo": 609.1999999999998,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 26200.29342712793,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 26189.52204162842,
+            "parts": {
+              "phase1SavingsVsRent": 7310.399999999998,
+              "phase2CashFlow": 0,
+              "principalPaydown": 25329.161044599197,
+              "appreciation": 0,
+              "cashOpportunityCost": -6450.039002970775
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 90389.94484153883,
+            "parts": {
+              "phase1SavingsVsRent": 7310.399999999998,
+              "phase2CashFlow": 0,
+              "principalPaydown": 25329.161044599197,
+              "appreciation": 64200.42279991042,
+              "cashOpportunityCost": -6450.039002970775
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 55431.122041628405,
+            "parts": {
+              "phase1SavingsVsRent": 36551.999999999985,
+              "phase2CashFlow": 0,
+              "principalPaydown": 25329.161044599197,
+              "appreciation": 0,
+              "cashOpportunityCost": -6450.039002970775
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 119631.54484153882,
+            "parts": {
+              "phase1SavingsVsRent": 36551.999999999985,
+              "phase2CashFlow": 0,
+              "principalPaydown": 25329.161044599197,
+              "appreciation": 64200.42279991042,
+              "cashOpportunityCost": -6450.039002970775
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $486k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Needs $13k more cash than Kyle has. No open loan shown in listing data (verify); most sellers want cash.",
+        "price": 539990,
+        "grossMo": 5200,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2271.235342695135,
+        "savingsVsRentMo": 178.76465730486507,
+        "p2Dscr": 0.8522750304025403,
+        "p2CashFlowPerDoorMo": -215.21767134756738,
+        "cashToClose": 70198.7,
+        "capitalShortfall": 13192.406028085403,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -2042.1718152268259,
+            "parts": {
+              "phase1SavingsVsRent": 2145.175887658381,
+              "phase2CashFlow": -20660.896449366468,
+              "principalPaydown": 33755.20073321165,
+              "appreciation": 0,
+              "cashOpportunityCost": -17281.651986730387
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 83964.23556603021,
+            "parts": {
+              "phase1SavingsVsRent": 2145.175887658381,
+              "phase2CashFlow": -20660.896449366468,
+              "principalPaydown": 33755.20073321165,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -17281.651986730387
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 27199.42818477316,
+            "parts": {
+              "phase1SavingsVsRent": 10725.879438291904,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33755.20073321165,
+              "appreciation": 0,
+              "cashOpportunityCost": -17281.651986730387
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 113205.8355660302,
+            "parts": {
+              "phase1SavingsVsRent": 10725.879438291904,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33755.20073321165,
+              "appreciation": 86006.40738125704,
+              "cashOpportunityCost": -17281.651986730387
+            }
+          }
+        ],
+        "flags": [
+          "Balloon of ~$452,236 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "asking",
+      "label": "Asking rent from Sept listing ($2,600/unit)",
+      "basis": "market-estimate",
+      "grossMo": 5200,
+      "ownerUnitRentMo": 2600,
+      "note": "Both units vacant; no signed leases. RV pad ($650/mo claimed) excluded."
+    }
+  },
+  {
+    "dealId": "15501-61st-st-n",
+    "name": "Clearwater triplex (15501 61st St N)",
+    "askPrice": 649990,
+    "motivation": {
+      "daysOnMarket": 68,
+      "priceCuts": 3,
+      "motivated": true,
+      "summary": "68 days on market, 3 cuts → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 649990,
+        "grossMo": 5100,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 3133.478519401586,
+        "savingsVsRentMo": -683.4785194015858,
+        "p2Dscr": 0.5250272154576099,
+        "p2CashFlowPerDoorMo": -683.5261731338619,
+        "cashToClose": 42249.350000000006,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -76185.93475729034,
+            "parts": {
+              "phase1SavingsVsRent": -8201.74223281903,
+              "phase2CashFlow": -98427.7689312761,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 27340.620796966712,
+            "parts": {
+              "phase1SavingsVsRent": -8201.74223281903,
+              "phase2CashFlow": -98427.7689312761,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -10565.13475729035,
+            "parts": {
+              "phase1SavingsVsRent": -41008.71116409515,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 92961.4207969667,
+            "parts": {
+              "phase1SavingsVsRent": -41008.71116409515,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$585k price and seller pays closing costs (~$18k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 584991,
+        "grossMo": 5100,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2609.671125794761,
+        "savingsVsRentMo": -159.67112579476088,
+        "p2Dscr": 0.607062253074002,
+        "p2CashFlowPerDoorMo": -508.9237085982534,
+        "cashToClose": 20474.685,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -43481.42224487204,
+            "parts": {
+              "phase1SavingsVsRent": -1916.0535095371306,
+              "phase2CashFlow": -73285.0140381485,
+              "principalPaydown": 36760.142928950954,
+              "appreciation": 0,
+              "cashOpportunityCost": -5040.497626137363
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 49692.477753959305,
+            "parts": {
+              "phase1SavingsVsRent": -1916.0535095371306,
+              "phase2CashFlow": -73285.0140381485,
+              "principalPaydown": 36760.142928950954,
+              "appreciation": 93173.89999883134,
+              "cashOpportunityCost": -5040.497626137363
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 22139.377755127938,
+            "parts": {
+              "phase1SavingsVsRent": -9580.267547685653,
+              "phase2CashFlow": 0,
+              "principalPaydown": 36760.142928950954,
+              "appreciation": 0,
+              "cashOpportunityCost": -5040.497626137363
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 115313.27775395928,
+            "parts": {
+              "phase1SavingsVsRent": -9580.267547685653,
+              "phase2CashFlow": 0,
+              "principalPaydown": 36760.142928950954,
+              "appreciation": 93173.89999883134,
+              "cashOpportunityCost": -5040.497626137363
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $39k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 649990,
+        "grossMo": 5100,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 2813.1010961349803,
+        "savingsVsRentMo": -363.10109613498025,
+        "p2Dscr": 0.5671117859525756,
+        "p2CashFlowPerDoorMo": -576.7336987116604,
+        "cashToClose": 22749.65,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -46531.86482050548,
+            "parts": {
+              "phase1SavingsVsRent": -4357.213153619763,
+              "phase2CashFlow": -83049.6526144791,
+              "principalPaydown": 46475.553865523776,
+              "appreciation": 0,
+              "cashOpportunityCost": -5600.552917930403
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 56994.69073375157,
+            "parts": {
+              "phase1SavingsVsRent": -4357.213153619763,
+              "phase2CashFlow": -83049.6526144791,
+              "principalPaydown": 46475.553865523776,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -5600.552917930403
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 19088.935179494558,
+            "parts": {
+              "phase1SavingsVsRent": -21786.065768098815,
+              "phase2CashFlow": 0,
+              "principalPaydown": 46475.553865523776,
+              "appreciation": 0,
+              "cashOpportunityCost": -5600.552917930403
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 122615.4907337516,
+            "parts": {
+              "phase1SavingsVsRent": -21786.065768098815,
+              "phase2CashFlow": 0,
+              "principalPaydown": 46475.553865523776,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -5600.552917930403
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $7,732/mo at ask",
+        "requirement": "Gross rent $7,732/mo vs $5,100 today (+52%).",
+        "feasibility": "very-unlikely",
+        "reason": "+52% over in-place at close + vacant at last rent with no evidence.",
+        "price": 649990,
+        "grossMo": 7732.321591016157,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 896.0051670378525,
+        "savingsVsRentMo": 1553.9948329621475,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 42249.350000000006,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 49091.51440235057,
+            "parts": {
+              "phase1SavingsVsRent": 18647.93799554577,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 152618.0699566076,
+            "parts": {
+              "phase1SavingsVsRent": 18647.93799554577,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 123683.26638453365,
+            "parts": {
+              "phase1SavingsVsRent": 93239.68997772885,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 0,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 227209.82193879067,
+            "parts": {
+              "phase1SavingsVsRent": 93239.68997772885,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40844.60325438983,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -10401.026847585035
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $396k",
+        "requirement": "Price ≤ $396k (39% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "39% below ask.",
+        "price": 395534.7272998421,
+        "grossMo": 5100,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1082.9,
+        "savingsVsRentMo": 1367.1,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 25709.75727448974,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 34930.85684410141,
+            "parts": {
+              "phase1SavingsVsRent": 16405.199999999997,
+              "phase2CashFlow": 0,
+              "principalPaydown": 24854.93470652681,
+              "appreciation": 0,
+              "cashOpportunityCost": -6329.277862425396
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 97929.28438828673,
+            "parts": {
+              "phase1SavingsVsRent": 16405.199999999997,
+              "phase2CashFlow": 0,
+              "principalPaydown": 24854.93470652681,
+              "appreciation": 62998.42754418532,
+              "cashOpportunityCost": -6329.277862425396
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 100551.65684410141,
+            "parts": {
+              "phase1SavingsVsRent": 82026,
+              "phase2CashFlow": 0,
+              "principalPaydown": 24854.93470652681,
+              "appreciation": 0,
+              "cashOpportunityCost": -6329.277862425396
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 163550.08438828672,
+            "parts": {
+              "phase1SavingsVsRent": 82026,
+              "phase2CashFlow": 0,
+              "principalPaydown": 24854.93470652681,
+              "appreciation": 62998.42754418532,
+              "cashOpportunityCost": -6329.277862425396
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $585k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Needs $30k more cash than Kyle has. No open loan shown in listing data (verify); most sellers want cash.",
+        "price": 649990,
+        "grossMo": 5100,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2323.5403625963645,
+        "savingsVsRentMo": 126.4596374036355,
+        "p2Dscr": 0.6462707820158972,
+        "p2CashFlowPerDoorMo": -413.54678753212147,
+        "cashToClose": 84498.7,
+        "capitalShortfall": 30139.32108778909,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -38203.88797233142,
+            "parts": {
+              "phase1SavingsVsRent": 1517.515648843626,
+              "phase2CashFlow": -59550.73740462549,
+              "principalPaydown": 40631.38747862051,
+              "appreciation": 0,
+              "cashOpportunityCost": -20802.053695170067
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 65322.667581925634,
+            "parts": {
+              "phase1SavingsVsRent": 1517.515648843626,
+              "phase2CashFlow": -59550.73740462549,
+              "principalPaydown": 40631.38747862051,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -20802.053695170067
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 27416.912027668575,
+            "parts": {
+              "phase1SavingsVsRent": 7587.57824421813,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40631.38747862051,
+              "appreciation": 0,
+              "cashOpportunityCost": -20802.053695170067
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 130943.46758192562,
+            "parts": {
+              "phase1SavingsVsRent": 7587.57824421813,
+              "phase2CashFlow": 0,
+              "principalPaydown": 40631.38747862051,
+              "appreciation": 103526.55555425705,
+              "cashOpportunityCost": -20802.053695170067
+            }
+          }
+        ],
+        "flags": [
+          "Balloon of ~$544,360 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place at close + vacant at last rent ($5,100)",
+      "basis": "in-place",
+      "grossMo": 5100,
+      "ownerUnitRentMo": 1700,
+      "note": "$3,400 contracted at closing (incl. seller leaseback) + vacant unit at its last rent."
+    }
+  },
+  {
+    "dealId": "208-212-elizabeth-ave",
+    "name": "Clearwater quad (208–212 Elizabeth Ave)",
+    "askPrice": 879000,
+    "motivation": {
+      "daysOnMarket": 286,
+      "priceCuts": 3,
+      "motivated": true,
+      "summary": "286 days on market, 3 cuts → motivated"
+    },
+    "paths": [],
+    "note": "No rents published. At ask, the other 3 doors would need ~$7,220/mo for Kyle to beat his current rent, and the building ~$11,023/mo for Phase 2 to break even. Get the rent roll before anything else."
+  },
+  {
+    "dealId": "2613-e-23rd-ave",
+    "name": "Ybor new-build duplex (2613 E 23rd Ave)",
+    "askPrice": 779900,
+    "motivation": {
+      "daysOnMarket": 124,
+      "priceCuts": 3,
+      "motivated": true,
+      "summary": "124 days on market, 3 cuts → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 779900,
+        "grossMo": 5200,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 5292.792641079806,
+        "savingsVsRentMo": -2842.7926410798063,
+        "p2Dscr": 0.3493625927376105,
+        "p2CashFlowPerDoorMo": -1725.996320539903,
+        "cashToClose": 50693.5,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -163280.98843191535,
+            "parts": {
+              "phase1SavingsVsRent": -34113.511692957676,
+              "phase2CashFlow": -165695.64677183068,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 0,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": -39063.137885345284,
+            "parts": {
+              "phase1SavingsVsRent": -34113.511692957676,
+              "phase2CashFlow": -165695.64677183068,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -134039.38843191537,
+            "parts": {
+              "phase1SavingsVsRent": -170567.55846478837,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 0,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": -9821.53788534531,
+            "parts": {
+              "phase1SavingsVsRent": -170567.55846478837,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          }
+        ],
+        "flags": [
+          "FHA base loan $753k exceeds the 2-unit limit $693k."
+        ]
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$702k price and seller pays closing costs (~$21k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 701910,
+        "grossMo": 5200,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 4538.860768638492,
+        "savingsVsRentMo": -2088.860768638492,
+        "p2Dscr": 0.4212789298522947,
+        "p2CashFlowPerDoorMo": -1349.030384319246,
+        "cashToClose": 24566.850000000002,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -116513.96617298071,
+            "parts": {
+              "phase1SavingsVsRent": -25066.329223661905,
+              "phase2CashFlow": -129506.91689464761,
+              "principalPaydown": 44107.194680362474,
+              "appreciation": 0,
+              "cashOpportunityCost": -6047.914735033662
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": -4717.90068106767,
+            "parts": {
+              "phase1SavingsVsRent": -25066.329223661905,
+              "phase2CashFlow": -129506.91689464761,
+              "principalPaydown": 44107.194680362474,
+              "appreciation": 111796.06549191305,
+              "cashOpportunityCost": -6047.914735033662
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -87272.3661729807,
+            "parts": {
+              "phase1SavingsVsRent": -125331.64611830952,
+              "phase2CashFlow": 0,
+              "principalPaydown": 44107.194680362474,
+              "appreciation": 0,
+              "cashOpportunityCost": -6047.914735033662
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 24523.699318932337,
+            "parts": {
+              "phase1SavingsVsRent": -125331.64611830952,
+              "phase2CashFlow": 0,
+              "principalPaydown": 44107.194680362474,
+              "appreciation": 111796.06549191305,
+              "cashOpportunityCost": -6047.914735033662
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $47k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 779900,
+        "grossMo": 5200,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 4908.383108001414,
+        "savingsVsRentMo": -2458.3831080014143,
+        "p2Dscr": 0.3766526430321928,
+        "p2CashFlowPerDoorMo": -1533.791554000707,
+        "cashToClose": 27296.500000000004,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -127700.11927439221,
+            "parts": {
+              "phase1SavingsVsRent": -29500.59729601697,
+              "phase2CashFlow": -147243.98918406788,
+              "principalPaydown": 55764.37246684113,
+              "appreciation": 0,
+              "cashOpportunityCost": -6719.905261148513
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": -3482.26872782216,
+            "parts": {
+              "phase1SavingsVsRent": -29500.59729601697,
+              "phase2CashFlow": -147243.98918406788,
+              "principalPaydown": 55764.37246684113,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -6719.905261148513
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -98458.51927439224,
+            "parts": {
+              "phase1SavingsVsRent": -147502.98648008486,
+              "phase2CashFlow": 0,
+              "principalPaydown": 55764.37246684113,
+              "appreciation": 0,
+              "cashOpportunityCost": -6719.905261148513
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 25759.331272177817,
+            "parts": {
+              "phase1SavingsVsRent": -147502.98648008486,
+              "phase2CashFlow": 0,
+              "principalPaydown": 55764.37246684113,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -6719.905261148513
+            }
+          }
+        ],
+        "flags": [
+          "FHA base loan $753k exceeds the 2-unit limit $693k."
+        ]
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $9,631/mo at ask",
+        "requirement": "Gross rent $9,631/mo vs $5,200 today (+85%).",
+        "feasibility": "very-unlikely",
+        "reason": "+85% over seller: $2,600+/unit with no evidence.",
+        "price": 779900,
+        "grossMo": 9631.312761334797,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1526.1767939452293,
+        "savingsVsRentMo": 923.8232060547707,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 50693.5,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 47614.04850553025,
+            "parts": {
+              "phase1SavingsVsRent": 11085.878472657248,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 0,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 171831.8990521003,
+            "parts": {
+              "phase1SavingsVsRent": 11085.878472657248,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 91957.56239615924,
+            "parts": {
+              "phase1SavingsVsRent": 55429.39236328624,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 0,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 216175.4129427293,
+            "parts": {
+              "phase1SavingsVsRent": 55429.39236328624,
+              "phase2CashFlow": 0,
+              "principalPaydown": 49007.994089291664,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -12479.824056418665
+            }
+          }
+        ],
+        "flags": [
+          "FHA base loan $753k exceeds the 2-unit limit $693k."
+        ]
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $367k",
+        "requirement": "Price ≤ $367k (53% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "blocked",
+        "reason": "$367k is below the seller's recorded loan (~$570k) plus selling costs: short sale only.",
+        "price": 367108.9757281497,
+        "grossMo": 5200,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1840.8000000000002,
+        "savingsVsRentMo": 609.1999999999998,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 23862.08342232973,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 24504.680146161932,
+            "parts": {
+              "phase1SavingsVsRent": 7310.399999999998,
+              "phase2CashFlow": 0,
+              "principalPaydown": 23068.694079511566,
+              "appreciation": 0,
+              "cashOpportunityCost": -5874.413933349632
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 82975.62242248417,
+            "parts": {
+              "phase1SavingsVsRent": 7310.399999999998,
+              "phase2CashFlow": 0,
+              "principalPaydown": 23068.694079511566,
+              "appreciation": 58470.94227632224,
+              "cashOpportunityCost": -5874.413933349632
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 53746.28014616192,
+            "parts": {
+              "phase1SavingsVsRent": 36551.999999999985,
+              "phase2CashFlow": 0,
+              "principalPaydown": 23068.694079511566,
+              "appreciation": 0,
+              "cashOpportunityCost": -5874.413933349632
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 112217.22242248416,
+            "parts": {
+              "phase1SavingsVsRent": 36551.999999999985,
+              "phase2CashFlow": 0,
+              "principalPaydown": 23068.694079511566,
+              "appreciation": 58470.94227632224,
+              "cashOpportunityCost": -5874.413933349632
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $702k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Seller has ~$210k of equity over a $570k recorded loan; can't carry a $702k note.",
+        "price": 779900,
+        "grossMo": 5200,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 4195.542591099716,
+        "savingsVsRentMo": -1745.5425910997164,
+        "p2Dscr": 0.44045345094398236,
+        "p2CashFlowPerDoorMo": -1177.3712955498581,
+        "cashToClose": 101387,
+        "capitalShortfall": 50153.62777329915,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -110181.63955387204,
+            "parts": {
+              "phase1SavingsVsRent": -20946.511093196597,
+              "phase2CashFlow": -113027.64437278638,
+              "principalPaydown": 48752.16402494826,
+              "appreciation": 0,
+              "cashOpportunityCost": -24959.64811283733
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 14036.210992698016,
+            "parts": {
+              "phase1SavingsVsRent": -20946.511093196597,
+              "phase2CashFlow": -113027.64437278638,
+              "principalPaydown": 48752.16402494826,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -24959.64811283733
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -80940.03955387206,
+            "parts": {
+              "phase1SavingsVsRent": -104732.555465983,
+              "phase2CashFlow": 0,
+              "principalPaydown": 48752.16402494826,
+              "appreciation": 0,
+              "cashOpportunityCost": -24959.64811283733
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 43277.810992697996,
+            "parts": {
+              "phase1SavingsVsRent": -104732.555465983,
+              "phase2CashFlow": 0,
+              "principalPaydown": 48752.16402494826,
+              "appreciation": 124217.85054657006,
+              "cashOpportunityCost": -24959.64811283733
+            }
+          }
+        ],
+        "flags": [
+          "Seller note $701,910 exceeds seller's equity ~$209,900 (recorded liens $570,000). Requires payoff at close or a wrap with due-on-sale risk.",
+          "Balloon of ~$653,158 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "seller",
+      "label": "Seller: $2,600+/unit ($5,200)",
+      "basis": "seller-pro-forma",
+      "grossMo": 5200,
+      "ownerUnitRentMo": 2600,
+      "note": "MLS 'Total Actual Rent' field shows $2,600 — unclear if one unit leased or per unit."
+    }
+  },
+  {
+    "dealId": "7711-amherst-st",
+    "name": "Tampa duplex (7711 Amherst St)",
+    "askPrice": 530000,
+    "motivation": {
+      "daysOnMarket": 138,
+      "priceCuts": 4,
+      "motivated": true,
+      "summary": "138 days on market, 4 cuts → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 530000,
+        "grossMo": 3525,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 3413.4022777778746,
+        "savingsVsRentMo": -963.4022777778746,
+        "p2Dscr": 0.3848347425789002,
+        "p2CashFlowPerDoorMo": -1082.7761388889373,
+        "cashToClose": 34450,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -90683.73092565096,
+            "parts": {
+              "phase1SavingsVsRent": -11560.827333334495,
+              "phase2CashFlow": -103946.50933333798,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 0,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": -6268.471546650917,
+            "parts": {
+              "phase1SavingsVsRent": -11560.827333334495,
+              "phase2CashFlow": -103946.50933333798,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -32980.53092565096,
+            "parts": {
+              "phase1SavingsVsRent": -57804.13666667248,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 0,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 51434.72845334908,
+            "parts": {
+              "phase1SavingsVsRent": -57804.13666667248,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$477k price and seller pays closing costs (~$14k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 477000,
+        "grossMo": 3525,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2986.291216666754,
+        "savingsVsRentMo": -536.2912166667538,
+        "p2Dscr": 0.4512928387643247,
+        "p2CashFlowPerDoorMo": -869.2206083333767,
+        "cashToClose": 16695,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -64016.56430526957,
+            "parts": {
+              "phase1SavingsVsRent": -6435.494600001046,
+              "phase2CashFlow": -83445.17840000417,
+              "principalPaydown": 29974.116143854568,
+              "appreciation": 0,
+              "cashOpportunityCost": -4110.0074491189125
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 11957.16913583047,
+            "parts": {
+              "phase1SavingsVsRent": -6435.494600001046,
+              "phase2CashFlow": -83445.17840000417,
+              "principalPaydown": 29974.116143854568,
+              "appreciation": 75973.73344110003,
+              "cashOpportunityCost": -4110.0074491189125
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -6313.364305269574,
+            "parts": {
+              "phase1SavingsVsRent": -32177.47300000523,
+              "phase2CashFlow": 0,
+              "principalPaydown": 29974.116143854568,
+              "appreciation": 0,
+              "cashOpportunityCost": -4110.0074491189125
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 69660.36913583046,
+            "parts": {
+              "phase1SavingsVsRent": -32177.47300000523,
+              "phase2CashFlow": 0,
+              "principalPaydown": 29974.116143854568,
+              "appreciation": 75973.73344110003,
+              "cashOpportunityCost": -4110.0074491189125
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $32k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 530000,
+        "grossMo": 3525,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 3152.1674367321657,
+        "savingsVsRentMo": -702.1674367321657,
+        "p2Dscr": 0.4156819146418908,
+        "p2CashFlowPerDoorMo": -952.1587183660829,
+        "cashToClose": 18550,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -66503.88651805099,
+            "parts": {
+              "phase1SavingsVsRent": -8426.009240785988,
+              "phase2CashFlow": -91407.23696314395,
+              "principalPaydown": 37896.034629344416,
+              "appreciation": 0,
+              "cashOpportunityCost": -4566.674943465458
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 17911.372860949054,
+            "parts": {
+              "phase1SavingsVsRent": -8426.009240785988,
+              "phase2CashFlow": -91407.23696314395,
+              "principalPaydown": 37896.034629344416,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -4566.674943465458
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -8800.686518050989,
+            "parts": {
+              "phase1SavingsVsRent": -42130.046203929945,
+              "phase2CashFlow": 0,
+              "principalPaydown": 37896.034629344416,
+              "appreciation": 0,
+              "cashOpportunityCost": -4566.674943465458
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 75614.57286094905,
+            "parts": {
+              "phase1SavingsVsRent": -42130.046203929945,
+              "phase2CashFlow": 0,
+              "principalPaydown": 37896.034629344416,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -4566.674943465458
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $6,305/mo at ask",
+        "requirement": "Gross rent $6,305/mo vs $3,525 today (+79%).",
+        "feasibility": "very-unlikely",
+        "reason": "+79% over in-place with no evidence.",
+        "price": 530000,
+        "grossMo": 6304.9130651834075,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 2231.9392250749265,
+        "savingsVsRentMo": 218.06077492507347,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 34450,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 27440.3350401224,
+            "parts": {
+              "phase1SavingsVsRent": 2616.7292991008817,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 0,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 111855.59441912244,
+            "parts": {
+              "phase1SavingsVsRent": 2616.7292991008817,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 37907.25223652593,
+            "parts": {
+              "phase1SavingsVsRent": 13083.646495504408,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 0,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 122322.51161552596,
+            "parts": {
+              "phase1SavingsVsRent": 13083.646495504408,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33304.57349317166,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -8480.967752150138
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $261k",
+        "requirement": "Price ≤ $261k (51% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "blocked",
+        "reason": "$261k is below the seller's recorded loan (~$304k) plus selling costs: short sale only.",
+        "price": 261277.69057620657,
+        "grossMo": 3525,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1247.85,
+        "savingsVsRentMo": 1202.15,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 16983.049887453428,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 26663.261093940288,
+            "parts": {
+              "phase1SavingsVsRent": 14425.800000000001,
+              "phase2CashFlow": 0,
+              "principalPaydown": 16418.381222493248,
+              "appreciation": 0,
+              "cashOpportunityCost": -4180.9201285529625
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 68278.02339570744,
+            "parts": {
+              "phase1SavingsVsRent": 14425.800000000001,
+              "phase2CashFlow": 0,
+              "principalPaydown": 16418.381222493248,
+              "appreciation": 41614.76230176715,
+              "cashOpportunityCost": -4180.9201285529625
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 84366.46109394029,
+            "parts": {
+              "phase1SavingsVsRent": 72129,
+              "phase2CashFlow": 0,
+              "principalPaydown": 16418.381222493248,
+              "appreciation": 0,
+              "cashOpportunityCost": -4180.9201285529625
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 125981.22339570745,
+            "parts": {
+              "phase1SavingsVsRent": 72129,
+              "phase2CashFlow": 0,
+              "principalPaydown": 16418.381222493248,
+              "appreciation": 41614.76230176715,
+              "cashOpportunityCost": -4180.9201285529625
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $477k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "blocked",
+        "reason": "Seller has ~$226k of equity over a $304k recorded loan; can't carry a $477k note.",
+        "price": 530000,
+        "grossMo": 3525,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2752.981004978651,
+        "savingsVsRentMo": -302.9810049786511,
+        "p2Dscr": 0.47370391993219013,
+        "p2CashFlowPerDoorMo": -752.5655024893254,
+        "cashToClose": 68900,
+        "capitalShortfall": 11653.318014935954,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -59713.277847867925,
+            "parts": {
+              "phase1SavingsVsRent": -3635.772059743813,
+              "phase2CashFlow": -72246.28823897523,
+              "principalPaydown": 33130.7179551514,
+              "appreciation": 0,
+              "cashOpportunityCost": -16961.935504300276
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 24701.98153113211,
+            "parts": {
+              "phase1SavingsVsRent": -3635.772059743813,
+              "phase2CashFlow": -72246.28823897523,
+              "principalPaydown": 33130.7179551514,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -16961.935504300276
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -2010.0778478679422,
+            "parts": {
+              "phase1SavingsVsRent": -18178.860298719064,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33130.7179551514,
+              "appreciation": 0,
+              "cashOpportunityCost": -16961.935504300276
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 82405.1815311321,
+            "parts": {
+              "phase1SavingsVsRent": -18178.860298719064,
+              "phase2CashFlow": 0,
+              "principalPaydown": 33130.7179551514,
+              "appreciation": 84415.25937900004,
+              "cashOpportunityCost": -16961.935504300276
+            }
+          }
+        ],
+        "flags": [
+          "Seller note $477,000 exceeds seller's equity ~$226,250 (recorded liens $303,750). Requires payoff at close or a wrap with due-on-sale risk.",
+          "Balloon of ~$443,869 due in year 5; refinance risk."
+        ]
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place ($3,525/mo)",
+      "basis": "in-place",
+      "grossMo": 3525,
+      "note": "Per-unit split not given; 12-month gross leases."
+    }
+  },
+  {
+    "dealId": "9502-banyan-ave",
+    "name": "Tampa duplex (9502 Banyan Ave)",
+    "askPrice": 480000,
+    "motivation": {
+      "daysOnMarket": 396,
+      "priceCuts": 1,
+      "motivated": true,
+      "summary": "396 days on market (incl. prior run), 1 cut → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 480000,
+        "grossMo": 3180,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 3246.6756477988292,
+        "savingsVsRentMo": -796.6756477988292,
+        "p2Dscr": 0.33474316282944655,
+        "p2CashFlowPerDoorMo": -1060.477823899415,
+        "cashToClose": 31200,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -88884.2227251178,
+            "parts": {
+              "phase1SavingsVsRent": -9560.10777358595,
+              "phase2CashFlow": -101805.87109434383,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": -12432.667061117776,
+            "parts": {
+              "phase1SavingsVsRent": -9560.10777358595,
+              "phase2CashFlow": -101805.87109434383,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -25318.78272511778,
+            "parts": {
+              "phase1SavingsVsRent": -47800.538867929754,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 51132.77293888225,
+            "parts": {
+              "phase1SavingsVsRent": -47800.538867929754,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$432k price and seller pays closing costs (~$13k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 432000,
+        "grossMo": 3180,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2859.8580830189467,
+        "savingsVsRentMo": -409.8580830189467,
+        "p2Dscr": 0.3956355279315983,
+        "p2CashFlowPerDoorMo": -867.0690415094734,
+        "cashToClose": 15120.000000000002,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -64732.8265406216,
+            "parts": {
+              "phase1SavingsVsRent": -4918.29699622736,
+              "phase2CashFlow": -83238.62798490946,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 0,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 4073.573556978421,
+            "parts": {
+              "phase1SavingsVsRent": -4918.29699622736,
+              "phase2CashFlow": -83238.62798490946,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 68806.40009760002,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -1167.3865406215828,
+            "parts": {
+              "phase1SavingsVsRent": -24591.4849811368,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 0,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 67639.01355697843,
+            "parts": {
+              "phase1SavingsVsRent": -24591.4849811368,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 68806.40009760002,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $29k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 480000,
+        "grossMo": 3180,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 3010.085603078187,
+        "savingsVsRentMo": -560.085603078187,
+        "p2Dscr": 0.36157514757051384,
+        "p2CashFlowPerDoorMo": -942.1828015390938,
+        "cashToClose": 16800,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -66985.49571446126,
+            "parts": {
+              "phase1SavingsVsRent": -6721.027236938244,
+              "phase2CashFlow": -90449.548947753,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 0,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 9466.059949538765,
+            "parts": {
+              "phase1SavingsVsRent": -6721.027236938244,
+              "phase2CashFlow": -90449.548947753,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -3420.055714461231,
+            "parts": {
+              "phase1SavingsVsRent": -33605.13618469122,
+              "phase2CashFlow": 0,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 0,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 73031.4999495388,
+            "parts": {
+              "phase1SavingsVsRent": -33605.13618469122,
+              "phase2CashFlow": 0,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $432k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "long-shot",
+        "reason": "Short $3,950 of cash (small gap). No open loan shown in listing data (verify); most sellers want cash.",
+        "price": 480000,
+        "grossMo": 3180,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2648.55826865991,
+        "savingsVsRentMo": -198.55826865991003,
+        "p2Dscr": 0.4120447840550618,
+        "p2CashFlowPerDoorMo": -761.4191343299551,
+        "cashToClose": 62400,
+        "capitalShortfall": 3950.17480597973,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -60835.51050372944,
+            "parts": {
+              "phase1SavingsVsRent": -2382.6992239189203,
+              "phase2CashFlow": -73096.23689567568,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 0,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 15616.045160270589,
+            "parts": {
+              "phase1SavingsVsRent": -2382.6992239189203,
+              "phase2CashFlow": -73096.23689567568,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 2729.92949627057,
+            "parts": {
+              "phase1SavingsVsRent": -11913.496119594602,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 0,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 79181.4851602706,
+            "parts": {
+              "phase1SavingsVsRent": -11913.496119594602,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          }
+        ],
+        "flags": [
+          "Balloon of ~$401,995 due in year 5; refinance risk."
+        ]
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $5,903/mo at ask",
+        "requirement": "Gross rent $5,903/mo vs $3,180 today (+86%).",
+        "feasibility": "very-unlikely",
+        "reason": "+86% over in-place with no evidence.",
+        "price": 480000,
+        "grossMo": 5902.664502951002,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 932.4108202904777,
+        "savingsVsRentMo": 1517.5891797095223,
+        "p2Dscr": 1.0000000000000002,
+        "p2CashFlowPerDoorMo": 2.2737367544323206e-13,
+        "cashToClose": 31200,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 40692.82629932626,
+            "parts": {
+              "phase1SavingsVsRent": 18211.070156514266,
+              "phase2CashFlow": 2.1827872842550278e-11,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 117144.38196332629,
+            "parts": {
+              "phase1SavingsVsRent": 18211.070156514266,
+              "phase2CashFlow": 2.1827872842550278e-11,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 113537.10692538333,
+            "parts": {
+              "phase1SavingsVsRent": 91055.35078257135,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 189988.66258938334,
+            "parts": {
+              "phase1SavingsVsRent": 91055.35078257135,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $217k",
+        "requirement": "Price ≤ $217k (55% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "55% below ask.",
+        "price": 216811.66429896728,
+        "grossMo": 3180,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1125.7200000000003,
+        "savingsVsRentMo": 1324.2799999999997,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 14092.758179432873,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 26046.16617851371,
+            "parts": {
+              "phase1SavingsVsRent": 15891.359999999997,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 0,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 60578.64330717409,
+            "parts": {
+              "phase1SavingsVsRent": 15891.359999999997,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 34532.47712866039,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 89611.6061785137,
+            "parts": {
+              "phase1SavingsVsRent": 79456.79999999999,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 0,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 124144.08330717409,
+            "parts": {
+              "phase1SavingsVsRent": 79456.79999999999,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 34532.47712866039,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          }
+        ],
+        "flags": []
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place ($3,180/mo)",
+      "basis": "in-place",
+      "grossMo": 3180,
+      "ownerUnitRentMo": 1590,
+      "note": "Fully leased; 12-month gross leases."
+    }
+  },
+  {
+    "dealId": "7902-n-14th-st",
+    "name": "Sulphur Springs duplex (7902 N 14th St)",
+    "askPrice": 480000,
+    "motivation": {
+      "daysOnMarket": 396,
+      "priceCuts": 1,
+      "motivated": true,
+      "summary": "396 days on market (incl. prior run), 1 cut → motivated"
+    },
+    "paths": [
+      {
+        "id": "as-is",
+        "lever": "as-is",
+        "label": "As listed (FHA, ask, current rents)",
+        "requirement": "Nothing changes.",
+        "feasibility": "supported",
+        "reason": "Today's numbers.",
+        "price": 480000,
+        "grossMo": 3180,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 3246.6756477988292,
+        "savingsVsRentMo": -796.6756477988292,
+        "p2Dscr": 0.33474316282944655,
+        "p2CashFlowPerDoorMo": -1060.477823899415,
+        "cashToClose": 31200,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -88884.2227251178,
+            "parts": {
+              "phase1SavingsVsRent": -9560.10777358595,
+              "phase2CashFlow": -101805.87109434383,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": -12432.667061117776,
+            "parts": {
+              "phase1SavingsVsRent": -9560.10777358595,
+              "phase2CashFlow": -101805.87109434383,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -25318.78272511778,
+            "parts": {
+              "phase1SavingsVsRent": -47800.538867929754,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 51132.77293888225,
+            "parts": {
+              "phase1SavingsVsRent": -47800.538867929754,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "combo",
+        "lever": "combo",
+        "label": "Package: 10% off + 3% seller credit",
+        "requirement": "$432k price and seller pays closing costs (~$13k).",
+        "feasibility": "plausible",
+        "reason": "10% below ask; seller shows motivation. Credit + cut total 13% of ask.",
+        "price": 432000,
+        "grossMo": 3180,
+        "financingLabel": "FHA + 3% seller closing credit",
+        "netHousingMo": 2859.8580830189467,
+        "savingsVsRentMo": -409.8580830189467,
+        "p2Dscr": 0.3956355279315983,
+        "p2CashFlowPerDoorMo": -867.0690415094734,
+        "cashToClose": 15120.000000000002,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -64732.8265406216,
+            "parts": {
+              "phase1SavingsVsRent": -4918.29699622736,
+              "phase2CashFlow": -83238.62798490946,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 0,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 4073.573556978421,
+            "parts": {
+              "phase1SavingsVsRent": -4918.29699622736,
+              "phase2CashFlow": -83238.62798490946,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 68806.40009760002,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -1167.3865406215828,
+            "parts": {
+              "phase1SavingsVsRent": -24591.4849811368,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 0,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 67639.01355697843,
+            "parts": {
+              "phase1SavingsVsRent": -24591.4849811368,
+              "phase2CashFlow": 0,
+              "principalPaydown": 27146.36933783046,
+              "appreciation": 68806.40009760002,
+              "cashOpportunityCost": -3722.270897315242
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-credit",
+        "lever": "seller-credit",
+        "label": "Ask: 6% seller credit (closing + rate buydown)",
+        "requirement": "Seller pays $29k (FHA max): 3% closing, ~3.1 pts → 5.71%.",
+        "feasibility": "plausible",
+        "reason": "Motivated seller; costs the seller about what a 6% price cut would.",
+        "price": 480000,
+        "grossMo": 3180,
+        "financingLabel": "FHA @ 5.71% w/ 6% seller credit",
+        "netHousingMo": 3010.085603078187,
+        "savingsVsRentMo": -560.085603078187,
+        "p2Dscr": 0.36157514757051384,
+        "p2CashFlowPerDoorMo": -942.1828015390938,
+        "cashToClose": 16800,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -66985.49571446126,
+            "parts": {
+              "phase1SavingsVsRent": -6721.027236938244,
+              "phase2CashFlow": -90449.548947753,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 0,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 9466.059949538765,
+            "parts": {
+              "phase1SavingsVsRent": -6721.027236938244,
+              "phase2CashFlow": -90449.548947753,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": -3420.055714461231,
+            "parts": {
+              "phase1SavingsVsRent": -33605.13618469122,
+              "phase2CashFlow": 0,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 0,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 73031.4999495388,
+            "parts": {
+              "phase1SavingsVsRent": -33605.13618469122,
+              "phase2CashFlow": 0,
+              "principalPaydown": 34320.93702280248,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -4135.856552572491
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "seller-carry",
+        "lever": "seller-carry",
+        "label": "Seller financing at 6.0%",
+        "requirement": "Seller carries $432k for 5 yrs; Kyle puts 10% down.",
+        "feasibility": "long-shot",
+        "reason": "Short $3,950 of cash (small gap). No open loan shown in listing data (verify); most sellers want cash.",
+        "price": 480000,
+        "grossMo": 3180,
+        "financingLabel": "Seller note 10% down @ 6.0%, 5-yr balloon",
+        "netHousingMo": 2648.55826865991,
+        "savingsVsRentMo": -198.55826865991003,
+        "p2Dscr": 0.4120447840550618,
+        "p2CashFlowPerDoorMo": -761.4191343299551,
+        "cashToClose": 62400,
+        "capitalShortfall": 3950.17480597973,
+        "tests": {
+          "beatsRent": false,
+          "zeroHousing": false,
+          "dscr1": false,
+          "hurdles": false,
+          "capital": false
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": -60835.51050372944,
+            "parts": {
+              "phase1SavingsVsRent": -2382.6992239189203,
+              "phase2CashFlow": -73096.23689567568,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 0,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 15616.045160270589,
+            "parts": {
+              "phase1SavingsVsRent": -2382.6992239189203,
+              "phase2CashFlow": -73096.23689567568,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 2729.92949627057,
+            "parts": {
+              "phase1SavingsVsRent": -11913.496119594602,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 0,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 79181.4851602706,
+            "parts": {
+              "phase1SavingsVsRent": -11913.496119594602,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30005.17852542014,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -15361.752909554967
+            }
+          }
+        ],
+        "flags": [
+          "Balloon of ~$401,995 due in year 5; refinance risk."
+        ]
+      },
+      {
+        "id": "rent",
+        "lever": "rent",
+        "label": "Rents to $5,903/mo at ask",
+        "requirement": "Gross rent $5,903/mo vs $3,180 today (+86%).",
+        "feasibility": "very-unlikely",
+        "reason": "+86% over in-place with no evidence.",
+        "price": 480000,
+        "grossMo": 5902.664502951002,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 932.4108202904777,
+        "savingsVsRentMo": 1517.5891797095223,
+        "p2Dscr": 1.0000000000000002,
+        "p2CashFlowPerDoorMo": 2.2737367544323206e-13,
+        "cashToClose": 31200,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 40692.82629932626,
+            "parts": {
+              "phase1SavingsVsRent": 18211.070156514266,
+              "phase2CashFlow": 2.1827872842550278e-11,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 117144.38196332629,
+            "parts": {
+              "phase1SavingsVsRent": 18211.070156514266,
+              "phase2CashFlow": 2.1827872842550278e-11,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 113537.10692538333,
+            "parts": {
+              "phase1SavingsVsRent": 91055.35078257135,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 0,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 189988.66258938334,
+            "parts": {
+              "phase1SavingsVsRent": 91055.35078257135,
+              "phase2CashFlow": 0,
+              "principalPaydown": 30162.632597589458,
+              "appreciation": 76451.55566400003,
+              "cashOpportunityCost": -7680.876454777484
+            }
+          }
+        ],
+        "flags": []
+      },
+      {
+        "id": "price",
+        "lever": "price",
+        "label": "Negotiate to $217k",
+        "requirement": "Price ≤ $217k (55% off; binds on Phase 2 DSCR 1.0x).",
+        "feasibility": "very-unlikely",
+        "reason": "55% below ask.",
+        "price": 216811.66429896728,
+        "grossMo": 3180,
+        "financingLabel": "FHA 3.5% down @ 6.49%",
+        "netHousingMo": 1125.7200000000003,
+        "savingsVsRentMo": 1324.2799999999997,
+        "p2Dscr": 1,
+        "p2CashFlowPerDoorMo": 0,
+        "cashToClose": 14092.758179432873,
+        "capitalShortfall": 0,
+        "tests": {
+          "beatsRent": true,
+          "zeroHousing": false,
+          "dscr1": true,
+          "hurdles": false,
+          "capital": true
+        },
+        "wealth": [
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0,
+            "total": 26046.16617851371,
+            "parts": {
+              "phase1SavingsVsRent": 15891.359999999997,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 0,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          },
+          {
+            "plan": "move-out-after-year-1",
+            "appreciation": 0.03,
+            "total": 60578.64330717409,
+            "parts": {
+              "phase1SavingsVsRent": 15891.359999999997,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 34532.47712866039,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0,
+            "total": 89611.6061785137,
+            "parts": {
+              "phase1SavingsVsRent": 79456.79999999999,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 0,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          },
+          {
+            "plan": "stay-full-hold",
+            "appreciation": 0.03,
+            "total": 124144.08330717409,
+            "parts": {
+              "phase1SavingsVsRent": 79456.79999999999,
+              "phase2CashFlow": 0,
+              "principalPaydown": 13624.188694003416,
+              "appreciation": 34532.47712866039,
+              "cashOpportunityCost": -3469.382515489703
+            }
+          }
+        ],
+        "flags": []
+      }
+    ],
+    "rentCase": {
+      "id": "in-place",
+      "label": "In-place ($3,180/mo)",
+      "basis": "in-place",
+      "grossMo": 3180,
+      "ownerUnitRentMo": 1590,
+      "note": "Fully tenanted; rented at $1,050 in 2019."
+    }
+  }
+]

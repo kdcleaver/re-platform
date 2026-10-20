@@ -10,6 +10,7 @@ export const TPA_236_W_NORTH_ST: Deal = {
   marketId: "tampa-msa",
   askPrice: 998_000,
   listedOn: "2026-07-21",
+  priceCuts: 0,
   units: [
     { id: "A", beds: 2, baths: 2, note: "vacant; marketed for owner-occupancy" },
     { id: "B", beds: 1, baths: 1, note: "Airbnb" },

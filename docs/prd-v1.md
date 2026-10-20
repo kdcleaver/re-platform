@@ -134,3 +134,12 @@ Storage gate thresholds (from Kyle's source material, already numeric — see pr
 - Duplex finding: $0 Phase 1 housing cost means one tenant's rent must cover the whole PITIA — structurally out of reach for Tampa duplexes at any realistic price. Phase 2 hurdle prices for duplexes run $186k–$346k vs $480k–$780k asks.
 - Insurance default (1.45%, from frame-quad comps) is likely heavy for block duplexes; at 0.9% the duplex max offers rise $25–50k — conclusion unchanged.
 - 64 tests; duplex/triplex/rent-needed outputs re-derived independently in Python (8/8 exact).
+
+### 2026-10-20 (later) — path analysis: "what could work?"
+- Kyle asked to move from a rigid buy box to showing which strategy/structure could work. New `src/paths.ts` + `npm run paths`.
+- New Phase 1 comparator: Kyle's current housing — $2,765/mo household all-in, $2,450 base rent used as like-for-like (as owner he keeps paying electric/internet; model already charges water/trash on his unit). "$0 housing cost" stays as a stricter secondary test.
+- Levers solved per deal and rated by explicit rules (days on market incl. prior runs, price cuts, recorded loans vs. price, rent evidence, cash): negotiated price (to beat rent and DSCR 1.0x), rent needed, 6% FHA seller credit (3% closing + ~0.75% buydown), seller financing (6%, 10% down, 5-yr balloon), VA/FHA loan assumption + seller second, and a realistic package (5–10% off + 3% credit).
+- Rough 5-yr wealth vs renting at 0% / 3% appreciation, for "move out after year 1" vs "stay all 5 years".
+- Findings: as listed, Ybor (~$2,267/mo) and 1761 19th St S (~$2,343/mo) already beat Kyle's rent. Best plausible path: 1761 at 10% off + 3% seller credit → ~$1,783/mo (saves ~$667/mo). No path rated plausible clears Phase 2 DSCR 1.0x; every quad loses ~$900–1,500/mo after move-out. Staying the full 5 years turns the quads wealth-positive even at 0% appreciation (~$37–74k, mostly principal paydown + savings); moving out after year 1 needs appreciation to work. Duplexes, Kenwood, 725 14th (marginal), and 15501 61st don't beat rent on any plausible path.
+- Placeholder rules to calibrate as paper trades resolve: motivation thresholds, price-cut bands, buydown ~0.25%/point, seller-note terms, assumption rate guess, appreciation/opportunity rates.
+- 75 tests; one full path (1761 package, incl. both wealth plans) re-derived independently in Python (8/8 exact).

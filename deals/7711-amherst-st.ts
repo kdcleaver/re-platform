@@ -10,6 +10,7 @@ export const TPA_7711_AMHERST_ST: Deal = {
   marketId: "tampa-msa",
   askPrice: 530_000,
   listedOn: "2026-06-04",
+  priceCuts: 4,
   units: [
     { id: "A", beds: 3, baths: 1 },
     { id: "B", beds: 3, baths: 1 },

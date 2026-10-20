@@ -10,6 +10,7 @@ export const TPA_2613_E_23RD_AVE: Deal = {
   marketId: "tampa-msa",
   askPrice: 779_900,
   listedOn: "2026-06-18",
+  priceCuts: 3,
   units: [
     { id: "1", beds: 3, baths: 2.5 },
     { id: "2", beds: 3, baths: 2.5 },

@@ -9,6 +9,7 @@ export const STPETE_633_7TH_AVE_N: Deal = {
   marketId: "tampa-msa",
   askPrice: 1_000_000,
   listedOn: "2026-07-14",
+  priceCuts: 0,
   units: [
     { id: "f1", beds: 1, baths: 1 },
     { id: "f2", beds: 1, baths: 1 },

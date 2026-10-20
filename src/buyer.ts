@@ -15,9 +15,25 @@ export interface Hurdles {
   phase2MinCoc: number;
 }
 
+export interface CurrentHousing {
+  /** like-for-like comparator: what owning replaces (base rent; owner model already charges water/trash) */
+  likeForLikeMo: number;
+  /** everything the household pays today incl. utilities kept as an owner */
+  allInMo: number;
+}
+
+/** Placeholder return assumptions for the rough 5-year wealth view. */
+export interface WealthAssumptions {
+  holdYears: number;
+  appreciationCases: number[]; // annual
+  cashOpportunityRate: number; // what the down payment earns if not invested (T-bill proxy)
+}
+
 export interface BuyerProfile {
   id: string;
   capital: BuyerCapital;
+  currentHousing: CurrentHousing;
+  wealth: WealthAssumptions;
   /** pricing tier only; exact scores are not stored */
   ficoBand: FicoBand;
   hurdles: Hurdles;
@@ -27,6 +43,8 @@ export interface BuyerProfile {
 export const KYLE: BuyerProfile = {
   id: "kyle",
   capital: { giftFunds: 50_000, ownCash: 20_000 },
+  currentHousing: { likeForLikeMo: 2_450, allInMo: 2_765 },
+  wealth: { holdYears: 5, appreciationCases: [0, 0.03], cashOpportunityRate: 0.045 },
   ficoBand: "740+",
   hurdles: {
     phase1MaxNetHousingCostMo: 0,
@@ -36,6 +54,14 @@ export const KYLE: BuyerProfile = {
   },
   provenance: {
     capital: { source: "Kyle, 2026-09: ~$50k likely gift + ~$20k own reserves.", confidence: "researched" },
+    currentHousing: {
+      source: "Kyle, 2026-10-20: household all-in $2,765/mo = base rent $2,450 + trash, internet, electric, water. Comparator uses base rent: as an owner he still pays electric/internet, and the model already charges water/trash on his unit.",
+      confidence: "quoted",
+    },
+    wealth: {
+      source: "Placeholders for a rough comparison: 5-yr hold, 0% and 3%/yr appreciation, 4.5% opportunity rate on cash. Ignores rent/expense growth, selling costs, capex shocks, taxes.",
+      confidence: "placeholder",
+    },
     ficoBand: {
       source: "Kyle, 2026-10-20: two bureau scores, both 740+ (lenders use the lower of two / middle of three). Consumer scores; lender pull may differ slightly.",
       confidence: "researched",

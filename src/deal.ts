@@ -47,6 +47,10 @@ export interface Deal {
   marketId: string;
   askPrice: number;
   listedOn: string;
+  /** number of price reductions on the current listing run (motivation signal) */
+  priceCuts?: number;
+  /** first time this property hit the market in its current sale effort, if relisted */
+  firstListedOn?: string;
   units: Unit[];
   yearBuilt: number;
   construction: string;

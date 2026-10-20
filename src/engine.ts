@@ -17,6 +17,17 @@ export type Financing =
       /** override market FHA rate (stress tests) */
       rate?: number;
       downPct?: number;
+      /** seller-paid credit toward closing costs, % of price (FHA caps total concessions at 6%) */
+      sellerCreditPct?: number;
+      label?: string;
+    }
+  | {
+      /** Several loans at once, e.g. an assumed loan + a seller second. Buyer funds the rest. */
+      kind: "stack";
+      label: string;
+      tranches: { label: string; balance: number; rate: number; amortMonths: number; lender: "bank" | "seller" | "assumed" }[];
+      closingCostPct?: number;
+      reserveMonths?: number;
     }
   | {
       kind: "amortizing";
@@ -93,6 +104,8 @@ export interface CostBuild {
   ins: number;
   pitia: number;
   debtServiceMo: number; // P&I + MIP
+  /** every amortizing piece of debt, for principal-paydown math */
+  amortization: { principal: number; rate: number; months: number }[];
   down: number;
   closing: number;
   cashToClose: number;
@@ -117,13 +130,31 @@ export function costBuild(i: CostInputs): CostBuild {
     const mip = (baseLoan * mipRate) / 12;
     const pitia = pi + mip + tax + ins;
     const down = price * downPct;
-    const closing = price * market.closingCostPct;
+    const closing = Math.max(0, price * market.closingCostPct - price * (f.sellerCreditPct ?? 0));
     return {
-      financingLabel: `FHA ${(downPct * 100).toFixed(1)}% down @ ${(rate * 100).toFixed(2)}%`,
+      financingLabel: f.label ?? `FHA ${(downPct * 100).toFixed(1)}% down @ ${(rate * 100).toFixed(2)}%`,
       baseLoan, totalLoan, rate, pi, mip, tax, ins, pitia,
       debtServiceMo: pi + mip,
+      amortization: [{ principal: totalLoan, rate, months: fha.termMonths }],
       down, closing, cashToClose: down + closing,
       reserves: pitia * fha.reserveMonths,
+    };
+  }
+
+  if (f.kind === "stack") {
+    const baseLoan = f.tranches.reduce((a, t) => a + t.balance, 0);
+    const pi = f.tranches.reduce((a, t) => a + pmt(t.balance, t.rate, t.amortMonths), 0);
+    const pitia = pi + tax + ins;
+    const down = price - baseLoan;
+    const closing = price * (f.closingCostPct ?? market.closingCostPct);
+    return {
+      financingLabel: f.label,
+      baseLoan, totalLoan: baseLoan, rate: baseLoan > 0 ? f.tranches.reduce((a, t) => a + t.rate * t.balance, 0) / baseLoan : 0,
+      pi, mip: 0, tax, ins, pitia,
+      debtServiceMo: pi,
+      amortization: f.tranches.map((t) => ({ principal: t.balance, rate: t.rate, months: t.amortMonths })),
+      down, closing, cashToClose: down + closing,
+      reserves: pitia * (f.reserveMonths ?? 3),
     };
   }
 
@@ -136,6 +167,7 @@ export function costBuild(i: CostInputs): CostBuild {
     financingLabel: f.label,
     baseLoan, totalLoan: baseLoan, rate: f.rate, pi, mip: 0, tax, ins, pitia,
     debtServiceMo: pi,
+    amortization: [{ principal: baseLoan, rate: f.rate, months: f.amortMonths }],
     down, closing, cashToClose: down + closing,
     reserves: pitia * (f.reserveMonths ?? 3),
   };
@@ -439,4 +471,23 @@ export function rentNeeded(
     return r.dscr >= h.phase2MinDscr && r.cashFlowPerDoorMo >= h.phase2MinCashFlowPerDoorMo && r.coc >= h.phase2MinCoc;
   });
   return { selfSufficiency: ss, dscr1, phase2Hurdles: hurdles, zeroHousingOtherDoors: otherRentForZero(units, c, s.market, s.utilPerDoor) };
+}
+
+// ---------- Housing-cost targets (Phase 1 vs. renting) ----------
+
+/** Rent needed from the non-owner doors so Phase 1 net housing cost <= targetMo. */
+export function otherRentForHousingCost(units: number, c: CostBuild, market: MarketAssumptions, targetMo: number, utilPerDoor?: number): number {
+  const o = market.opex;
+  const varOpex = o.repairsPctOfRent + o.capexPctOfRent + o.vacancyPct;
+  return Math.max(0, (c.pitia + (utilPerDoor ?? o.ownerUtilitiesPerDoorMo) * units - targetMo) / (1 - varOpex));
+}
+
+/** Highest price where Phase 1 net housing cost <= targetMo. */
+export function maxPriceForHousingCost(units: number, otherRentMo: number, targetMo: number, s: SolverContext): number | null {
+  return solveMaxPrice((p) => phase1(units, otherRentMo, cb(p, s), s.market, s.utilPerDoor).netHousingCostMo <= targetMo);
+}
+
+/** Principal repaid over the first k months across every amortizing piece of debt. */
+export function principalPaid(c: CostBuild, months: number): number {
+  return c.amortization.reduce((a, t) => a + (t.principal - balanceAfter(t.principal, t.rate, t.months, Math.min(months, t.months))), 0);
 }
