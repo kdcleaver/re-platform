@@ -1,6 +1,6 @@
 # RE Platform — PRD v1 & Build Log
 
-Status: M0 engine built and tested; repo kdcleaver/re-platform created, awaiting Claude GitHub App install to push
+Status: M0 engine built, tested, and on GitHub (kdcleaver/re-platform, private)
 Last updated: 2026-10-20
 
 ## Purpose
@@ -81,7 +81,7 @@ Storage gate thresholds (from Kyle's source material, already numeric — see pr
 
 | Milestone | Deliverable | Status |
 |---|---|---|
-| M0 | Ported, tested calculation engine (TS) + GRM pre-screen + Tampa MarketAssumptions record | **built 2026-10-20** — derived screen, hurdles, max-offer done; needs GitHub push |
+| M0 | Ported, tested calculation engine (TS) + GRM pre-screen + Tampa MarketAssumptions record | **done 2026-10-20** — on GitHub |
 | M0.5 | House-hack Excel workbook (Kyle's own, from scratch — golden file / spec) | not started |
 | M1 | Intake, doc vault, assumptions library, pipeline w/ reminders, gates v1, paper-trade ledger, personal capital view | not started |
 | M2 | Exit-scenario module (hold/refi/sale, FHA-assumable-vs-refi comparison; tax estimates flagged CPA-to-confirm) | not started |
@@ -93,7 +93,7 @@ Storage gate thresholds (from Kyle's source material, already numeric — see pr
 1. Phase 2 hurdles: Kyle delegated to market benchmarks (2026-10-20). Engine uses DSCR 1.20x, $100/door/mo, 8% CoC, labeled as benchmarks. Revisit once he has a view.
 2. Real FHA lender quote (rate/MIP). Credit tier now known: 740+.
 3. Bound insurance quote + 4-point inspection on a pre-1950 frame quad (current figures are web comps, $9.2k–$11.4k/yr Pinellas).
-4. GitHub repo `kdcleaver/re-platform` created by Kyle 2026-10-20. Pushing needs the Claude GitHub App installed on it.
+4. ~~GitHub repo~~ Resolved 2026-10-20: `kdcleaver/re-platform` (private), Claude GitHub App installed, M0 pushed.
 5. Gift-fund rules for non-FHA structures (engine currently pools gift + own cash outside FHA).
 
 ## Session/tooling decisions
