@@ -1,0 +1,62 @@
+import type { Deal } from "../src/deal.js";
+
+/** Midtown St. Pete quad, 4 x 2bd/1ba. Source: MLS TB8524207 via homes.com, pulled 2026-10-20. */
+export const STPETE_1761_19TH_S: Deal = {
+  id: "1761-19th-st-s",
+  name: "Midtown St. Pete quad (4 x 2bd)",
+  address: "1761 19th St S, St. Petersburg, FL 33712",
+  url: "https://www.homes.com/property/1761-19th-st-s-st-petersburg-fl/qfdm8bmw3qrjz/",
+  mls: "TB8524207",
+  marketId: "tampa-msa",
+  askPrice: 695_000,
+  listedOn: "2026-06-29",
+  units: [
+    { id: "u1", beds: 2, baths: 1, inPlaceRentMo: 1_650 },
+    { id: "u2", beds: 2, baths: 1, inPlaceRentMo: 1_650 },
+    { id: "u3", beds: 2, baths: 1, inPlaceRentMo: 1_895 },
+    { id: "u4", beds: 2, baths: 1, inPlaceRentMo: 1_562, note: "lowest rent; assumed owner unit" },
+  ],
+  yearBuilt: 1927,
+  construction: "Frame/stucco, slab; ~530 sf per unit; wall/window AC",
+  isFrame: true,
+  floodZone: "X (panel 12103C0218G)",
+  mlsUnitCountField: 1,
+  currentAnnualTax: 8_765,
+  openLiens: [{ recorded: "2023-05-17", amount: 431_000, type: "Conventional (open)" }],
+  lastSale: { date: "2023-05-17", price: 520_000 },
+  insuranceEstimate: {
+    lowAnnual: 9_200,
+    highAnnual: 11_400,
+    bound: false,
+    source: "Kyle's research 2026-10-20: Kin / State Farm / Insurify comps for a Pinellas multi-unit wood-frame DP-3 landlord policy, $2.5k AOP + 2% hurricane deductible. Not a bound quote. 2020 roof should earn wind-mit credits.",
+  },
+  rentCases: [
+    {
+      id: "in-place",
+      label: "In-place rent roll ($6,757/mo)",
+      basis: "in-place",
+      grossMo: 1_650 + 1_650 + 1_895 + 1_562,
+      ownerUnitRentMo: 1_562,
+    },
+    {
+      id: "hud-fmr",
+      label: "Seller's HUD FMR upside ($2,130/door)",
+      basis: "seller-pro-forma",
+      grossMo: 2_130 * 4,
+      ownerUnitRentMo: 2_130,
+      note: "FMR is a Section 8 payment benchmark, not a market-rent comp for ~530 sf units.",
+    },
+  ],
+  gates: [
+    { id: "parcel-units", label: "Parcel unit count vs. advertised doors", state: "unverified", ifConfirmed: "kill",
+      evidence: "MLS unit-count field shows 1 vs. 4 advertised. Check Pinellas PA / CO." },
+    { id: "permits-co", label: "Permit history for 2021–23 gut reno", state: "unverified", ifConfirmed: "reprice",
+      evidence: "Gut renovation by a flipper; confirm permits closed." },
+    { id: "flood", label: "FEMA flood zone", state: "unverified", evidence: "MLS says Zone X." },
+    { id: "insurance", label: "Insurability / quote", state: "unverified", ifConfirmed: "kill",
+      evidence: "1927 frame. Roof 2020 (wind-mit credit). Comps $9.2k–$11.4k/yr; needs a bound quote + clean 4-point (electrical, plumbing, HVAC, roof)." },
+    { id: "hvac", label: "Cooling system", state: "unverified", ifConfirmed: "reprice",
+      evidence: "Wall/window units; mini-split conversion is a likely capex item." },
+  ],
+  notes: ["Seller bought 05/2023 at $520k; ask is +34%. Listed 06/29, cut $4k on 09/16; 'motivated seller'."],
+};

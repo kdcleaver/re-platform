@@ -1,0 +1,60 @@
+import type { Deal } from "../src/deal.js";
+
+/** Historic Kenwood quad, 3 x 1bd + 1 x 3bd. Source: MLS TB8476431 via homes.com, pulled 2026-10-20. */
+export const STPETE_1846_2ND_AVE_N: Deal = {
+  id: "1846-2nd-ave-n",
+  name: "Historic Kenwood quad (3 x 1bd + 3bd)",
+  address: "1846 2nd Ave N, St. Petersburg, FL 33713",
+  url: "https://www.homes.com/property/1846-2nd-ave-n-saint-petersburg-fl/5fqym9b67t1pn/",
+  mls: "TB8476431",
+  marketId: "tampa-msa",
+  askPrice: 750_000,
+  listedOn: "2026-02-14",
+  units: [
+    { id: "1bd-a", beds: 1, baths: 1 },
+    { id: "1bd-b", beds: 1, baths: 1 },
+    { id: "1bd-c", beds: 1, baths: 1 },
+    { id: "3bd", beds: 3, baths: 1 },
+  ],
+  yearBuilt: 1921,
+  construction: "Frame/vinyl siding, crawlspace; impact windows; central AC all units; historic district",
+  isFrame: true,
+  zoning: "Multi-family (≤10 units) per listing",
+  floodZone: "X (panel 12103C0218G)",
+  mlsUnitCountField: 2,
+  currentAnnualTax: 6_855,
+  sellerReportedOpexAnnual: 17_255,
+  insuranceEstimate: {
+    lowAnnual: 9_200,
+    highAnnual: 11_400,
+    bound: false,
+    source: "Kyle's research 2026-10-20: Kin / State Farm / Insurify comps for a Pinellas multi-unit wood-frame DP-3 landlord policy, $2.5k AOP + 2% hurricane deductible. Not a bound quote. Roof age unknown; impact windows help wind-mit.",
+  },
+  rentCases: [
+    {
+      id: "in-place",
+      label: "In-place / MLS gross ($6,225/mo)",
+      basis: "in-place",
+      grossMo: 6_225,
+      note: "Per-unit split not disclosed; Phase 1 assumes owner takes an average door (a 1bd is likely cheaper).",
+    },
+  ],
+  overrides: {
+    ownerUtilitiesPerDoorMo: 40,
+    note: "Placeholder: landlord pays water only; MLS says tenants pay electric, gas, sewer, trash.",
+  },
+  gates: [
+    { id: "zoning", label: "Zoning permits 4 units", state: "unverified", ifConfirmed: "kill",
+      evidence: "Listing says multi-family ≤10 units. Confirm code with City of St. Pete." },
+    { id: "parcel-units", label: "Parcel unit count vs. advertised doors", state: "unverified", ifConfirmed: "kill",
+      evidence: "MLS: 4 units total but 'Unit Count: 2', 2 buildings. Check Pinellas PA / CO." },
+    { id: "flood", label: "FEMA flood zone", state: "unverified", evidence: "MLS says Zone X, non-evacuation." },
+    { id: "insurance", label: "Insurability / quote", state: "unverified", ifConfirmed: "kill",
+      evidence: "1921 frame, historic district. Comps $9.2k–$11.4k/yr; impact windows help wind-mit; roof age unknown. Needs a bound quote + clean 4-point." },
+    { id: "historic", label: "Historic district constraints", state: "unverified", ifConfirmed: "reprice",
+      evidence: "Exterior changes need COA review; affects capex cost and timing." },
+    { id: "opex", label: "Seller-reported opex reconciles", state: "unverified", ifConfirmed: "reprice",
+      evidence: "Seller lists $17,255/yr (23% of gross); taxes alone roughly double on sale." },
+  ],
+  notes: ["On market since 02/14/2026 with no price change (~248 days)."],
+};
